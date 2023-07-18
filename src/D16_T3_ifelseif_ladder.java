@@ -9,7 +9,7 @@ public class D16_T3_ifelseif_ladder {
         if (value1<value2) {
             System.out.println(value2 + " is grater that " + value1);
         } else {
-            System.out.println("Both values are equals");
+            System.out.println("Both values are equals.");
         }
     }
 
