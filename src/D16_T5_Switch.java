@@ -1,4 +1,4 @@
-public class D16_Task5_Switch {
+public class D16_T5_Switch {
     public static void main(String[] args) {
         String userType = args[0];
 
