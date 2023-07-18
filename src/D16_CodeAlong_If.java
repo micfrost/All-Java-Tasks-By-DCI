@@ -1,4 +1,4 @@
-public class D16_CodeAlong {
+public class D16_CodeAlong_If {
     public static void main(String[] args) {
         int covidCases = 50;
         boolean ishomeinconstrction = true;
