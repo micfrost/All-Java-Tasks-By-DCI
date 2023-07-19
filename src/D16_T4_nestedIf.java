@@ -4,7 +4,7 @@ public class D16_T4_nestedIf {
         int id = Integer.parseInt(args[1]);
 
         if (user == 200) {
-            if (id == 150) {
+            if (id > 100) {
                 System.out.println("Valid ID number.");
             } else {
                 System.out.println("Invalid ID number.");
@@ -12,6 +12,5 @@ public class D16_T4_nestedIf {
         } else {
             System.out.println("You need to be an admin to perform operations.");
         }
-
     }
 }

@@ -15,7 +15,7 @@ public class D16_T5_Switch {
             case "guest":
                 System.out.println("Logged in as guest. Would you mind signing in?");
                 break;
-            case "default case":
+            default:
                 System.out.println("User type not recognized!");
                 break;
         }
