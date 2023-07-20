@@ -9,6 +9,7 @@ public class D18_T2_Length {
 
         int lenghtOfWord = givenWord.length();
         if (lenghtOfWord % 2 == 1) {
+
             System.out.println("\"" + givenWord + "\"" + " --> " + "\"odd\"");
 
         } else {
