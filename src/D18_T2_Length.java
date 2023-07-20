@@ -12,6 +12,7 @@ public class D18_T2_Length {
             System.out.println("\"" + givenWord + "\"" + " --> " + "\"odd\"");
         } else {
             System.out.println("\"" + givenWord + "\"" + " --> " + "\"even\"");
+
         }
     }
 }
