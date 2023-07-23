@@ -1,4 +1,4 @@
-public class D18_T6_toUpperCase {
+public class D18_T5_toUpperCase {
     public static void main(String[] args) {
 
         String input = "The Quick BroWnFoX jumps over the laZy Dog!";
