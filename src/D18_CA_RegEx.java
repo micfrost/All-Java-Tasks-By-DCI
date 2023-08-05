@@ -16,4 +16,3 @@ public class D18_CA_RegEx {
         }
     }
 }
-// Outputs Match found
