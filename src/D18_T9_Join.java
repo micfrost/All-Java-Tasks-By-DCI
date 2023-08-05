@@ -5,11 +5,13 @@ public class D18_T9_Join {
 
         System.out.println("input --> output");
 
+
+
         System.out.print(inputList[0] + ", " + inputList[1] + ", " + inputList[2]);
 
         System.out.print(" --> ");
 
-        String outputList = String.join(",", inputList[0], inputList[1], inputList[2]);
+        String outputList = String.join(",", inputList);
 
         System.out.println(outputList);
     }
