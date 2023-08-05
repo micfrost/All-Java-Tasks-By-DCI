@@ -6,7 +6,7 @@ public class D18_T11_1_Regex_CapitalLetter {
     }
 
     private static void patternWordsStatsCapitalLetter() {
-        String input = "Hello my name is Mathias";
+        String input = "Hello my name is Mathias John Rooseveld. Nice to meet you Sir.";
         String pattern = "([A-Z])\\w+";
         Pattern regex = Pattern.compile(pattern);
         Matcher matcher = regex.matcher(input);
@@ -26,4 +26,6 @@ public class D18_T11_1_Regex_CapitalLetter {
             System.out.println("No matches found.");
         }
     }
+
+
 }
