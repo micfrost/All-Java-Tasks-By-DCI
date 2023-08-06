@@ -14,7 +14,7 @@ public class D18_T10_Regex_10Digit {
 
         Matcher matcher = pattern.matcher(givenInput);
 
-        System.out.println("Input --> Output");
+        System.out.println("Input/Output");
 
         if (matcher.matches()) {
             System.out.println(givenInput + " --> true");
