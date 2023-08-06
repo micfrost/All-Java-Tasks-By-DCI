@@ -7,7 +7,8 @@ public class D18_T12_Regex_MathExpress {
         System.out.println("Write a mathematical expression: ");
         String givenInput = scanner.nextLine();
 
-        String pattern = "^-?\\d+\\s?[+\\-*]\\s?-?\\d+$";
+//        String pattern = "^-?\\d+\\s?[+\\-*]\\s?-?\\d+$";
+        String pattern = "^[\\d+\\-*/()%\\s]+$";
         Pattern regex = Pattern.compile(pattern);
         Matcher matcher = regex.matcher(givenInput);
         if (matcher.find()) {
