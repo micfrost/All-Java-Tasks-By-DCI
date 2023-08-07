@@ -1,4 +1,4 @@
-package D19_T2_SumOfTwoNumbers;
+package D19_Objects.D19_T2_SumOfTwoNumbers;
 
 public class Main {
     public static void main(String[] args) {

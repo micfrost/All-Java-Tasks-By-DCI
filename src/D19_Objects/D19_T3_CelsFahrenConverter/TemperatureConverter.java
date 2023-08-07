@@ -1,4 +1,4 @@
-package D19_T3_CelsFahrenConverter;
+package D19_Objects.D19_T3_CelsFahrenConverter;
 
 import java.util.Scanner;
 
