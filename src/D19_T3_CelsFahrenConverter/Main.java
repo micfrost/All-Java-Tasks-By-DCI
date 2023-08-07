@@ -3,6 +3,6 @@ public class Main {
     public static void main(String[] args) {
 
         TemperatureConverter tempConv1 = new TemperatureConverter();
-        tempConv1.convertToCelsius();
+        tempConv1.convertToFahrenheit();
     }
 }
