@@ -1,3 +1,5 @@
+package D18;
+
 public class D16_T3_ifelseif_ladder {
     public static void main(String[] args) {
         int value1 = Integer.parseInt(args[0]);

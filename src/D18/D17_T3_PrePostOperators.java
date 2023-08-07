@@ -1,3 +1,5 @@
+package D18;
+
 public class D17_T3_PrePostOperators {
     public static void main(String[] args) {
         int operator = Integer.parseInt(args[0]);

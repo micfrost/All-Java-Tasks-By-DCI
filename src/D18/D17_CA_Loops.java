@@ -1,3 +1,5 @@
+package D18;
+
 public class D17_CA_Loops {
     public static void main(String[] args) {
 forLoop();

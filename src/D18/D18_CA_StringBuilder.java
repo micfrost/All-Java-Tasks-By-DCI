@@ -1,3 +1,5 @@
+package D18;
+
 public class D18_CA_StringBuilder {
 //    mutable (String class is immutable)
 //    newer than StringBuffer (Java 1.5)

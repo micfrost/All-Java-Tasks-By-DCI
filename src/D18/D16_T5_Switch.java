@@ -1,3 +1,5 @@
+package D18;
+
 public class D16_T5_Switch {
     public static void main(String[] args) {
         String userType = args[0];

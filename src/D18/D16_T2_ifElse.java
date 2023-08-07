@@ -1,3 +1,5 @@
+package D18;
+
 public class D16_T2_ifElse {
     public static void main(String[] args) {
         int receivedNumber = Integer.parseInt(args[0]);

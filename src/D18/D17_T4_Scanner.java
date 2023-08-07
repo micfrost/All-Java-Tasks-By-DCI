@@ -1,3 +1,5 @@
+package D18;
+
 import java.util.Scanner;
 
 public class D17_T4_Scanner {

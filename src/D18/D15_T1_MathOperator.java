@@ -1,3 +1,5 @@
+package D18;
+
 public class D15_T1_MathOperator {
     public static void main(String[] args) {
         int int1 = 10;

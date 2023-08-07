@@ -1,3 +1,5 @@
+package D18;
+
 import java.util.Scanner;
 public class D18_T4_trim {
     public static void main(String[] args) {

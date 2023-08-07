@@ -1,3 +1,5 @@
+package D18;
+
 public class D17_T2_Ternary {
     public static void main(String[] args) {
         int givenNumber = Integer.parseInt(args[0]);

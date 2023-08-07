@@ -1,3 +1,5 @@
+package D18;
+
 import java.util.Scanner;
 public class D18_T1_String {
     public static void main(String[] args) {

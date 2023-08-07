@@ -1,3 +1,5 @@
+package D18;
+
 import java.util.Scanner;
 import java.util.regex.*;
 

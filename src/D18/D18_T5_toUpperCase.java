@@ -1,3 +1,5 @@
+package D18;
+
 public class D18_T5_toUpperCase {
     public static void main(String[] args) {
 

@@ -1,3 +1,5 @@
+package D18;
+
 public class D18_T7_replaceAll {
     public static void main(String[] args) {
         String input = "A dogmatic dog buys dogecoin to become rich and buy hotdogs every day.";

@@ -1,3 +1,5 @@
+package D18;
+
 public class D16_CodeAlong_If {
     public static void main(String[] args) {
         int covidCases = 50;
