@@ -17,10 +17,10 @@ public class Main {
 
         RectangleCalculator RectCalc = new RectangleCalculator();
         double area = RectCalc.areaOfRectangle(givenLength, givenWidth);
-        System.out.println(area);
+        System.out.println("The area of the rectangle is: " + area);
 
         double perimeter = RectCalc.perimeterOfRectangle(givenLength, givenWidth);
-        System.out.println(perimeter);
+        System.out.println("The perimeter of the rectangle is: " + perimeter);
 
 
     }
