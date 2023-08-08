@@ -18,10 +18,7 @@ public class App {
         System.out.println();
 
         person1.sayHello();
-
         String animal = value1.getAnimal();
-
         System.out.println(animal);
-
     }
 }
