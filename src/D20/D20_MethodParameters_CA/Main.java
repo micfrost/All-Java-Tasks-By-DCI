@@ -1,4 +1,4 @@
-package D20_MethodParameters.D20_CA;
+package D20.D20_MethodParameters_CA;
 
 public class Main {
     public static void main(String[] args) {
