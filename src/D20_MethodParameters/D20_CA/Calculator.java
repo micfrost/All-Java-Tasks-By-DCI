@@ -5,4 +5,8 @@ public class Calculator {
         System.out.println("Received the value: " + value);
         return value*value;
     }
+int add(int a, int b) {
+    System.out.println("Received values: " + a + " and " + b);
+    return a + b;
+}
 }
