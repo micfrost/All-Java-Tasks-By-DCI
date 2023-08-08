@@ -1,4 +1,4 @@
-package D20.D20_T1;
+package D20.D20_T1_ArithmeticCalculator;
 
 public class ArithmeticCalculator {
     double add(double value1, double value2) {
