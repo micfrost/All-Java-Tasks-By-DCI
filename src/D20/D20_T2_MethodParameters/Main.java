@@ -1,5 +1,4 @@
 package D20.D20_T2_MethodParameters;
-
 import java.util.Scanner;
 
 public class Main {
