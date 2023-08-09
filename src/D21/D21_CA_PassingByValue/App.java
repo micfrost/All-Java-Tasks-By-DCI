@@ -27,8 +27,10 @@ public class App {
 
     public void display(Person person) {
         System.out.println("2. Person is: " + person);
-
         person = new Person("Mike");
+        person.setName("Sue");
+
+
         System.out.println("3. Person is: " + person);
     }
 
