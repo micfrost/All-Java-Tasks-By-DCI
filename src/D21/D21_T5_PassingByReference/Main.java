@@ -9,8 +9,8 @@ public class Main {
         person1.displayInfo();
 
         changePerson(person1);
-        System.out.println("");
-        System.out.println("After the change: ");
+
+        System.out.println("\nAfter the change: ");
         person1.displayInfo();
     }
 
