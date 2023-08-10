@@ -16,10 +16,4 @@ public class Person {
         System.out.println("Persons name: " + name);
         System.out.println("Persons age: " + age);
     }
-
-    public void changePerson(String newName, int newAge ) {
-        this.name = newName;
-        this.age = newAge;
-    }
-
 }
