@@ -8,7 +8,7 @@ public class Main {
 
     public static class NumberCounter {
 
-        public void countAndDisplay(int start, int end) {
+        void countAndDisplay(int start, int end) {
 
             while (start <= end) {
                 System.out.println(start);
