@@ -1,10 +1,10 @@
-package D21.D21_CA_PassingByValue;
+package D21.D21_CA_PassingByValue_Reference;
 
 public class Person {
     String name;
 
     public Person(String name) { // Constructor of the class
-        super();
+
         this.name = name; // this is a key word to make equal the variables
     }
 
