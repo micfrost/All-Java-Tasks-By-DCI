@@ -1,5 +1,7 @@
 package D21.D21_T1_PassByValue;
+
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -11,12 +13,21 @@ public class Main {
 
         System.out.println("Input1: " + givenInput1 + ", Input2: " + givenInput2);
 
-        Swapping swapsAB = new Swapping();
-        swapsAB.swap(givenInput1,givenInput2);
+        Main myMainApp = new Main();
+        myMainApp.swap(givenInput1, givenInput2);
         System.out.println("Swapped two numbers");
 
-        System.out.println("Output1: " + swapsAB.swapped1 + ", Output2: " + swapsAB.swapped2);
+        System.out.println("Output1: " + myMainApp.swapped1 + ", Output2: " + myMainApp.swapped2);
         scanner.close();
+    }
+
+    int swapped1;
+    int swapped2;
+
+    public void swap(int value1, int value2) {
+
+        swapped1 = value2;
+        swapped2 = value1;
     }
 
 
