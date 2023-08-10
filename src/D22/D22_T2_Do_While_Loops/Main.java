@@ -4,8 +4,7 @@ public class Main {
     public static void main(String[] args) {
         EvenNumberCounter.countAndDisplayEvens(10);
     }
-
-    public static class EvenNumberCounter {//    static class EvenNumberCounter {
+    static class EvenNumberCounter {//    static class EvenNumberCounter {
 
         static void countAndDisplayEvens(int limit) {
             int i = 2;

@@ -9,10 +9,11 @@ public class Main {
     public static class NumberCounter {
 
         void countAndDisplay(int start, int end) {
+            int current = start;
+            while (current <= end) {
 
-            while (start <= end) {
-                System.out.println(start);
-                start ++;
+                System.out.println(current);
+                current ++;
             }
         }
     }
