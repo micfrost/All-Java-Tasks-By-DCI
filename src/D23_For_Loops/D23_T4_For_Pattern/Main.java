@@ -10,7 +10,7 @@ public class Main {
         System.out.println("A Program that prints a square pattern of asterisks based on a specified size n.");
         System.out.println("Enter a value of n: ");
 
-        int n = Integer.valueOf(scanner.nextLine());
+        int n = scanner.nextInt();
 
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
