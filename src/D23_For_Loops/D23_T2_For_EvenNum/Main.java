@@ -9,9 +9,9 @@ public class Main {
         System.out.println();
         System.out.println("A program that prints all even numbers between a specified range of integers.");
         System.out.println("Enter the starting value of the range");
-        int start = Integer.valueOf(scanner.nextLine());
+        int start = scanner.nextInt();
         System.out.println("Enter the ending value of the range");
-        int end = Integer.valueOf(scanner.nextLine());
+        int end = scanner.nextInt();
         System.out.print("All even numbers between " + start + " and " + end + " are : ");
         for (int i = start; i <= end; i++) {
             if (i % 2 == 0) {
