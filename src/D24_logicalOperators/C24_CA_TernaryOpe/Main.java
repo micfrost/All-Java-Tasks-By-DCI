@@ -10,7 +10,7 @@ public class Main {
         int temp = scanner.nextInt();
 
         String weather = (temp >= 40) ? "Very hot!" : ( temp >= 25) ? "Normal Hot!" : (temp >= 0) ? "Cold!" : "Frost";
-        System.out.println(weather);
+        System.out.println("Today is: " + weather);
 
     }
 }
