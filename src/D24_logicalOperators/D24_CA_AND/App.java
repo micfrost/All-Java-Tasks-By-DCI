@@ -1,16 +1,13 @@
-package D23_logicalOperators.D23_CA;
+package D24_logicalOperators.D24_CA_AND;
 
 public class App {
     public static void main(String[] args) {
 
-//        Boolean logical operators AND && , OR ||
+//        Boolean logical operators AND &&
 //        Those are also called short-circuit operators
+
         logicalOperatorAND();
 //        nestedIF();
-
-    }
-
-    public static void logicalOperatorOR() {
 
     }
 
@@ -25,7 +22,6 @@ public class App {
             System.out.println("Take umbrella: " + takeUmbrella);
         }
     }
-
 
     public static void nestedIF() {
         boolean isRaining = true;
@@ -45,6 +41,5 @@ public class App {
             System.out.println("I am not taking an umbrella.");
         }
     }
-
 
 }
