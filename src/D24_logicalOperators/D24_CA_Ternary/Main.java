@@ -11,6 +11,7 @@ public class Main {
 
         boolean takeUmbrella  = false;
 
+        // if condition, if block, else block
         takeUmbrella = isRaining && haveUmbrella ? true : false;
         System.out.println("take an Umbrella : " + takeUmbrella);
 
