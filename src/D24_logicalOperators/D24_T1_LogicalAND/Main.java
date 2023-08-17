@@ -12,8 +12,22 @@ public class Main {
         System.out.print("Enter a number: ");
         int givenInput = scanner.nextInt();
 
-       String outputText = givenInput >= 10 && givenInput <= 50 ? "The given number is within the valid range." : "The given number is not within the valid range.";
+        System.out.println("--- USING TERNARY ---");
+        String outputText = givenInput >= 10 && givenInput <= 50 ?
+                "The given number is within the valid range." :
+                "The given number is not within the valid range.";
         System.out.println(outputText);
+
+
+        System.out.println("--- USING BOOLEAN ---");
+        boolean isWithinRange = givenInput >= 10 && givenInput <= 50;
+
+        if (isWithinRange) {
+            System.out.println("The given number is within the valid range.");
+        } else {
+            System.out.println("The given number is not within the valid range.");
+        }
+        scanner.close();
 
     }
 
