@@ -9,17 +9,19 @@ public class ToDo {
     void createList(String name) {
         Random random = new Random();
         generalToDoList = new ArrayList<>();
-        String[] autoTasks = {"Have a coffee break", "Go for a nice walk", "Read a couple pages of a book", "Just go and buy you a pizza"};
+        String[] autoTasks = {"Have a coffee break", "Go for a nice walk", "Read a couple pages of a book", "Just go and buy a pizza"};
 
 //      Creating a To-Do-List
+//      I want to change a While to do-While (Note for a bette code)
         while (true) {
             System.out.println("Add a task to the list or type \"end\" to finish the list)");
             String somethingToAdd = scanner.nextLine();
             if (somethingToAdd.equals("end")) {
+                if (generalToDoList.size()==0) {
                 generalToDoList.add("Nothing from you but you have one nice task from me :)");
                 int index = random.nextInt(autoTasks.length);
                 String niceTask = autoTasks[index];
-                generalToDoList.add(niceTask);
+                generalToDoList.add(niceTask);}
                 break;
             } else {
                 generalToDoList.add(somethingToAdd);
@@ -31,7 +33,7 @@ public class ToDo {
 
 //        Printing a List
         System.out.println(" - - - - - - - - - - - - - - - - - - - - - - - - - ");
-        System.out.println("Here you go " + name + ". I added also a reward for you.");
+        System.out.println("Here you go " + name + ". I added a reward for you.");
         System.out.println("This is your To-Do-List: ");
         for (int i = 0; i < generalToDoList.size(); i++) {
             System.out.println("Task " + (i + 1) + ": " + generalToDoList.get(i));
