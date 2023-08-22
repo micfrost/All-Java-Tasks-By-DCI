@@ -12,7 +12,6 @@ public class ToDo {
         String[] autoTasks = {"Have a coffee break", "Go for a nice walk", "Read a couple pages of a book", "Just go and buy a pizza"};
 
 //      Creating a To-Do-List
-//      I want to change a While to do-While (Note for a bette code)
         while (true) {
             System.out.println("Add a task to the list or type \"end\" to finish the list)");
             String somethingToAdd = scanner.nextLine();
