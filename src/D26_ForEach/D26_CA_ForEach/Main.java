@@ -7,8 +7,15 @@ public class Main {
         int[] score = {125, 132, 95, 116, 154};
 
         display(animals);
+//        String highestScore = maximum(animals);
+//        System.out.println("The maximum String is: " + highestScore);
+
         display(score);
-        maximum(score);
+        int longestWord = maximum(score);
+        System.out.println("The maximum number is: " + longestWord);
+
+        int lowestScore = minimum(score);
+        System.out.println("The minimum number is: " + lowestScore);
     }
 
     public static void display(String[] animals) {
@@ -32,7 +39,30 @@ public class Main {
                 maxSoFar = arr;
             }
         }
-        System.out.println("The maximum number is: " + maxSoFar );
         return maxSoFar;
     }
+
+//    public static String maximum(String[] array) {
+//        int maxSoFarLength = array[0].length();
+//        int index = 0;
+//        for (String arr : array) {
+//            if (arr.length() > maxSoFarLength) {
+//                maxSoFar = arr.length();
+//            }
+//            index++;
+//        }
+//        return array[maxSoFar];
+//    }
+
+    public static int minimum(int[] array) {
+        int minSoFar = array[0];
+        for (int arr : array) {
+            if (arr < minSoFar) {
+                minSoFar = arr;
+            }
+        }
+        return minSoFar;
+    }
+
+
 }
