@@ -2,8 +2,6 @@ package D27_MultidimensionalArrays.D27_T1_OneDimens_Array_ExamScore;
 
 public class StudentExamAnalyzer {
 
-
-
     public void run(int[] array) {
         title();
 
@@ -31,12 +29,11 @@ public class StudentExamAnalyzer {
 
     private double calculateAverage(int[] arr) {
         int sum = 0;
-        double ave;
         for (int element : arr
         ) {
             sum = sum + element;
         }
-        return ave = 1.0 * sum / arr.length;
+        return 1.0 * sum / arr.length;
     }
 
     private int findHighestScore(int[] arr) {
@@ -65,8 +62,7 @@ public class StudentExamAnalyzer {
 
         int countAbove = countAboveAverage(arr);
         int countAllStudents = arr.length;
-        double percentage = 100.0 * countAbove / countAllStudents;
-        return percentage;
+        return 100.0 * countAbove / countAllStudents;
     }
 
 }
