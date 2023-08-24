@@ -12,24 +12,14 @@ public class App {
             menu();
 
             Scanner scanner = new Scanner(System.in);
-            chosenOption = Integer.valueOf(scanner.nextLine());
+            chosenOption = Integer.parseInt(scanner.nextLine());
 
             switch (chosenOption) {
-                case 1:
-                    addItem(scanner, shoppingList);
-                    break;
-                case 2:
-                    removeItem(scanner, shoppingList);
-                    break;
-                case 3:
-                    displayList(scanner, shoppingList);
-                    break;
-                case 4:
-                    exit();
-                    break;
-                default:
-                    tryOneMoreTime();
-                    break;
+                case 1 -> addItem(scanner, shoppingList);
+                case 2 -> removeItem(scanner, shoppingList);
+                case 3 -> displayList(scanner, shoppingList);
+                case 4 -> exit();
+                default -> tryOneMoreTime();
             }
         } while (chosenOption != 4);
     }
