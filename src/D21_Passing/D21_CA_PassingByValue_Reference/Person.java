@@ -16,7 +16,6 @@ public class Person {
         this.name = name;
     }
 
-
     public String toString() {
         return "Person [name=" + name + "]";
     }
