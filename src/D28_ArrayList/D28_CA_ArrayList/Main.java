@@ -38,7 +38,7 @@ public class Main {
         }
         System.out.println("- - - - - - - - - - - - - - - - - - - - - ");
 
-//      Size of a list using .size() method
+//      Print of a list using .size() method
         System.out.println("Printing using normal for and size() method");
         for (int i = 0; i < arrList.size(); i++) {
             Integer n = arrList.get(i);

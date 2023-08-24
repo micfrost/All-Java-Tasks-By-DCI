@@ -1,4 +1,4 @@
-package D27_MultidimensionalArrays.D27_T4_2DArray_StudentGradeTracker;
+package D27_MultidimensionalArrays2D.D27_T4_2DArray_StudentGradeTracker;
 
 import java.util.Scanner;
 
@@ -46,7 +46,11 @@ public class App {
     private void title() {
         System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - ");
         System.out.println("Student Grade Tracker.");
-        System.out.println("The program allows teachers to input student names and grades, calculate the average grade for each student, and display the student names along with their average grades.");
+        System.out.println("The program allows teachers to input student names and grades,");
+        System.out.println("calculate the average grade for each student,");
+        System.out.println("and display the student names along with their average grades.");
+
+
         System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - ");
     }
 

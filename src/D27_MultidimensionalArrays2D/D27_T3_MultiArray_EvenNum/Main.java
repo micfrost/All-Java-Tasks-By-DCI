@@ -1,4 +1,4 @@
-package D27_MultidimensionalArrays.D27_T3_MultiArray_EvenNum;
+package D27_MultidimensionalArrays2D.D27_T3_MultiArray_EvenNum;
 
 public class Main {
 

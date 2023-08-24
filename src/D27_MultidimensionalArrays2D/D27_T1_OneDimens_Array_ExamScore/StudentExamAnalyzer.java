@@ -1,4 +1,4 @@
-package D27_MultidimensionalArrays.D27_T1_OneDimens_Array_ExamScore;
+package D27_MultidimensionalArrays2D.D27_T1_OneDimens_Array_ExamScore;
 
 public class StudentExamAnalyzer {
 

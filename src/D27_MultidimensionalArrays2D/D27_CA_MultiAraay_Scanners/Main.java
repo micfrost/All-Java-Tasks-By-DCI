@@ -1,4 +1,4 @@
-package D27_MultidimensionalArrays.D27_CA_MultiAraay_Scanners;
+package D27_MultidimensionalArrays2D.D27_CA_MultiAraay_Scanners;
 
 import java.util.Scanner;
 

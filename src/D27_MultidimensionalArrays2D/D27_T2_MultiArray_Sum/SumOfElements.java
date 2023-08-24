@@ -1,4 +1,4 @@
-package D27_MultidimensionalArrays.D27_T2_MultiArray_Sum;
+package D27_MultidimensionalArrays2D.D27_T2_MultiArray_Sum;
 
 public class SumOfElements {
 

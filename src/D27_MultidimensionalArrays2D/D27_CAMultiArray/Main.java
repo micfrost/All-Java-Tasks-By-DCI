@@ -1,4 +1,4 @@
-package D27_MultidimensionalArrays.D27_CAMultiArray;
+package D27_MultidimensionalArrays2D.D27_CAMultiArray;
 
 public class Main {
     public static void main(String[] args) {
