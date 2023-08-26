@@ -42,9 +42,9 @@ public class App {
             System.out.println("Add an Item to the shopping list. Type \"end\" to end adding.");
             givenItem = scanner.nextLine();
             if (!givenItem.equals("end")) {
-                shoppingList.add(givenItem);
+                shoppingList.add(givenItem);System.out.println(givenItem + " added successfully.");
             }
-            System.out.println(givenItem + " added successfully.");
+
         } while (!givenItem.equals("end"));
 
     }
@@ -55,6 +55,7 @@ public class App {
             displayList(scanner, arrList);
 
 //          Removing
+            System.out.println("- - - - - ");
             System.out.println("Which item do you want to remove. Type a number of the item");
             int numOfItem = scanner.nextInt();
             System.out.println("- - - - - ");
