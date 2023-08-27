@@ -8,21 +8,25 @@ public class App {
     public void run() {
         ArrayList<Integer> arrayList = new ArrayList<>();
 
-        int chosenOption;
+        String chosenOption;
+
+        Scanner scanner = new Scanner(System.in);
+
         do {
             menu();
-            Scanner scanner = new Scanner(System.in);
-            chosenOption = Integer.parseInt(scanner.nextLine());
+
+            chosenOption = scanner.nextLine();
+            ;
 
             switch (chosenOption) {
-                case 1 -> addItem(scanner, arrayList);
-                case 2 -> largestNumber(scanner, arrayList);
-                case 3 -> smallestNumber(scanner, arrayList);
-                case 4 -> calculateAverage(scanner, arrayList);
-                case 5 -> exit();
+                case "1" -> addItem(scanner, arrayList);
+                case "2" -> largestNumber(scanner, arrayList);
+                case "3" -> smallestNumber(scanner, arrayList);
+                case "4" -> calculateAverage(scanner, arrayList);
+                case "5" -> exit();
                 default -> tryOneMoreTime();
             }
-        } while (chosenOption != 5);
+        } while (!chosenOption.equals("5"));
     }
 
     private static void menu() {
@@ -95,7 +99,8 @@ public class App {
             for (Integer integer : arrList) {
                 sum += integer;
             }
-            System.out.println("The average of all numbers is: " + (1.0*sum/arrList.size()) + ".");
+            double ave = 1.0*sum/arrList.size();
+            System.out.printf("The average of all numbers is: %.2f.\n", ave);
         } else {
             System.out.println("The List is empty. Add a number first.");
             addItem(scanner, arrList);
