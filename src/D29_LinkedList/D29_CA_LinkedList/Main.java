@@ -1,4 +1,4 @@
-package D29_LinkedList_D29_CA_LinkedList;
+package D29_LinkedList.D29_CA_LinkedList;
 
 import java.util.*;
 

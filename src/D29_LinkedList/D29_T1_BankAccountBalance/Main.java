@@ -1,4 +1,4 @@
-package D29_LinkedList_D29_T1_BankAccountBalance;
+package D29_LinkedList.D29_T1_BankAccountBalance;
 
 import java.util.LinkedList;
 
@@ -15,18 +15,18 @@ public class Main {
     }
 
 
-    static void addAccount(LinkedList<Double> accounts, double initialBalance) {
-        accounts.add(initialBalance);
+    static void addAccount(LinkedList<Double> list, double initialBalance) {
+        list.add(initialBalance);
 
     }
 
-    static void displayBalances(LinkedList<Double> accounts) {
+    static void displayBalances(LinkedList<Double> list) {
         System.out.println("Account Balances: ");
         int accountNo = 0;
-        for (double account : accounts
+        for (double item : list
         ) {
             accountNo++;
-            System.out.println("Account no.: " + accountNo + ": $" + account);
+            System.out.println("Account no.: " + accountNo + ": $ " + item);
 
         }
     }
