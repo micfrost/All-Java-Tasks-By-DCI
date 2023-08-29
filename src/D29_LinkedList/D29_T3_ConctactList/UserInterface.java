@@ -1,5 +1,5 @@
 package D29_LinkedList.D29_T3_ConctactList;
-import java.util.LinkedList;
+
 import java.util.Scanner;
 public class UserInterface {
 
@@ -62,5 +62,4 @@ public class UserInterface {
         System.out.println("- - - - - ");
         System.out.println("Try one more time.");
     }
-
 }
