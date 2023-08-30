@@ -18,13 +18,27 @@ public class Candidate implements Comparable<Candidate> {
     }
 
 
-    //    NATURAL INTEGER ORDER
-    @Override
+
+    // If votes are equal compare names !!!
     public int compareTo(Candidate other) {
-        return Integer.compare(other.votesCounter, votesCounter);
+        int voteComparison = Integer.compare(other.votesCounter, votesCounter);
+        if (voteComparison == 0) {
+            return name.compareTo(other.name);
+        }
+        return voteComparison;
     }
 
 
+    //    NATURAL INTEGER ORDER
+//    @Override
+//    public int compareTo(Candidate other) {
+//        return Integer.compare(other.votesCounter, votesCounter);
+//    }
+
+//    @Override
+//    public int compareTo(Candidate other) {
+//        return name.compareTo(other.name);
+//    }
 }
 
 

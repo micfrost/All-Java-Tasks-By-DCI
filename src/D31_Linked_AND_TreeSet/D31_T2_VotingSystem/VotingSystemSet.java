@@ -5,12 +5,7 @@ import java.util.*;
 public class VotingSystemSet {
     Scanner scanner = new Scanner(System.in);
 
-//    AS TREESET DOESN'T WORK ADDING MORE CANDIDATES
-//    WHY???
-//   Set<Candidate> candidateSet = new TreeSet<>();
-
-    //With LinkedHashSet Works good
-    Set<Candidate> candidateSet = new LinkedHashSet<>();
+   Set<Candidate> candidateSet = new TreeSet<>();
 
     int allVotes;
 
@@ -46,16 +41,6 @@ public class VotingSystemSet {
         System.out.print("Enter selected option: ");
     }
 
-//    Separate adding Candidates works also good
-//    private void addCandidate() {
-//        System.out.println("- - - - - ");
-//        System.out.println("Enter a name of a Candidate: ");
-//        String givenName = scanner.nextLine();
-//        int currentVotesCounter = 0;
-//        candidateSet.add(new Candidate(givenName, currentVotesCounter));
-//    }
-
-    //    Adding using an Array of Names
     private void addCandidate() {
         System.out.println("- - - - - ");
         System.out.println("Enter a Set of candidates separated by spaces: : ");
@@ -67,7 +52,6 @@ public class VotingSystemSet {
         }
         System.out.println("Candidates added to the set successfully.");
         displayVotes();
-
     }
 
 
@@ -89,7 +73,6 @@ public class VotingSystemSet {
         System.out.println("All candidates and their current votes: ");
         for (Candidate element : candidateSet) {
             System.out.println(element);
-
         }
     }
 
