@@ -1,4 +1,4 @@
-package D30_Set.D30_CA_HashSet_WithCustomObject;
+package D30_HashSet.D30_CA_HashSet_WithCustomObject;
 
 import java.util.HashSet;
 

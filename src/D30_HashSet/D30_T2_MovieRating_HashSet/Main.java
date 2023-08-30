@@ -1,4 +1,4 @@
-package D30_Set.D30_T2_MovieRating_HashSet;
+package D30_HashSet.D30_T2_MovieRating_HashSet;
 
 public class Main {
     public static void main(String[] args) {

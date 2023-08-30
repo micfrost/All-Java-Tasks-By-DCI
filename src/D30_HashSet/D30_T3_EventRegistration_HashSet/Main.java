@@ -1,6 +1,4 @@
-package D30_Set.D30_T3_EventRegistration_HashSet;
-
-
+package D30_HashSet.D30_T3_EventRegistration_HashSet;
 import java.util.Scanner;
 
 public class Main {

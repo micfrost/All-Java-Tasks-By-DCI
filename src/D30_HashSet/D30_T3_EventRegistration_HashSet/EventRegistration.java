@@ -1,4 +1,4 @@
-package D30_Set.D30_T3_EventRegistration_HashSet;
+package D30_HashSet.D30_T3_EventRegistration_HashSet;
 //    Create a class named EventRegistration that includes the following methods:
 //registerParticipant that registers a participant for the event by adding their name to the HashSet.
 //displayParticipants that displays the unique list of registered participants.

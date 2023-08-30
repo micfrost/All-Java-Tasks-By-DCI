@@ -1,4 +1,4 @@
-package D30_Set.D30_T1_EmailList_HashSet;
+package D30_HashSet.D30_T1_EmailList_HashSet;
 
 import java.util.HashSet;
 import java.util.Scanner;
