@@ -15,6 +15,9 @@ public class Main {
         employeeIDs.put(5678, "Joe");
         employeeIDs.put(9876, "Bob");
 
+//        GET
+        System.out.println();
+        System.out.println("GET METHOD");
         System.out.println(employeeIDs);
         System.out.println(employeeIDs.get(1234));
 
