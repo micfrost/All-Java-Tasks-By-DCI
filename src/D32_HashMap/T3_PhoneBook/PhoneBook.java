@@ -57,7 +57,7 @@ public class PhoneBook {
     private void displayPhoneBook() {
         System.out.println("- - - - - ");
         System.out.println("All contacts: ");
-        for(Map.Entry m: phoneBook.entrySet()){
+        for(Map.Entry<String, String> m: phoneBook.entrySet()){
             System.out.println("Name: " + m.getKey() + ", Phone number:  " + m.getValue());
         }
     }
