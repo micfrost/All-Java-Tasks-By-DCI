@@ -24,7 +24,7 @@ public class Main {
         System.out.println();
         System.out.println("CONTAINS METHOD");
         System.out.println(employeeIDs.containsKey(9876));
-        System.out.println(employeeIDs.containsKey("George"));
+        System.out.println(employeeIDs.containsValue("George"));
 
         System.out.println();
         System.out.println("PUT METHOD");
