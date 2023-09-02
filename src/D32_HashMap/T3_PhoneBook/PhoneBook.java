@@ -1,8 +1,6 @@
 package D32_HashMap.T3_PhoneBook;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class PhoneBook {
     Scanner scanner = new Scanner(System.in);
@@ -36,26 +34,31 @@ public class PhoneBook {
     }
     private void addContact() {
         System.out.println("- - -");
-        System.out.println("Enter a word and its translation separated by a space: ");
+        System.out.println("Enter a contact's name and phone number - separated by a space: ");
         String inputString = scanner.nextLine();
         String[] inputArray = inputString.split(" ");
         String K = inputArray[0];
         String V = inputArray[1];
         phoneBook.put(K,V);
-        System.out.println("Added successfully.");
+        System.out.println("Contact added successfully.");
     }
     private void lookUpPhoneNumber() {
         System.out.println("- - -");
-        System.out.println("Enter a word to display its translation: ");
-        String wordToTranslate = scanner.nextLine();
-        System.out.print(wordToTranslate + " means ");
-        System.out.println(phoneBook.get(wordToTranslate));
+        System.out.println("Enter a contact's name to display a phone number: ");
+        String inputK = scanner.nextLine();
+        String outputV = phoneBook.get(inputK);
+        if(outputV != null) {
+            System.out.println("Name: " + inputK + ", Phone number:  " + outputV);
+        }
+        else {
+            System.out.println("Contact not found.");
+        }
     }
     private void displayPhoneBook() {
         System.out.println("- - - - - ");
-        System.out.println("All words in a translator: ");
+        System.out.println("All contacts: ");
         for(Map.Entry m: phoneBook.entrySet()){
-            System.out.println(m.getKey() + " means " + m.getValue());
+            System.out.println("Name: " + m.getKey() + ", Phone number:  " + m.getValue());
         }
     }
     private void exit() {
