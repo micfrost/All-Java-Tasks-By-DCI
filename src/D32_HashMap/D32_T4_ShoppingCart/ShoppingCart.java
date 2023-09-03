@@ -1,5 +1,6 @@
 package D32_HashMap.D32_T4_ShoppingCart;
 import java.util.*;
+
 public class ShoppingCart {
     Scanner scanner = new Scanner(System.in);
     HashMap<String, Double> itemsAndPrices = new HashMap<>();
