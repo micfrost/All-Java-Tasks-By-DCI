@@ -2,10 +2,10 @@ package D32_HashMap.D32_CA_HashMap;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.security.*;
+
 
 public class Main {
-    public static <Entry> void main(String[] args) {
+    public static void main(String[] args) {
         System.out.println();
 //                key    value
         HashMap<Integer, String> employeeIDs = new HashMap<>();
@@ -15,7 +15,7 @@ public class Main {
         employeeIDs.put(5678, "Joe");
         employeeIDs.put(9876, "Bob");
 
-//        GET
+//        GET (inout key to output value
         System.out.println();
         System.out.println("GET METHOD");
         System.out.println(employeeIDs);
@@ -28,18 +28,18 @@ public class Main {
 
         System.out.println();
         System.out.println("PUT METHOD");
-        employeeIDs.put(9876, "GeorgePutedInPlaceOfBob");
+        employeeIDs.put(9876, "GeorgePutInPlaceOfBob");
 //        System.out.println(employeeIDs);
 
         System.out.println();
         System.out.println("REPLACE METHOD");
         employeeIDs.replace(6893, "JohnReplaced");
-        employeeIDs.replace(1, "Stella_NewPersonDoesntCome");
+        employeeIDs.replace(1, "Stella_NewPersonDoesNotCome");
 //        System.out.println(employeeIDs);
 
         System.out.println();
         System.out.println("PUT IF ABSENCE");
-        employeeIDs.putIfAbsent(5678, "Bardha-DOESNT SHOW");
+        employeeIDs.putIfAbsent(5678, "Bardha-DOESNoT SHOW");
         employeeIDs.putIfAbsent(2, "King-SHOW");
 //        System.out.println(employeeIDs);
 
@@ -54,7 +54,7 @@ public class Main {
             System.out.println(m.getKey() + " " + m.getValue());
         }
 
-//      NOT PREFERRED - BETTER <Integer, STRING>
+//      NOT PREFERRED - BETTER <Integer, String>
         System.out.println();
         System.out.println("SECOND");
         for(Map.Entry m: employeeIDs.entrySet()){
