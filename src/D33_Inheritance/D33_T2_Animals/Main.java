@@ -8,10 +8,10 @@ public class Main {
         horse.displayInfo();
 
 
-        Bird parot = new Bird("rainbow");
-        parot.setName("Sunday");
-        parot.setAge(4);
-        parot.displayInfo();
+        Bird parrot = new Bird("rainbow");
+        parrot.setName("Sunday");
+        parrot.setAge(4);
+        parrot.displayInfo();
 
     }
 }

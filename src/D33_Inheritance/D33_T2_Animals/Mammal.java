@@ -11,7 +11,12 @@ public class Mammal extends Animal {
 
     @Override
     public void makeSound() {
-        System.out.println("Sounds of a mammal --.||| - . . -|||| .. --|||| ..");
+        System.out.printf("Sounds of a %s --.||| - . . -|||| .. --|||| ..\n", this.name);
+    }
+
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Fur color: " + this.furColor);
     }
 
 }
