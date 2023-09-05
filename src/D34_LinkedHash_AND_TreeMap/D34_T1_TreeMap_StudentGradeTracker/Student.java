@@ -23,6 +23,7 @@ public class Student {
         this.gradeEnglish = gradeEnglish;
         this.aveGrades=aveGrades;
 
+
     }
 
 //    public double averageGrade() {
