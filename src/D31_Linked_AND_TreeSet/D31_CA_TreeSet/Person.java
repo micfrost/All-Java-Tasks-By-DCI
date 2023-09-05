@@ -1,6 +1,8 @@
 package D31_Linked_AND_TreeSet.D31_CA_TreeSet;
 
 
+import D31_Linked_AND_TreeSet.D31_T2_VotingSystem.Candidate;
+
 // Implement so the class use it.
 public class Person implements Comparable<Person> {
 
@@ -19,13 +21,16 @@ public class Person implements Comparable<Person> {
     }
 
 
+
+
+
 //    NATURAL INTEGER ORDER
 //    @Override
 //    public int compareTo(Person other) {
 //        return Integer.compare(age, other.age);
 //    }
 
-    //    REVERSE NATURAL INTEGER ORDER
+//        REVERSE NATURAL INTEGER ORDER
     @Override
     public int compareTo(Person other) {
         return Integer.compare(other.age, age);
@@ -46,6 +51,15 @@ public class Person implements Comparable<Person> {
 //    @Override
 //    public int compareTo(Person other) {
 //        return other.name.compareTo(name);
+//    }
+
+    // If votes are equal compare names !!!
+//    public int compareTo(Candidate other) {
+//        int voteComparison = Integer.compare(other.votesCounter, votesCounter);
+//        if (voteComparison == 0) {
+//            return name.compareTo(other.name);
+//        }
+//        return voteComparison;
 //    }
 
 }
