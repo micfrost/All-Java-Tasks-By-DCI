@@ -1,4 +1,4 @@
-package D36_AbstractClasses.D36_CA_Abstract;
+package D36_AbstractClasses.D36_CA1_Abstract;
 
 public class Main {
     public static void main(String[] args) {
