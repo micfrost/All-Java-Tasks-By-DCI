@@ -8,7 +8,6 @@ public class Appointment {
     private String time;
 
     public void displayAppointmentInfo(){
-        System.out.println();
         System.out.println("APPOINTMENT DETAILS");
 
         patient.displayPatientInfo();

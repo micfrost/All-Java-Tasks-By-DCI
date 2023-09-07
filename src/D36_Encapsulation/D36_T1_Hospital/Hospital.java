@@ -4,53 +4,82 @@ import java.util.ArrayList;
 
 public class Hospital {
 
-    ArrayList<Patient> patientList = new ArrayList<>();
+    private ArrayList<Patient> patientList;
 
-    ArrayList<Doctor> doctorList = new ArrayList<>();
+    private ArrayList<Doctor> doctorList;
 
-    ArrayList<Appointment> appointmentList = new ArrayList<>();
+    private ArrayList<Appointment> appointmentList;
 
-
-    public void addPatient(String patientId, String patientName, String dateOfBirth){
-        Patient patient = new Patient(patientId, patientName, dateOfBirth);
-        patientList.add(patient);
+    public Hospital() {
+        patientList = new ArrayList<>();
+        doctorList = new ArrayList<>();
+        appointmentList = new ArrayList<>();
     }
 
-    public void displayPatientList(){
-        for (Patient patient:patientList
-             ) {
-            System.out.println();
+    public boolean addPatient(String patientId, String patientName, String dateOfBirth) {
+
+        for (Patient patient : patientList) {
+            if (patient.getPatientId().equals(patientId)) {
+                return false;
+            }
+        }
+        Patient patient = new Patient(patientId, patientName, dateOfBirth);
+        patientList.add(patient);
+        return true;
+    }
+
+    public void displayPatientList() {
+        for (Patient patient : patientList
+        ) {
             patient.displayPatientInfo();
         }
     }
 
 
-    public void addDoctor(String doctorId, String doctorName, String specialization){
+    public boolean addDoctor(String doctorId, String doctorName, String specialization) {
+        for (Doctor doctor : doctorList) {
+            if (doctor.getDoctorId().equals(doctorId)) {
+                return false;
+            }
+        }
         Doctor doctor = new Doctor(doctorId, doctorName, specialization);
         doctorList.add(doctor);
+        return true;
     }
 
-    public void displayDoctorList(){
-        for (Doctor doctor:doctorList
+    public void displayDoctorList() {
+        for (Doctor doctor : doctorList
         ) {
-            System.out.println();
             doctor.displayDoctorInfo();
         }
     }
 
 
-    public void addAppointment(Patient patient, Doctor doctor, String date, String time){
+    public void addAppointment(Patient patient, Doctor doctor, String date, String time) {
         Appointment appointment = new Appointment(patient, doctor, date, time);
         appointmentList.add(appointment);
     }
 
-    public void displayAppointmentList(){
-        for (Appointment appointment:appointmentList
+    public void displayAppointmentList() {
+        for (Appointment appointment : appointmentList
         ) {
             appointment.displayAppointmentInfo();
         }
     }
 
+    public ArrayList<Patient> getPatientList() {
+        return patientList;
+    }
 
+    public void setPatientList(ArrayList<Patient> patientList) {
+        this.patientList = patientList;
+    }
 
+    public ArrayList<Doctor> getDoctorList() {
+        return doctorList;
+    }
+
+    public void setDoctorList(ArrayList<Doctor> doctorList) {
+        this.doctorList = doctorList;
+    }
 }
