@@ -6,6 +6,8 @@ public class Main {
         MusicPlayer mediaPlayer = new MediaPlayer();
         MusicPlayer streamingService = new StreamingService();
 
+        System.out.println("Music Streaming Service");
+
         System.out.println("- - - ");
         System.out.println("MEDIA PLAYER");
         mediaPlayer.play("Jump Jump");
