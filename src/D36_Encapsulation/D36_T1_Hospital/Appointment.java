@@ -10,8 +10,9 @@ public class Appointment {
     public void displayAppointmentInfo(){
         System.out.println("APPOINTMENT DETAILS");
 
-        patient.displayPatientInfo();
-        doctor.displayDoctorInfo();
+        System.out.println("Patient: " + patient.getPatientName());
+        System.out.println("Doctor: " +
+        doctor.getDoctorName());
         System.out.println("Date: " + date);
         System.out.println("Time: " + time);
     }
