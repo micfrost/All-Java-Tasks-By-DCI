@@ -3,7 +3,7 @@ package D36_Encapsulation.D36_T1_Hospital;
 import java.util.ArrayList;
 
 public class Hospital {
-
+    //        encapsulation for ArrayLists
     private ArrayList<Patient> patientList;
 
     private ArrayList<Doctor> doctorList;
@@ -11,6 +11,7 @@ public class Hospital {
     private ArrayList<Appointment> appointmentList;
 
     public Hospital() {
+//        encapsulation for ArrayLists
         patientList = new ArrayList<>();
         doctorList = new ArrayList<>();
         appointmentList = new ArrayList<>();

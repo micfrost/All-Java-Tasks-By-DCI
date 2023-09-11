@@ -7,7 +7,9 @@ public class Main {
         System.out.println("Hospital Management System");
         System.out.println("A hospital management system that simulates various operations such as adding patients, assigning doctors, scheduling appointments, and managing medical records.");
         System.out.println(" - - - - - - - ");
+
         Hospital hospital = new Hospital();
+
         hospital.addPatient(
                 "1234",
                 "John Smith",
