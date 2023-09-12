@@ -62,6 +62,7 @@ If you have any further question please let me know.
         System.out.println("Do you want to select tasks only for today? (yes/no)");
         String wantDaily = scanner.nextLine();
 
+
         if (wantDaily.matches("^[y]\\w*")) {
             int availableTime = getInput("How much time do you have? (in minutes): ");
             int unitAvailableTime = availableTime / 15;
