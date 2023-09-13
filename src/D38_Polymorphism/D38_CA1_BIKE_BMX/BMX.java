@@ -1,4 +1,4 @@
-package D38_Polymorphism.D38_CA1_Polymorhism;
+package D38_Polymorphism.D38_CA1_BIKE_BMX;
 
 class Bike {
     void ride() {
