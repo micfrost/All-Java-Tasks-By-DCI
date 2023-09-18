@@ -1,4 +1,4 @@
-package D41_UpcastingDown.D41_CA2_DowncastinIsInstance;
+package D41_UpcastingDown.D41_CA3_DowncastinIsInstance;
 
 class Car {
 }
