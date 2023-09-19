@@ -1,6 +1,4 @@
-package D42_Date.D41_CA1_LocalDate;
-
-import org.w3c.dom.CDATASection;
+package D42_Date.D42_CA1_LocalDate;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -49,6 +47,13 @@ public class Main {
         String stringDate = "2020-08-02";
         LocalDate date5 = LocalDate.parse(stringDate);
         System.out.println("String to LocalDate: " + date5);
+
+        //      Check if a date is after another date
+        System.out.println("- - -");
+        System.out.println("Check if a date is after another date");
+        LocalDate date6 = LocalDate.parse("2023-05-23");
+        LocalDate date7 = LocalDate.parse("2023-05-29");
+        System.out.println(date6.isAfter(date7));
 
 
     }
