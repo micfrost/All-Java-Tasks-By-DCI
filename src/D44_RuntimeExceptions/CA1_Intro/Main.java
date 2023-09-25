@@ -1,4 +1,4 @@
-package D44_RuntimeExceptions.D44_CA1_;
+package D44_RuntimeExceptions.CA1_Intro;
 
 public class Main {
 

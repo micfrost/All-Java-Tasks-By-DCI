@@ -1,4 +1,4 @@
-package D44_RuntimeExceptions.D44_CA2_PasswordValidator;
+package D44_RuntimeExceptions.CA2_PasswordValidator;
 
 import java.util.Scanner;
 

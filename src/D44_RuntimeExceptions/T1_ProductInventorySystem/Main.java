@@ -9,8 +9,19 @@ public class Main {
         inventoryMy.addProduct(product1);
         inventoryMy.addProduct(product2);
 
-        System.out.println(inventoryMy.getProductDetails(101));
-        System.out.println(inventoryMy.getProductDetails(202));
-        System.out.println(inventoryMy.getProductDetails(303));
+//        Using Default Throw from a default Exception Message
+        System.out.println("- - - ");
+        System.out.println("Using Default Throw from a default Exception Message");
+        System.out.println(inventoryMy.getProductDetailsDefaultThrow(101));
+        System.out.println(inventoryMy.getProductDetailsDefaultThrow(303));
+
+        //        Using Custom Throw from a new Exception Message
+        System.out.println("- - - ");
+        System.out.println("Using Custom Throw from a new Exception Message");
+        System.out.println(inventoryMy.getProductDetailsCustomThrow(202));
+        System.out.println(inventoryMy.getProductDetailsCustomThrow(404));
+
+
+
     }
 }
