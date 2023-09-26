@@ -1,4 +1,4 @@
-package D45_CheckedExceptions.CA3_NestedTryBlock2;
+package D45_Exceptions_Multiple.CA3_NestedTryBlock2;
 
 public class Main {
 

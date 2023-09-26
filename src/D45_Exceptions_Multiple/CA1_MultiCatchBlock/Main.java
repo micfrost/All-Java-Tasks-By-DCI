@@ -1,4 +1,4 @@
-package D45_CheckedExceptions.CA1_MultiCatchBlock;
+package D45_Exceptions_Multiple.CA1_MultiCatchBlock;
 
 public class Main {
     public static void main(String[] args) {

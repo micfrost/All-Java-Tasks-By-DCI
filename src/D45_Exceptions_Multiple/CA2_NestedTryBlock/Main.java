@@ -1,4 +1,4 @@
-package D45_CheckedExceptions.CA2_NestedTryBlock;
+package D45_Exceptions_Multiple.CA2_NestedTryBlock;
 
 public class Main {
     public static void main(String[] args) {
