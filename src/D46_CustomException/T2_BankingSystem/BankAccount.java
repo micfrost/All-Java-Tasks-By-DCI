@@ -27,7 +27,6 @@ public class BankAccount {
         } catch (InsufficientFundsException e) {
             System.out.println(e.getMessage());
         }
-
     }
 
     public void deposit(double depositAmount) {
@@ -53,8 +52,6 @@ public class BankAccount {
 
     @Override
     public String toString() {
-        return "Account Number: " + accountNumber +
-                ", balance: " + balance +
-                ", pin: " + pin;
+        return "Account Number: " + accountNumber + ", balance: " + balance + ", pin: " + pin;
     }
 }

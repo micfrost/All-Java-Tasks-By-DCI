@@ -9,6 +9,10 @@ public class Main {
             // Inner loop
             for (int j = 1; j <= 3; j++) {
                 System.out.println(" Inner Loop: " + j); // Executes 6 times (2 * 3)
+                if (i == 2 && j == 2) {
+                    String hugeProblem = "oh no: two twos.";
+                    System.out.println(hugeProblem);
+                }
             }
         }
     }
