@@ -50,7 +50,7 @@ public class TicTacToe {
         System.out.println("Current Table: ");
         for (char[] row : table) {
             for (char column : row) {
-                System.out.print(column);
+                System.out.print(" "+ column +" ");
             }
             System.out.println();
         }
