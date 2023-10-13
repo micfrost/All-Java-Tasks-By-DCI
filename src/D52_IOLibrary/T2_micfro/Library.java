@@ -94,10 +94,6 @@ public class Library {
             objectOutputStream.writeObject(bookArrayList);
             objectOutputStream.close();
             fileOutputStream.close();
-//            for (Book book : bookArrayList) {
-//                objectOutputStream.writeObject(book);
-//            }
-
             System.out.println("Books written to the file successfully.");
         } catch (IOException e) {
             System.out.println("Oh no: " + e);
