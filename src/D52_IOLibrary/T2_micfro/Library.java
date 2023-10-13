@@ -1,4 +1,4 @@
-package D52_IOLibrary.T1_micfro;
+package D52_IOLibrary.T2_micfro;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -82,7 +82,7 @@ public class Library {
     }
 
 
-    static String filePath = "//home//dci-student//IdeaProjects//JavaFbw//src//D52_IOLibrary//books.txt";
+    static String filePath = "//home//dci-student//IdeaProjects//JavaFbw//src//D52_IOLibrary//T2_micfro//books.txt";
 
     public static void writeBooksArrayToFile() throws IOException {
         FileOutputStream fileOutputStream = null;
@@ -103,7 +103,7 @@ public class Library {
                 objectOutputStream.close();
             }
             if (fileOutputStream != null) {
-                fileOutputStream.close()
+                fileOutputStream.close();
             }
         }
     }
