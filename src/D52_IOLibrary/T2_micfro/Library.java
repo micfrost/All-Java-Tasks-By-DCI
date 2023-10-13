@@ -109,7 +109,6 @@ public class Library {
             objectInputStream.close();
             fileInputStream.close();
             System.out.println("Books read from the file successfully.");
-
             // Display the read objects
             for (Book book : bookArrayList) {
                 System.out.println(book);
