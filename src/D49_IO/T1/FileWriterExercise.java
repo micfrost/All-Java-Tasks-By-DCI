@@ -25,6 +25,11 @@ public class FileWriterExercise {
         }
     }
 
+
+
+
+
+
     public static void readNamesToProgram(String pathToFileToBeRead) throws IOException {
 
         FileInputStream file = null;
@@ -67,4 +72,9 @@ public class FileWriterExercise {
             System.out.println("Oh no: " + e);
         }
     }
+
+
+
+
+
 }
