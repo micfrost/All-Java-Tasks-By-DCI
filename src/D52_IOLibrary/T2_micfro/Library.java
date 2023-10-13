@@ -2,6 +2,7 @@ package D52_IOLibrary.T2_micfro;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Library {
@@ -82,50 +83,43 @@ public class Library {
     }
 
 
-    static String filePath = "//home//dci-student//IdeaProjects//JavaFbw//src//D52_IOLibrary//T2_micfro//books.txt";
+    static String fileName = "//home//dci-student//IdeaProjects//JavaFbw//src//D52_IOLibrary//T2_micfro//DB_Books.ser";
 
-    public static void writeBooksArrayToFile() throws IOException {
-        FileOutputStream fileOutputStream = null;
-        ObjectOutputStream objectOutputStream = null;
+    public void writeBooksArrayToFile() throws IOException {
 
         try {
 
-            fileOutputStream = new FileOutputStream(filePath);
-            objectOutputStream = new ObjectOutputStream(fileOutputStream);
-
-            for (Book book : bookArrayList) {
-                objectOutputStream.writeObject(book);
-            }
+            FileOutputStream fileOutputStream = new FileOutputStream(fileName);
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+            objectOutputStream.writeObject(bookArrayList);
+            objectOutputStream.close();
+            fileOutputStream.close();
+//            for (Book book : bookArrayList) {
+//                objectOutputStream.writeObject(book);
+//            }
 
             System.out.println("Books written to the file successfully.");
-        } finally {
-            if (objectOutputStream != null) {
-                objectOutputStream.close();
-            }
-            if (fileOutputStream != null) {
-                fileOutputStream.close();
-            }
+        } catch (IOException e) {
+            System.out.println("Oh no: " + e);
         }
     }
 
 
     public void readBooksFromFile() {
-        try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(filePath))) {
-            while (true) {
-                try {
-                    Book book = (Book) objectInputStream.readObject();
-                    bookArrayList.add(book);
-                } catch (EOFException e) {
-                    // End of file reached
-                    break;
-                }
-            }
+        try{
+            FileInputStream fileInputStream = new FileInputStream(fileName);
+            ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+            bookArrayList = (ArrayList<Book>) objectInputStream.readObject();
+            objectInputStream.close();
+            fileInputStream.close();
             System.out.println("Books read from the file successfully.");
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found.");
-        } catch (IOException e) {
-            System.out.println("Oh no: " + e);
-        } catch (Exception e) {
+
+            // Display the read objects
+            for (Book book : bookArrayList) {
+                System.out.println(book);
+            }
+
+        } catch (IOException | ClassNotFoundException e) {
             System.out.println("Oh no: " + e);
         }
     }

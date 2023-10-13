@@ -56,7 +56,7 @@ public class LibraryManagement {
                 case "2" -> library.checkoutBook();
                 case "3" -> library.returnBook();
                 case "4" -> library.displayAvailableBooks();
-                case "5" -> Library.writeBooksArrayToFile();
+                case "5" -> library.writeBooksArrayToFile();
                 case "6" -> exit();
                 default -> tryOneMoreTime();
             }
