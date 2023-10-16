@@ -2,6 +2,8 @@ package D53_Thread.CA1;
 
 
 class ThreadExample extends Thread {
+
+    @Override
     public void run() {
 
         for(int n=1; n<3; n++) {
