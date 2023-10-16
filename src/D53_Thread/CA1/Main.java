@@ -1,4 +1,4 @@
-package D53_Thread_.CA1;
+package D53_Thread.CA1;
 
 
 class ThreadExample extends Thread {

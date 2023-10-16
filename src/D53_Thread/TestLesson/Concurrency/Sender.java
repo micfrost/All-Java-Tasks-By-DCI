@@ -1,4 +1,4 @@
-package D53_Thread_.TestLesson.Concurrency;
+package D53_Thread.TestLesson.Concurrency;
 
 public class Sender {
     public void sendMessage(String message) {

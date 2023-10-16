@@ -1,4 +1,4 @@
-package D53_Thread_.TestLesson.Creation;
+package D53_Thread.TestLesson.Creation;
 
 public class Thread1 implements Runnable  {
 

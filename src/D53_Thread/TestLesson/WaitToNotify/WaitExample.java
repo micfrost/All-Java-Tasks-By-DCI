@@ -1,4 +1,4 @@
-package D53_Thread_.TestLesson.WaitToNotify;
+package D53_Thread.TestLesson.WaitToNotify;
 
 import java.time.Instant;
 
