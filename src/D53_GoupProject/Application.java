@@ -15,9 +15,9 @@ public class Application {
         String chosenOption;
 
         do {
-
+            System.out.println("- - -");
             System.out.println("Topics: ");
-            System.out.println("1. Help with booking process.");
+            System.out.println("1. Help with a booking process.");
             System.out.println("2. Details about our listing.");
             System.out.println("3. Information about canceling a booking.");
             System.out.println("4. Other topic.");

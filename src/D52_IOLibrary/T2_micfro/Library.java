@@ -88,7 +88,7 @@ public class Library {
     public void writeBooksArrayToFile() throws IOException {
 
         try {
-
+//With Buffer from NIO is also possible
             FileOutputStream fileOutputStream = new FileOutputStream(fileName);
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
             objectOutputStream.writeObject(bookArrayList);

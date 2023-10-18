@@ -21,7 +21,7 @@ public class LibraryManagement {
             switch (chosenOption) {
                 case "1" -> loginEmployee();
                 case "2" -> loginAdmin();
-                case "3" -> exit();
+                case "3" -> exitMy();
                 default -> tryOneMoreTime();
             }
         } while (!chosenOption.equals("3"));
@@ -57,7 +57,7 @@ public class LibraryManagement {
                 case "3" -> library.returnBook();
                 case "4" -> library.displayAvailableBooks();
                 case "5" -> library.writeBooksArrayToFile();
-                case "6" -> exit();
+                case "6" -> exitMy();
                 default -> tryOneMoreTime();
             }
         } while (!chosenOptionEmployee.equals("6"));
@@ -76,7 +76,7 @@ public class LibraryManagement {
         libraryMember.addMember(employee);
     }
 
-    private void exit() {
+    private void exitMy() {
         System.out.println("- - - - - ");
         System.out.println("The program was closed successfully.");
     }
