@@ -9,7 +9,7 @@ class ParallelTask extends Thread {
     public void factorial() {
         String nameOfThread = "Current thread: " + Thread.currentThread().getName();
 
-        int result = 1;
+        Long result = 1L;
         for (int i = 1; i <= number; i++) {
             result *= i;
         }
@@ -26,8 +26,8 @@ class ParallelTask extends Thread {
 public class ParallelTaskExercise {
     public static void main(String[] args) {
 
-        ParallelTask thread0 = new ParallelTask(2);
-        ParallelTask thread1 = new ParallelTask(3);
+        ParallelTask thread0 = new ParallelTask(18);
+        ParallelTask thread1 = new ParallelTask(10);
         ParallelTask thread2 = new ParallelTask(4);
 
         thread0.start();
