@@ -4,11 +4,8 @@ import java.util.Scanner;
 
 public class Application {
     Scanner scanner = new Scanner(System.in);
-    private AirbnbChatBot chatBot;
+    AirbnbChatBot chatBot = new AirbnbChatBot();
 
-    public Application() {
-        chatBot = new AirbnbChatBot();
-    }
 
     void userInterface() {
         System.out.println("- - - ");
@@ -39,33 +36,55 @@ public class Application {
         } while (!chosenOption.equals("5"));
     }
 
-    void answerHelp(){
-
+    void answerHelp() {
+        System.out.println();
+        System.out.println("Nice question. Here is the answer: ");
+        String response = chatBot.getAnswers().get("booking");
+        System.out.println(response);
+        System.out.println();
     }
 
-    void answerListing(){}
+    void answerListing() {
+        System.out.println();
+        System.out.println("Nice question. Here is the answer: ");
+        String response = chatBot.getAnswers().get("listing");
+        System.out.println(response);
+        System.out.println();
+    }
 
-    void answerCancel(){}
 
-    void answerOpen(){
+    void answerCancel() {
+        System.out.println();
+        System.out.println("Nice question. Here is the answer: ");
+        String response = chatBot.getAnswers().get("cancel");
+        System.out.println(response);
+        System.out.println();
+    }
 
-        System.out.print("Ask me anything else: ");
-        String userQuery = scanner.nextLine();
 
-        String response = chatBot.respondToQuery(userQuery);
-        System.out.println("Chat Bot: " + response);
+    void answerOpen() {
+        System.out.println("Ask me anything (e.g. contact, product, problem).");
+        System.out.println("Enter a searched word: ");
+
+        String searchedWord = scanner.nextLine();
+
+        String response = chatBot.respondToQuery(searchedWord);
+        System.out.println();
+        System.out.println("Nice question. Here is the answer: ");
+        System.out.println(response);
+        System.out.println();
     }
 
     private void exit() {
         System.out.println("- - - - - ");
-        System.out.println("Chat Bot: Thank you for using Airbnb support. Have a great day!");
+        System.out.println("Thank you for using Airbnb support. Have a great day!");
         System.out.println("The program was closed successfully.");
     }
+
     private void tryOneMoreTime() {
         System.out.println("- - - - - ");
         System.out.println("Try one more time.");
     }
-
 
 
 }
