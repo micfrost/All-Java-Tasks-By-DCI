@@ -1,19 +1,14 @@
-package D53_GoupProject;
-
+package D55_Airbnb;
 import java.util.Scanner;
-
 public class Application {
     Scanner scanner = new Scanner(System.in);
     AirbnbChatBot chatBot = new AirbnbChatBot();
-
-
     void userInterface() {
         System.out.println("- - - ");
         System.out.println("AIRBNB");
         System.out.println("Welcome to Airbnb Customer Support. How can I help you?");
 
         String chosenOption;
-
         do {
             System.out.println("- - -");
             System.out.println("Topics: ");
@@ -35,7 +30,6 @@ public class Application {
             }
         } while (!chosenOption.equals("5"));
     }
-
     void answerHelp() {
         System.out.println();
         System.out.println("Nice question. Here is the answer: ");
@@ -43,7 +37,6 @@ public class Application {
         System.out.println(response);
         System.out.println();
     }
-
     void answerListing() {
         System.out.println();
         System.out.println("Nice question. Here is the answer: ");
@@ -51,8 +44,6 @@ public class Application {
         System.out.println(response);
         System.out.println();
     }
-
-
     void answerCancel() {
         System.out.println();
         System.out.println("Nice question. Here is the answer: ");
@@ -60,8 +51,6 @@ public class Application {
         System.out.println(response);
         System.out.println();
     }
-
-
     void answerOpen() {
         System.out.println("Ask me anything (e.g. contact, product, problem).");
         System.out.println("Enter a searched word: ");
@@ -74,13 +63,11 @@ public class Application {
         System.out.println(response);
         System.out.println();
     }
-
     private void exit() {
         System.out.println("- - - - - ");
         System.out.println("Thank you for using Airbnb support. Have a great day!");
         System.out.println("The program was closed successfully.");
     }
-
     private void tryOneMoreTime() {
         System.out.println("- - - - - ");
         System.out.println("Try one more time.");

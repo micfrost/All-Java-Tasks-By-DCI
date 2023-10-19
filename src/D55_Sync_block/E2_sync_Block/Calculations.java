@@ -18,7 +18,7 @@ public class Calculations {
 
     public void firstCalculation() {
 
-
+//synchronized Block
         synchronized (firstLock) {
 
             try {

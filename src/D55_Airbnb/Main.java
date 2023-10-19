@@ -1,6 +1,5 @@
-package D53_GoupProject;
+package D55_Airbnb;
 
-//Group Project: Calton Manhique, Albert Cordina, Michal Frost
 
 public class Main {
     public static void main(String[] args) {
