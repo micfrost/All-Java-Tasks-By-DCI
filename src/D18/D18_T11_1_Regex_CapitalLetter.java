@@ -25,7 +25,7 @@ public class D18_T11_1_Regex_CapitalLetter {
         }
 
         if (!foundMatch) {
-            System.out.println("No matches found.");
+            System.out.println("NO matches found.");
         }
     }
 

@@ -23,7 +23,7 @@ public class IntegerList {
         int no=1;
         for (Integer element: integerArrayList
              ) {
-            System.out.println("No " + no + ": " + element);
+            System.out.println("NO " + no + ": " + element);
             no++;
         }
 

@@ -10,7 +10,7 @@ class TicketBookingSystem {
             totalTickets--;
             System.out.println(user.getName() + " booked a ticket.");
         } else {
-            System.out.println("No tickets available for " + user.getName());
+            System.out.println("NO tickets available for " + user.getName());
         }
     }
     public int getAvailableTickets() {

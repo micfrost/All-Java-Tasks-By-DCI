@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 public class Application {
     public static void main(String[] args) {
 
+//        creating multiple Threads to handle tasks together.
         ScheduledExecutorService executorSES = Executors.newScheduledThreadPool(2);
 
         Runnable repeatedTask = new Runnable() {

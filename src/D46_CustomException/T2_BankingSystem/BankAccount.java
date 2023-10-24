@@ -15,7 +15,7 @@ public class BankAccount {
         try {
 
             if (balance >= withdrawAmount) {
-                System.out.println("Withdraw from an account No: " + accountNumber);
+                System.out.println("Withdraw from an account NO: " + accountNumber);
                 System.out.println("Old balance: \t" + balance + "€");
                 System.out.println("Withdraw: \t\t" + withdrawAmount + "€");
                 balance -= withdrawAmount;
@@ -30,7 +30,7 @@ public class BankAccount {
     }
 
     public void deposit(double depositAmount) {
-        System.out.println("Deposit to an account No: " + accountNumber);
+        System.out.println("Deposit to an account NO: " + accountNumber);
         System.out.println("Old balance: \t" + balance + "€");
         System.out.println("Deposit: \t\t" + depositAmount + "€");
         balance += depositAmount;

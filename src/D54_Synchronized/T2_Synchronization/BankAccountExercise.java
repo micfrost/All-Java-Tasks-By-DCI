@@ -30,7 +30,7 @@ class Depositor extends Thread {
         for (int i = 1; i <= 10; i++) {
             double amount = 100;
             bankAccount.deposit(amount);
-            System.out.println("Inside a Print Method, \tDeposit No.: " + i + ": " + amount + "€." + "\t Balance: " + bankAccount.getAccountBalance());
+            System.out.println("Inside a Print Method, \tDeposit NO.: " + i + ": " + amount + "€." + "\t Balance: " + bankAccount.getAccountBalance());
         }
     }
 }
@@ -49,7 +49,7 @@ class Withdrawal extends Thread {
 //                System.out.println("Account balance insufficient.");
 //            } else {
             bankAccount.withdraw(amount);
-            System.out.println("Inside a Print Method, \tWithdraw No.: " + i + ": " + amount + "€." + "\t Balance: " + bankAccount.getAccountBalance());
+            System.out.println("Inside a Print Method, \tWithdraw NO.: " + i + ": " + amount + "€." + "\t Balance: " + bankAccount.getAccountBalance());
         }
     }
 }

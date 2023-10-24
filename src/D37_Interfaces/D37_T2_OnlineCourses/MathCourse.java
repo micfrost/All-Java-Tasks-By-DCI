@@ -28,7 +28,7 @@ public class MathCourse implements OnlineCourse {
         System.out.println("Enrolled students: ");
         int studentNo=1;
         for (String student : enrolledStudentsList) {
-            System.out.println("Student No." + studentNo + ": "+ student +".");
+            System.out.println("Student NO." + studentNo + ": "+ student +".");
             studentNo++;
         }
 

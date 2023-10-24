@@ -27,7 +27,7 @@ public class TaskSynchronizationExercise {
     class TaskExecutor extends Thread {
         @Override
         public void run() {
-            for (int i = 0; i < requiredTasks; i++) {
+            for (int i = 0; i < 20; i++) {
                 //The taskLock is locked by this thread.
                 taskLock.lock();
                 try {
@@ -51,7 +51,7 @@ public class TaskSynchronizationExercise {
             try {
                 //A while loop is used to check whether
                 // the number of completed tasks is less than the total required tasks.
-                while (taskCount < requiredTasks) {
+                while (taskCount < 10) {
                     try {
                         //The await method is called on the taskCompleted condition,
                         // which makes the TaskMonitor thread wait until it is signaled by the TaskExecutor thread.

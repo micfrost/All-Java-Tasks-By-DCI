@@ -18,7 +18,7 @@ public class Main {
         };
 
         for (int i = 0; i < colors.length; i++) {
-            System.out.print("Array No. : " + i + ". ");
+            System.out.print("Array NO. : " + i + ". ");
             for (int j = 0; j < 1; j++) {
                 System.out.print("Length: " + colors[i].length + ".");
             }

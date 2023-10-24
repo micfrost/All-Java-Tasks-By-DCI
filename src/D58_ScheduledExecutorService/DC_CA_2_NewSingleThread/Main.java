@@ -33,6 +33,7 @@ executorSeS.scheduleAtFixedRate(repeatedTask, 3, 3,TimeUnit.SECONDS);
             throw new RuntimeException(e);
         }
 
+        System.out.println("Shutdown after 12 sek.");
         executorSeS.shutdown();
 
         try {
@@ -40,6 +41,6 @@ executorSeS.scheduleAtFixedRate(repeatedTask, 3, 3,TimeUnit.SECONDS);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-
+        System.out.println("End of the program successfully.");
     }
 }
