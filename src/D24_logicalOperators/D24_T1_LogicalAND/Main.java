@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Number Range Validator");
-        System.out.println("A Java program to validate if a given number is within a specific range. ");
+        System.out.println("DC_T_1_ReantrantLock_Inside Java program to validate if a given number is within a specific range. ");
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");

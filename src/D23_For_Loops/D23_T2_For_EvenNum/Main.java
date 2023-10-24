@@ -7,7 +7,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println();
-        System.out.println("A program that prints all even numbers between a specified range of integers.");
+        System.out.println("DC_T_1_ReantrantLock_Inside program that prints all even numbers between a specified range of integers.");
         System.out.println("Enter the starting value of the range");
         int start = scanner.nextInt();
         System.out.println("Enter the ending value of the range");

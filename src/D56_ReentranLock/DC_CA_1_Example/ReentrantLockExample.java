@@ -1,4 +1,4 @@
-package D56_ReentranLock.E1_Example;
+package D56_ReentranLock.DC_CA_1_Example;
 
 import java.util.Scanner;
 import java.util.concurrent.locks.Condition;

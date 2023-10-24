@@ -8,7 +8,7 @@ public class PhoneBook {
     public void userInterface() {
         System.out.println("- - - - - ");
         System.out.println("Phone Book");
-        System.out.println("A program that simulates a simple phone book using a HashMap. The program should allow users to add contact names and their corresponding phone numbers, look up phone numbers using contact names, display the phone book, and exit the program.");
+        System.out.println("DC_T_1_ReantrantLock_Inside program that simulates a simple phone book using a HashMap. The program should allow users to add contact names and their corresponding phone numbers, look up phone numbers using contact names, display the phone book, and exit the program.");
         String chosenOption;
         do {
             menu();

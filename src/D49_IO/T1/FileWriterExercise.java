@@ -51,7 +51,7 @@ public class FileWriterExercise {
     public static void main(String[] args) {
         System.out.println("- - -");
         System.out.println("Writing Data to a File using FileOutputStream");
-        System.out.println("A Java program that demonstrates how to write data to a file using the FileOutputStream class.");
+        System.out.println("DC_T_1_ReantrantLock_Inside Java program that demonstrates how to write data to a file using the FileOutputStream class.");
         System.out.println("- - -");
 
 //        Writing a file

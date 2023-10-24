@@ -8,7 +8,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println();
-        System.out.println("A program that calculates the factorial of a given positive integer n.");
+        System.out.println("DC_T_1_ReantrantLock_Inside program that calculates the factorial of a given positive integer n.");
         System.out.println("Enter a value of n: ");
 
         int n = Integer.valueOf(scanner.nextLine());

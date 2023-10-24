@@ -12,7 +12,7 @@ public class VotingSystemSet {
     public void userInterface() {
         System.out.println("- - - - - ");
         System.out.println("Voting System");
-        System.out.println("A program that simulates a simple voting system using a Set. The program should allow users to cast votes for candidates, count the votes, display the vote count for each candidate");
+        System.out.println("DC_T_1_ReantrantLock_Inside program that simulates a simple voting system using a Set. The program should allow users to cast votes for candidates, count the votes, display the vote count for each candidate");
         String chosenOption;
 
         do {

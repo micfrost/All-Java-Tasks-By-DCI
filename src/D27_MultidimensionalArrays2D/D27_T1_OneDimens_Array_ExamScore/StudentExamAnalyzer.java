@@ -23,7 +23,7 @@ public class StudentExamAnalyzer {
     private void title() {
         System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - ");
         System.out.println("Analyzing Student Exam Scores.");
-        System.out.println("A program that analyzes student exam scores, calculates basic statistics, and provides insights into the data.");
+        System.out.println("DC_T_1_ReantrantLock_Inside program that analyzes student exam scores, calculates basic statistics, and provides insights into the data.");
         System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - ");
     }
 

@@ -45,7 +45,7 @@ public class Main {
 
         //  changing by using a method
         System.out.println("- - -");
-        System.out.println("STUDENTS CHANGED BY USING A METHOD");
+        System.out.println("STUDENTS CHANGED BY USING DC_T_1_ReantrantLock_Inside METHOD");
    Student.changeUni();
         student1.display();
         student2.display();

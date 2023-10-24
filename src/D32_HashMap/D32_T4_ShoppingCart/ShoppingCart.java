@@ -8,7 +8,7 @@ public class ShoppingCart {
     public void userInterface() {
         System.out.println("- - -");
         System.out.println("Shopping Cart");
-        System.out.println("A program that simulates a basic shopping cart using a HashMap. The program allows users to add items to the cart along with their quantities, display the cart's contents, calculate the total price, and exit the program.");
+        System.out.println("DC_T_1_ReantrantLock_Inside program that simulates a basic shopping cart using a HashMap. The program allows users to add items to the cart along with their quantities, display the cart's contents, calculate the total price, and exit the program.");
         String chosenOption;
         do {
             menu();

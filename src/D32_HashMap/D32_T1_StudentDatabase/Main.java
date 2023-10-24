@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Student Database");
-        System.out.println("A program that simulates a student database using a HashMap. The program should allow users to add student names and their corresponding IDs, retrieve student IDs using their names, display the database, and exit the program.");
+        System.out.println("DC_T_1_ReantrantLock_Inside program that simulates a student database using a HashMap. The program should allow users to add student names and their corresponding IDs, retrieve student IDs using their names, display the database, and exit the program.");
 
         HashMap<Integer, String> studentIDs = new HashMap<>();
 

@@ -6,7 +6,7 @@ public class Main {
 
         System.out.println("- - -");
         System.out.println("Upcasting and Downcasting - Shape Hierarchy");
-        System.out.println("A Java program that demonstrates upcasting (assigning a subclass object to a superclass reference) and downcasting (casting a superclass reference to a subclass reference) by modeling a hierarchy of geometric shapes. ");
+        System.out.println("DC_T_1_ReantrantLock_Inside Java program that demonstrates upcasting (assigning a subclass object to a superclass reference) and downcasting (casting a superclass reference to a subclass reference) by modeling a hierarchy of geometric shapes. ");
         System.out.println("- - - ");
 
         Shape shape1 = new Circle("Red", 5);

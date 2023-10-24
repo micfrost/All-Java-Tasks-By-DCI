@@ -1,4 +1,4 @@
-package D56_ReentranLock.T1_FixedThreadPool;
+package D56_FixedThreadPool.T1_FixedThreadPool;
 
 
 import java.util.concurrent.ExecutorService;

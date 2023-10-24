@@ -45,7 +45,7 @@ public class TextFileReader {
     public static void main(String[] args) {
         System.out.println("- - -");
         System.out.println("Reading and Displaying Text from a File using FileInputStream");
-        System.out.println("A program that reads text from a text file using only FileInputStream and displays it on the console.");
+        System.out.println("DC_T_1_ReantrantLock_Inside program that reads text from a text file using only FileInputStream and displays it on the console.");
         System.out.println("- - -");
 
         String[][] studentRecords = {{"ID", "Name", "GPA"}, {"001", "John Kowalsky", "3.4"}, {"002", "Tadeusch Organitz", "4.5"}};

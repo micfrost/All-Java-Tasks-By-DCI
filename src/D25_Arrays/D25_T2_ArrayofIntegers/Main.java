@@ -11,7 +11,7 @@ public class Main {
             System.out.print(number + " ");
         }
 
-        System.out.println("\n\nA Java program that performs the tasks: ");
+        System.out.println("\n\nDC_T_1_ReantrantLock_Inside Java program that performs the tasks: ");
 //      Calculate the sum of all integers in the array.
         int sum = 0;
         for (int number : numbers) {

@@ -16,7 +16,7 @@ public class AgeVerifier {
 
             System.out.println();
             System.out.println("Custom Exception Handling - Age Verification");
-            System.out.println("A program that simulates age verification for accessing a website.");
+            System.out.println("DC_T_1_ReantrantLock_Inside program that simulates age verification for accessing a website.");
             System.out.println();
 
             System.out.println("Enter your age.");

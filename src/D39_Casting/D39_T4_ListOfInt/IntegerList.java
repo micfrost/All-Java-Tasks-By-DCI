@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class IntegerList {
     public static void main(String[] args) {
         System.out.println("List of Integers");
-        System.out.println("A program that works with a list of integers using both primitive and wrapper classes");
+        System.out.println("DC_T_1_ReantrantLock_Inside program that works with a list of integers using both primitive and wrapper classes");
         System.out.println(" ");
 
 //        Create an ArrayList of integers (use wrapper class Integer).

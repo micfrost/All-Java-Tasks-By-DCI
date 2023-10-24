@@ -3,7 +3,7 @@ package D44_RuntimeExceptions.T2_LibraryCatalogSystem;
 public class Main {
     public static void main(String[] args) {
         System.out.println();
-        System.out.println("A Library Catalog System");
+        System.out.println("DC_T_1_ReantrantLock_Inside Library Catalog System");
         System.out.println();
 
 LibraryCatalog libraryCatalog = new LibraryCatalog();

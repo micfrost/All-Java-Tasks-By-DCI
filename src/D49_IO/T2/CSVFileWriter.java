@@ -37,7 +37,7 @@ public class CSVFileWriter {
 
         System.out.println("- - -");
         System.out.println("Writing Data to a CSV File using FileOutputStream");
-        System.out.println("A Java program that writes data to a CSV file using the FileOutputStream class. You should write a list of student records to a CSV file.");
+        System.out.println("DC_T_1_ReantrantLock_Inside Java program that writes data to a CSV file using the FileOutputStream class. You should write a list of student records to a CSV file.");
         System.out.println("- - -");
 
         String[][] studentRecords = {{"ID", "Name", "GPA"},{"001", "John Kowalsky", "3.4"}, {"002", "Tadeusch Organitz", "4.5"}};

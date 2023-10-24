@@ -23,7 +23,7 @@ class Worker extends Thread {
 public class TaskManagementExercise {
     public static void main(String[] args) {
         System.out.println("- - -");
-        System.out.println("A program that simulates a simple task management system with multiple workers (threads) performing tasks concurrently.");
+        System.out.println("DC_T_1_ReantrantLock_Inside program that simulates a simple task management system with multiple workers (threads) performing tasks concurrently.");
         System.out.println("- - -");
 
         Worker worker1 = new Worker("Tom");

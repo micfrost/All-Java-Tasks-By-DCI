@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Hospital Management System");
-        System.out.println("A hospital management system that simulates various operations such as adding patients, assigning doctors, scheduling appointments, and managing medical records.");
+        System.out.println("DC_T_1_ReantrantLock_Inside hospital management system that simulates various operations such as adding patients, assigning doctors, scheduling appointments, and managing medical records.");
         System.out.println(" - - - - - - - ");
 
         Hospital hospital = new Hospital();

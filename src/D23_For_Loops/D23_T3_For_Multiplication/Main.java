@@ -7,7 +7,7 @@ public class Main {
         try {
 
             Scanner scanner = new Scanner(System.in);
-            System.out.println("A Program that generates a multiplication table for a specified integer n.");
+            System.out.println("DC_T_1_ReantrantLock_Inside Program that generates a multiplication table for a specified integer n.");
             System.out.println("Enter a value of n: ");
             int n = scanner.nextInt();
             System.out.println("Multiplication Table: ");

@@ -11,16 +11,16 @@ public class BufferManipulationExercise2 {
     public static void main(String[] args) {
 
         System.out.println("- - -");
-        System.out.println("A program that reads data from a file into a ByteBuffer, and then copies that data from the ByteBuffer to another file using a different FileChannel. This exercise simulates file copying\n" +
+        System.out.println("DC_T_1_ReantrantLock_Inside program that reads data from a file into a ByteBuffer, and then copies that data from the ByteBuffer to another file using a different FileChannel. This exercise simulates file copying\n" +
                 "This Java program reads data from a source file named \"source.txt\" and writes it to a destination file named \"destination.txt.\" It demonstrates file I/O using Java NIO and ByteBuffer.");
         System.out.println("- - -");
 
 //           Copy a file from source.txt to destination.txt
         try {
 
-//          A Path to the file in order to read it
+//          DC_T_1_ReantrantLock_Inside Path to the file in order to read it
             FileInputStream fileInputStream = new FileInputStream("//home//dci-student//IdeaProjects//JavaFbw//src//D50_NIO//source.txt");
-//          A Path to  the file in order to write it
+//          DC_T_1_ReantrantLock_Inside Path to  the file in order to write it
             FileOutputStream fileOutputStream = new FileOutputStream("//home//dci-student//IdeaProjects//JavaFbw//src//D50_NIO//destination.txt");
 
 //            create a channels

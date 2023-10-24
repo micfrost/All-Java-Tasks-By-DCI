@@ -19,7 +19,7 @@ public class CurrencyConverter {
     public static void main(String[] args) {
         System.out.println("- - - - - ");
         System.out.println("Currency Converter");
-        System.out.println("A currency conversion program using polymorphism and static methods in Java.");
+        System.out.println("DC_T_1_ReantrantLock_Inside currency conversion program using polymorphism and static methods in Java.");
         System.out.println("- - - - - ");
 
         //        creating array of objects. Every object extents Object class
@@ -30,13 +30,13 @@ public class CurrencyConverter {
 
         for (Object element : converter) {
             if (element instanceof USD) {
-                System.out.printf("A Converted amount from %s to USD is: %.2f\n",element.getClass().getSimpleName() ,USD.convertToUSD(amount));
+                System.out.printf("DC_T_1_ReantrantLock_Inside Converted amount from %s to USD is: %.2f\n",element.getClass().getSimpleName() ,USD.convertToUSD(amount));
             }
             if (element instanceof EUR) {
-                System.out.printf("A Converted amount from %s to USD is: %.2f\n",element.getClass().getSimpleName(), EUR.convertToUSD(amount));
+                System.out.printf("DC_T_1_ReantrantLock_Inside Converted amount from %s to USD is: %.2f\n",element.getClass().getSimpleName(), EUR.convertToUSD(amount));
             }
             if (element instanceof GBP) {
-                System.out.printf("A Converted amount from %s to USD is: %.2f\n",element.getClass().getSimpleName(), GBP.convertToUSD(amount));
+                System.out.printf("DC_T_1_ReantrantLock_Inside Converted amount from %s to USD is: %.2f\n",element.getClass().getSimpleName(), GBP.convertToUSD(amount));
             }
         }
 

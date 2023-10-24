@@ -8,7 +8,7 @@ public class StudentGradeTracker {
     public void userInterface() {
         System.out.println("- - - - - ");
         System.out.println("Student Grade Tracker");
-        System.out.println("A student grade tracker application that allows users to input and manage student grades for different courses.");
+        System.out.println("DC_T_1_ReantrantLock_Inside student grade tracker application that allows users to input and manage student grades for different courses.");
         String chosenOption;
         do {
             menu();

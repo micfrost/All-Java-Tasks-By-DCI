@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Discount Calculator with Ternary Operator");
-        System.out.println("A Java program to calculate the total cost of an order after applying a discount based on the order amount.");
+        System.out.println("DC_T_1_ReantrantLock_Inside Java program to calculate the total cost of an order after applying a discount based on the order amount.");
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the order amount: ");

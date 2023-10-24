@@ -9,7 +9,7 @@ public class App {
         HashSet<String> emailAddresses = new HashSet<>();
 
         System.out.println("- - - - - ");
-        System.out.println("A program that allows users to add email addresses to a list\n and then displays the unique email addresses in the list.");
+        System.out.println("DC_T_1_ReantrantLock_Inside program that allows users to add email addresses to a list\n and then displays the unique email addresses in the list.");
 
         String chosenOption;
         Scanner scanner = new Scanner(System.in);

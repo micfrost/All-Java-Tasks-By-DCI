@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Voting Eligibility Checker");
-        System.out.println("A Java program to determine whether a person is eligible to vote based on age and citizenship status");
+        System.out.println("DC_T_1_ReantrantLock_Inside Java program to determine whether a person is eligible to vote based on age and citizenship status");
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your age: ");

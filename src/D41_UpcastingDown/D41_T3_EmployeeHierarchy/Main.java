@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("- - -");
         System.out.println("Upcasting and Downcasting - Employee Hierarchy");
-        System.out.println("A Java program that demonstrates upcasting (assigning a subclass object to a superclass reference) and downcasting (casting a superclass reference to a subclass reference) by modeling an employee hierarchy.");
+        System.out.println("DC_T_1_ReantrantLock_Inside Java program that demonstrates upcasting (assigning a subclass object to a superclass reference) and downcasting (casting a superclass reference to a subclass reference) by modeling an employee hierarchy.");
         System.out.println("- - -");
 
         Employee employee1 = new Manager("John Lotus", 101, 12000.00, 4);

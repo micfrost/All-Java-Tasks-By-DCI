@@ -6,7 +6,7 @@ public class LanguageTranslator {
     public void userInterface() {
         System.out.println("- - - - - ");
         System.out.println("Language Translator");
-        System.out.println("A program that simulates a simple language translator using a HashMap. The program should allow users to add word translations, look up translations, display the translator's contents, and exit the program.");
+        System.out.println("DC_T_1_ReantrantLock_Inside program that simulates a simple language translator using a HashMap. The program should allow users to add word translations, look up translations, display the translator's contents, and exit the program.");
         String chosenOption;
         do {
             menu();

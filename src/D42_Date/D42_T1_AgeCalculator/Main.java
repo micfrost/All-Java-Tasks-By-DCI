@@ -10,7 +10,7 @@ public class Main {
 
         System.out.println(" - - - ");
         System.out.println("Age Calculator");
-        System.out.println("A Java program that calculates a person's age based on their birthdate.");
+        System.out.println("DC_T_1_ReantrantLock_Inside Java program that calculates a person's age based on their birthdate.");
         System.out.println(" - - - ");
 
 //        Prompt the user to enter their birthdate in the format "YYYY-MM-DD."

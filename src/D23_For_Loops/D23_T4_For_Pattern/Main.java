@@ -7,7 +7,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println();
-        System.out.println("A Program that prints a square pattern of asterisks based on a specified size n.");
+        System.out.println("DC_T_1_ReantrantLock_Inside Program that prints a square pattern of asterisks based on a specified size n.");
         System.out.println("Enter a value of n: ");
 
         int n = scanner.nextInt();

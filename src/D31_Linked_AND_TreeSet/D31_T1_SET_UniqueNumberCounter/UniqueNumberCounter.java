@@ -9,7 +9,7 @@ public class UniqueNumberCounter {
     public void userInterface() {
         System.out.println("- - - - - ");
         System.out.println("Unique Number Counter");
-        System.out.println("A program that takes a sequence of numbers as input \nand counts the number of unique numbers using a Set. ");
+        System.out.println("DC_T_1_ReantrantLock_Inside program that takes a sequence of numbers as input \nand counts the number of unique numbers using a Set. ");
         String chosenOption;
 
         do {

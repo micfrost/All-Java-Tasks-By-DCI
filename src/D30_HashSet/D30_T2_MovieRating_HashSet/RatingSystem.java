@@ -10,7 +10,7 @@ public class RatingSystem {
 
 
         System.out.println("- - - - - ");
-        System.out.println("A program that allows users to rate movies \nand view the unique movie ratings using a HashSet");
+        System.out.println("DC_T_1_ReantrantLock_Inside program that allows users to rate movies \nand view the unique movie ratings using a HashSet");
 
         String chosenOption;
 

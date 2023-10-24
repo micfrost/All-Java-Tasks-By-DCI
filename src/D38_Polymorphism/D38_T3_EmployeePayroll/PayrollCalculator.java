@@ -42,7 +42,7 @@ public class PayrollCalculator {
     public static void main(String[] args) {
         System.out.println("- - - - -");
         System.out.println("Employee Payroll");
-        System.out.println("A program to calculate the payroll for different \ntypes of employees using runtime polymorphism \nand method overriding in Java.");
+        System.out.println("DC_T_1_ReantrantLock_Inside program to calculate the payroll for different \ntypes of employees using runtime polymorphism \nand method overriding in Java.");
 
         Employee permanentEmployee = new PermanentEmployee(3000, 1500);
         System.out.println("- - -");
