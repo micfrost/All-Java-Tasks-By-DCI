@@ -8,7 +8,6 @@ public class Messages {
     //    creating a private instance here
     private static Messages value = new Messages();
 
-
     private Semaphore semaphore = new Semaphore(20);
 
     //    ii is to make the constructor private
