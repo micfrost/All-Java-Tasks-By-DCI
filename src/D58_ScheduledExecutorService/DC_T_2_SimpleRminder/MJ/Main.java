@@ -13,9 +13,9 @@ public class Main {
         ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
 
         System.out.println("Enter the reminder message and the time delay for the reminder: ");
-String inputMsg = scanner.nextLine();
+        String inputMsg = scanner.nextLine();
         System.out.println("Set the time delay for the reminder [Seconds]: ");
-int inputDelay = Integer.parseInt(scanner.nextLine());
+        int inputDelay = Integer.parseInt(scanner.nextLine());
         Runnable reminder = new Runnable() {
             @Override
             public void run() {

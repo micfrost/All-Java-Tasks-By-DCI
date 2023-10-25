@@ -1,4 +1,4 @@
-package D56_ReentranLock.DC_T_2_CH_;
+package D56_ReentranLock.DC_T_2_WithCondition.DC_T_2_CH_;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;

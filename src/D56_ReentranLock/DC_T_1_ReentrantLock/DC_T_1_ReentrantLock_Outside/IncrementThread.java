@@ -1,12 +1,12 @@
-package D56_ReentranLock.DC_T_1_ReentrantLock_Outside;
+package D56_ReentranLock.DC_T_1_ReentrantLock.DC_T_1_ReentrantLock_Outside;
 
 import java.util.concurrent.locks.ReentrantLock;
 
-public class DecrementThread extends Thread {
+public class IncrementThread extends Thread {
     private SharedValues sharedValues;
     private ReentrantLock reentrantLock;
 
-    public DecrementThread(SharedValues sharedValues, ReentrantLock reentrantLock) {
+    public IncrementThread(SharedValues sharedValues, ReentrantLock reentrantLock) {
         this.sharedValues = sharedValues;
         this.reentrantLock = reentrantLock;
     }
@@ -14,7 +14,7 @@ public class DecrementThread extends Thread {
     public void run() {
         reentrantLock.lock();
         try {
-            sharedValues.setCounter(sharedValues.getCounter() - 3);
+            sharedValues.setCounter(sharedValues.getCounter() + 5);
         } finally {
             reentrantLock.unlock();
         }

@@ -1,4 +1,4 @@
-package D56_ReentranLock.DC_T_1_ReentrantLock_Outside;
+package D56_ReentranLock.DC_T_1_ReentrantLock.DC_T_1_ReentrantLock_Outside;
 
 import java.util.concurrent.locks.ReentrantLock;
 

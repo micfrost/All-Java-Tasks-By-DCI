@@ -1,4 +1,4 @@
-package D56_ReentranLock.DC_T_1_Noo;
+package D56_ReentranLock.DC_T_1_ReentrantLock.DC_T_1_Noo;
 
 import java.util.concurrent.locks.ReentrantLock;
 
