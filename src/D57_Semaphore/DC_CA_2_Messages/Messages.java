@@ -15,7 +15,6 @@ public class Messages {
     private Messages() {
 
     }
-
     //    in order to have access to a value of Massage
 //    it is static to be able to call it from other class
     public static Messages getValue() {
@@ -38,9 +37,7 @@ public class Messages {
         } finally {
             semaphore.release();
         }
-
     }
-
 
     public void sendMsg() {
 
