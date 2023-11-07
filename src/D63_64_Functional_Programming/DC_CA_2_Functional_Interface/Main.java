@@ -1,4 +1,4 @@
-package D63_Functional_Programming.DC_CA_2_Functional_Interface;
+package D63_64_Functional_Programming.DC_CA_2_Functional_Interface;
 
 // has only one method
 @FunctionalInterface

@@ -1,4 +1,4 @@
-package D63_Functional_Programming.DC_T_1_LambdaExercise;
+package D63_64_Functional_Programming.DC_T_1_LambdaExercise;
 
 import java.util.ArrayList;
 import java.util.List;

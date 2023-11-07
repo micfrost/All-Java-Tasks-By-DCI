@@ -1,4 +1,4 @@
-package D63_Functional_Programming.DC_T_3_Lambda_Salary.micfro;
+package D63_64_Functional_Programming.DC_T_3_Lambda_Salary.No;
 
 public class Employee {
     private String name;
@@ -15,19 +15,13 @@ public class Employee {
         return name;
     }
 
-
-
     public String getPosition() {
         return position;
     }
 
-
-
     public double getSalary() {
         return salary;
     }
-
-
 
     @Override
     public String toString() {
