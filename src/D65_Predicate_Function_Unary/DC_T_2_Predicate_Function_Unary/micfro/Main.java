@@ -8,40 +8,6 @@ import java.util.function.UnaryOperator;
 
 public class Main {
 
-    //  Task 1: Filter Students
-
-//    Works but butter to use test instead of removeIt
-//    public static List<Student> filterStudents2(List<Student> studentList, Predicate<Student> filter) {
-//        List<Student> filteredStudentList = new ArrayList<>();
-//        filteredStudentList = studentList;
-//        filteredStudentList.removeIf(filter);
-//        return filteredStudentList;
-//    }
-
-    public static List<Student> filterStudents(List<Student> studentList, Predicate<Student> predicate) {
-        List<Student> filteredStudents = new ArrayList<>();
-        for (Student student : studentList) {
-            if (predicate.test(student)) {
-                filteredStudents.add(student);
-            }
-        }
-        return filteredStudents;
-    }
-
-
-    //  Task 2: Transform Student Names
-    public static List<Student> transfromStudent(List<Student> studentList, Function<Student, String> functionTansform) {
-        studentList.forEach(student -> student.name = functionTansform.apply(student));
-        return studentList;
-    }
-
-    //  Task 3: Modify Student GPAs
-    public static List<Student> modifyStudent(List<Student> studentList, UnaryOperator<Double> unaryModify) {
-        studentList.forEach(student -> student.dpa = unaryModify.apply(student.dpa));
-        return studentList;
-    }
-
-
     public static void main(String[] args) {
 
         List<Student> studentList = new ArrayList<>(List.of(
@@ -75,9 +41,43 @@ public class Main {
 //  Task 3: Modify Student GPAs
         System.out.println("- - - ");
         System.out.println("Modified List");
-        List<Student> modifiedStudentList = modifyStudent(studentList, gpa -> gpa + 7.0);
+        UnaryOperator<Double> increaseGpa = gpa -> gpa + 07.5;
+        List<Student> modifiedStudentList = modifyStudent(studentList,increaseGpa);
         modifiedStudentList.forEach(System.out::println);
 
+    }
+
+    //  Task 1: Filter Students
+
+//    Works but butter to use test instead of removeIt
+//    public static List<Student> filterStudents2(List<Student> studentList, Predicate<Student> filter) {
+//        List<Student> filteredStudentList = new ArrayList<>();
+//        filteredStudentList = studentList;
+//        filteredStudentList.removeIf(filter);
+//        return filteredStudentList;
+//    }
+
+    public static List<Student> filterStudents(List<Student> studentList, Predicate<Student> predicate) {
+        List<Student> filteredStudents = new ArrayList<>();
+        for (Student student : studentList) {
+            if (predicate.test(student)) {
+                filteredStudents.add(student);
+            }
+        }
+        return filteredStudents;
+    }
+
+
+    //  Task 2: Transform Student Names
+    public static List<Student> transfromStudent(List<Student> studentList, Function<Student, String> functionTansform) {
+        studentList.forEach(student -> student.name = functionTansform.apply(student));
+        return studentList;
+    }
+
+    //  Task 3: Modify Student GPAs
+    public static List<Student> modifyStudent(List<Student> studentList, UnaryOperator<Double> unaryModify) {
+        studentList.forEach(student -> student.dpa = unaryModify.apply(student.dpa));
+        return studentList;
     }
 
 }

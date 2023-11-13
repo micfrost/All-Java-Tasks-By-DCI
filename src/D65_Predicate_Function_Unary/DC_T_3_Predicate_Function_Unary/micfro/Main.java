@@ -7,33 +7,7 @@ import java.util.function.Predicate;
 
 public class Main {
 
-//    Objective 1: Filter Employees
-
-    public static List<Employee> filterEmployees(List<Employee> employeeList, Predicate<Employee> predicate) {
-        List<Employee> filteredEmployees = new ArrayList<>();
-        for (Employee employee : employeeList) {
-            if (predicate.test(employee)) {
-                filteredEmployees.add(employee);
-            }
-        }
-        return filteredEmployees;
-    }
-
-
-//    Objective 2: Transform Employee Names
-public static List<Employee> transformEmployeeNames(List<Employee> employeeList, Function<Employee, String> nameTransformer) {
-    List<Employee> transformedList = new ArrayList<>();
-    for (Employee employee : employeeList) {
-        String transformedName = nameTransformer.apply(employee);
-        employee.setName(transformedName);
-        transformedList.add(employee);
-    }
-    return transformedList;
-}
-
-
     public static void main(String[] args) {
-
 
         List<Employee> employeeList = new ArrayList<>(List.of(
                 new Employee("Michal Frost", "Male", 5000, "IT"),
@@ -65,6 +39,30 @@ public static List<Employee> transformEmployeeNames(List<Employee> employeeList,
                 : "Ms. " + employee.getName());
         transformedList.forEach(System.out::println);
 
+    }
+
+    //    Objective 1: Filter Employees
+
+    public static List<Employee> filterEmployees(List<Employee> employeeList, Predicate<Employee> predicate) {
+        List<Employee> filteredEmployees = new ArrayList<>();
+        for (Employee employee : employeeList) {
+            if (predicate.test(employee)) {
+                filteredEmployees.add(employee);
+            }
+        }
+        return filteredEmployees;
+    }
+
+
+    //    Objective 2: Transform Employee Names
+    public static List<Employee> transformEmployeeNames(List<Employee> employeeList, Function<Employee, String> nameTransformer) {
+        List<Employee> transformedList = new ArrayList<>();
+        for (Employee employee : employeeList) {
+            String transformedName = nameTransformer.apply(employee);
+            employee.setName(transformedName);
+            transformedList.add(employee);
+        }
+        return transformedList;
     }
 
 }
