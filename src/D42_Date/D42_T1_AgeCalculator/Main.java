@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println(" - - - ");
-        System.out.println("Age Calculator");
+        System.out.println("Age C1");
         System.out.println("DC_T_1_ReantrantLock_Inside Java program that calculates a person's age based on their birthdate.");
         System.out.println(" - - - ");
 

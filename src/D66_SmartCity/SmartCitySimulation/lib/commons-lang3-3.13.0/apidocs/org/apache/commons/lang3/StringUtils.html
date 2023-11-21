@@ -3603,7 +3603,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  StringUtils.deleteWhitespace(null)         = null
  StringUtils.deleteWhitespace("")           = ""
  StringUtils.deleteWhitespace("abc")        = "abc"
- StringUtils.deleteWhitespace("   ab  c  ") = "abc"
+ StringUtils.deleteWhitespace("   ab  calcPackage  ") = "abc"
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -3624,7 +3624,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
 <div class="block">Compares two Strings, and returns the portion where they differ.
  More precisely, return the remainder of the second String,
  starting from where it's different from the first. This means that
- the difference between "abc" and "ab" is the empty String and not "c".
+ the difference between "abc" and "ab" is the empty String and not "calcPackage".
 
  <p>For example,
  <code>difference("i am a machine", "i am a robot") -&gt; "robot"</code>.</p>
@@ -4287,8 +4287,8 @@ public static&nbsp;int&nbsp;<a href="../../../../src-html/org/apache/commons/lan
  insertion or substitution).</p>
 
  <p>The implementation uses a single-dimensional array of length s.length() + 1. See
- <a href="https://blog.softwx.net/2014/12/optimizing-levenshtein-algorithm-in-c.html">
- https://blog.softwx.net/2014/12/optimizing-levenshtein-algorithm-in-c.html</a> for details.</p>
+ <a href="https://blog.softwx.net/2014/12/optimizing-levenshtein-algorithm-in-calcPackage.html">
+     https://blog.softwx.net/2014/12/optimizing-levenshtein-algorithm-in-calcPackage.html</a> for details.</p>
 
  <pre>
  StringUtils.getLevenshteinDistance(null, *)             = IllegalArgumentException
@@ -4971,9 +4971,9 @@ public static&nbsp;int&nbsp;<a href="../../../../src-html/org/apache/commons/lan
  StringUtils.isAllLowerCase("  ")   = false
  StringUtils.isAllLowerCase("abc")  = true
  StringUtils.isAllLowerCase("abC")  = false
- StringUtils.isAllLowerCase("ab c") = false
+ StringUtils.isAllLowerCase("ab calcPackage") = false
  StringUtils.isAllLowerCase("ab1c") = false
- StringUtils.isAllLowerCase("ab/c") = false
+ StringUtils.isAllLowerCase("ab/calcPackage") = false
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -5035,7 +5035,7 @@ public static&nbsp;int&nbsp;<a href="../../../../src-html/org/apache/commons/lan
  StringUtils.isAlpha("  ")   = false
  StringUtils.isAlpha("abc")  = true
  StringUtils.isAlpha("ab2c") = false
- StringUtils.isAlpha("ab-c") = false
+ StringUtils.isAlpha("ab-calcPackage") = false
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -5064,9 +5064,9 @@ public static&nbsp;int&nbsp;<a href="../../../../src-html/org/apache/commons/lan
  StringUtils.isAlphanumeric("")     = false
  StringUtils.isAlphanumeric("  ")   = false
  StringUtils.isAlphanumeric("abc")  = true
- StringUtils.isAlphanumeric("ab c") = false
+ StringUtils.isAlphanumeric("ab calcPackage") = false
  StringUtils.isAlphanumeric("ab2c") = true
- StringUtils.isAlphanumeric("ab-c") = false
+ StringUtils.isAlphanumeric("ab-calcPackage") = false
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -5097,9 +5097,9 @@ public static&nbsp;int&nbsp;<a href="../../../../src-html/org/apache/commons/lan
  StringUtils.isAlphanumericSpace("")     = true
  StringUtils.isAlphanumericSpace("  ")   = true
  StringUtils.isAlphanumericSpace("abc")  = true
- StringUtils.isAlphanumericSpace("ab c") = true
+ StringUtils.isAlphanumericSpace("ab calcPackage") = true
  StringUtils.isAlphanumericSpace("ab2c") = true
- StringUtils.isAlphanumericSpace("ab-c") = false
+ StringUtils.isAlphanumericSpace("ab-calcPackage") = false
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -5130,9 +5130,9 @@ public static&nbsp;int&nbsp;<a href="../../../../src-html/org/apache/commons/lan
  StringUtils.isAlphaSpace("")     = true
  StringUtils.isAlphaSpace("  ")   = true
  StringUtils.isAlphaSpace("abc")  = true
- StringUtils.isAlphaSpace("ab c") = true
+ StringUtils.isAlphaSpace("ab calcPackage") = true
  StringUtils.isAlphaSpace("ab2c") = false
- StringUtils.isAlphaSpace("ab-c") = false
+ StringUtils.isAlphaSpace("ab-calcPackage") = false
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -5228,7 +5228,7 @@ public static&nbsp;int&nbsp;<a href="../../../../src-html/org/apache/commons/lan
  StringUtils.isAsciiPrintable(" ")      = true
  StringUtils.isAsciiPrintable("Ceki")   = true
  StringUtils.isAsciiPrintable("ab2c")   = true
- StringUtils.isAsciiPrintable("!ab-c~") = true
+ StringUtils.isAsciiPrintable("!ab-calcPackage~") = true
  StringUtils.isAsciiPrintable(" ") = true
  StringUtils.isAsciiPrintable("!") = true
  StringUtils.isAsciiPrintable("~") = true
@@ -5323,7 +5323,7 @@ public static&nbsp;int&nbsp;<a href="../../../../src-html/org/apache/commons/lan
  StringUtils.isMixedCase("ABC")   = false
  StringUtils.isMixedCase("abc")   = false
  StringUtils.isMixedCase("aBc")   = true
- StringUtils.isMixedCase("A c")   = true
+ StringUtils.isMixedCase("A calcPackage")   = true
  StringUtils.isMixedCase("A1c")   = true
  StringUtils.isMixedCase("a/C")   = true
  StringUtils.isMixedCase("aC\t")  = true
@@ -5556,7 +5556,7 @@ public static&nbsp;int&nbsp;<a href="../../../../src-html/org/apache/commons/lan
  StringUtils.isWhitespace("  ")   = true
  StringUtils.isWhitespace("abc")  = false
  StringUtils.isWhitespace("ab2c") = false
- StringUtils.isWhitespace("ab-c") = false
+ StringUtils.isWhitespace("ab-calcPackage") = false
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -6121,8 +6121,8 @@ public static&nbsp;int&nbsp;<a href="../../../../src-html/org/apache/commons/lan
  StringUtils.join(null, *)               = null
  StringUtils.join([], *)                 = ""
  StringUtils.join([null], *)             = ""
- StringUtils.join(["a", "b", "c"], ';')  = "a;b;c"
- StringUtils.join(["a", "b", "c"], null) = "abc"
+ StringUtils.join(["a", "b", "calcPackage"], ';')  = "a;b;calcPackage"
+ StringUtils.join(["a", "b", "calcPackage"], null) = "abc"
  StringUtils.join([null, "", "a"], ';')  = ";;a"
  </pre></div>
 <dl>
@@ -6161,8 +6161,8 @@ public static&nbsp;int&nbsp;<a href="../../../../src-html/org/apache/commons/lan
  StringUtils.join(null, *)               = null
  StringUtils.join([], *)                 = ""
  StringUtils.join([null], *)             = ""
- StringUtils.join(["a", "b", "c"], ';')  = "a;b;c"
- StringUtils.join(["a", "b", "c"], null) = "abc"
+ StringUtils.join(["a", "b", "calcPackage"], ';')  = "a;b;calcPackage"
+ StringUtils.join(["a", "b", "calcPackage"], null) = "abc"
  StringUtils.join([null, "", "a"], ';')  = ";;a"
  </pre></div>
 <dl>
@@ -6271,8 +6271,8 @@ public static&nbsp;int&nbsp;<a href="../../../../src-html/org/apache/commons/lan
  StringUtils.join(null, *)               = null
  StringUtils.join([], *)                 = ""
  StringUtils.join([null], *)             = ""
- StringUtils.join(["a", "b", "c"], ';')  = "a;b;c"
- StringUtils.join(["a", "b", "c"], null) = "abc"
+ StringUtils.join(["a", "b", "calcPackage"], ';')  = "a;b;calcPackage"
+ StringUtils.join(["a", "b", "calcPackage"], null) = "abc"
  StringUtils.join([null, "", "a"], ';')  = ";;a"
  </pre></div>
 <dl>
@@ -6307,8 +6307,8 @@ public static&nbsp;int&nbsp;<a href="../../../../src-html/org/apache/commons/lan
  StringUtils.join(null, *)               = null
  StringUtils.join([], *)                 = ""
  StringUtils.join([null], *)             = ""
- StringUtils.join(["a", "b", "c"], ';')  = "a;b;c"
- StringUtils.join(["a", "b", "c"], null) = "abc"
+ StringUtils.join(["a", "b", "calcPackage"], ';')  = "a;b;calcPackage"
+ StringUtils.join(["a", "b", "calcPackage"], null) = "abc"
  StringUtils.join([null, "", "a"], ';')  = ";;a"
  </pre></div>
 <dl>
@@ -6346,9 +6346,9 @@ public static&nbsp;int&nbsp;<a href="../../../../src-html/org/apache/commons/lan
  StringUtils.join(null, *)                = null
  StringUtils.join([], *)                  = ""
  StringUtils.join([null], *)              = ""
- StringUtils.join(["a", "b", "c"], "--")  = "a--b--c"
- StringUtils.join(["a", "b", "c"], null)  = "abc"
- StringUtils.join(["a", "b", "c"], "")    = "abc"
+ StringUtils.join(["a", "b", "calcPackage"], "--")  = "a--b--calcPackage"
+ StringUtils.join(["a", "b", "calcPackage"], null)  = "abc"
+ StringUtils.join(["a", "b", "calcPackage"], "")    = "abc"
  StringUtils.join([null, "", "a"], ',')   = ",,a"
  </pre></div>
 <dl>
@@ -6382,12 +6382,12 @@ public static&nbsp;int&nbsp;<a href="../../../../src-html/org/apache/commons/lan
  StringUtils.join(null, *, *, *)                = null
  StringUtils.join([], *, *, *)                  = ""
  StringUtils.join([null], *, *, *)              = ""
- StringUtils.join(["a", "b", "c"], "--", 0, 3)  = "a--b--c"
- StringUtils.join(["a", "b", "c"], "--", 1, 3)  = "b--c"
- StringUtils.join(["a", "b", "c"], "--", 2, 3)  = "c"
- StringUtils.join(["a", "b", "c"], "--", 2, 2)  = ""
- StringUtils.join(["a", "b", "c"], null, 0, 3)  = "abc"
- StringUtils.join(["a", "b", "c"], "", 0, 3)    = "abc"
+ StringUtils.join(["a", "b", "calcPackage"], "--", 0, 3)  = "a--b--calcPackage"
+ StringUtils.join(["a", "b", "calcPackage"], "--", 1, 3)  = "b--calcPackage"
+ StringUtils.join(["a", "b", "calcPackage"], "--", 2, 3)  = "calcPackage"
+ StringUtils.join(["a", "b", "calcPackage"], "--", 2, 2)  = ""
+ StringUtils.join(["a", "b", "calcPackage"], null, 0, 3)  = "abc"
+ StringUtils.join(["a", "b", "calcPackage"], "", 0, 3)    = "abc"
  StringUtils.join([null, "", "a"], ',', 0, 3)   = ",,a"
  </pre></div>
 <dl>
@@ -6502,7 +6502,7 @@ public static&nbsp;&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs
  StringUtils.join(null)            = null
  StringUtils.join([])              = ""
  StringUtils.join([null])          = ""
- StringUtils.join(["a", "b", "c"]) = "abc"
+ StringUtils.join(["a", "b", "calcPackage"]) = "abc"
  StringUtils.join([null, "", "a"]) = "a"
  </pre></div>
 <dl>
@@ -7123,7 +7123,7 @@ public static&nbsp;&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs
  StringUtils.mid("", 0, *)      = ""
  StringUtils.mid("abc", 0, 2)   = "ab"
  StringUtils.mid("abc", 0, 4)   = "abc"
- StringUtils.mid("abc", 2, 4)   = "c"
+ StringUtils.mid("abc", 2, 4)   = "calcPackage"
  StringUtils.mid("abc", 4, 2)   = ""
  StringUtils.mid("abc", -2, 2)  = "ab"
  </pre></div>
@@ -8545,8 +8545,8 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  <pre>
  StringUtils.reverseDelimited(null, *)      = null
  StringUtils.reverseDelimited("", *)        = ""
- StringUtils.reverseDelimited("a.b.c", 'x') = "a.b.c"
- StringUtils.reverseDelimited("a.b.c", ".") = "c.b.a"
+ StringUtils.reverseDelimited("a.b.calcPackage", 'x') = "a.b.calcPackage"
+ StringUtils.reverseDelimited("a.b.calcPackage", ".") = "calcPackage.b.a"
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -8779,10 +8779,10 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  <pre>
  StringUtils.split(null, *)         = null
  StringUtils.split("", *)           = []
- StringUtils.split("a.b.c", '.')    = ["a", "b", "c"]
- StringUtils.split("a..b.c", '.')   = ["a", "b", "c"]
- StringUtils.split("a:b:c", '.')    = ["a:b:c"]
- StringUtils.split("a b c", ' ')    = ["a", "b", "c"]
+ StringUtils.split("a.b.calcPackage", '.')    = ["a", "b", "calcPackage"]
+ StringUtils.split("a..b.calcPackage", '.')   = ["a", "b", "calcPackage"]
+ StringUtils.split("a:b:calcPackage", '.')    = ["a:b:calcPackage"]
+ StringUtils.split("a b calcPackage", ' ')    = ["a", "b", "calcPackage"]
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -9148,16 +9148,16 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  <pre>
  StringUtils.splitPreserveAllTokens(null, *)         = null
  StringUtils.splitPreserveAllTokens("", *)           = []
- StringUtils.splitPreserveAllTokens("a.b.c", '.')    = ["a", "b", "c"]
- StringUtils.splitPreserveAllTokens("a..b.c", '.')   = ["a", "", "b", "c"]
- StringUtils.splitPreserveAllTokens("a:b:c", '.')    = ["a:b:c"]
- StringUtils.splitPreserveAllTokens("a\tb\nc", null) = ["a", "b", "c"]
- StringUtils.splitPreserveAllTokens("a b c", ' ')    = ["a", "b", "c"]
- StringUtils.splitPreserveAllTokens("a b c ", ' ')   = ["a", "b", "c", ""]
- StringUtils.splitPreserveAllTokens("a b c  ", ' ')   = ["a", "b", "c", "", ""]
- StringUtils.splitPreserveAllTokens(" a b c", ' ')   = ["", a", "b", "c"]
- StringUtils.splitPreserveAllTokens("  a b c", ' ')  = ["", "", a", "b", "c"]
- StringUtils.splitPreserveAllTokens(" a b c ", ' ')  = ["", a", "b", "c", ""]
+ StringUtils.splitPreserveAllTokens("a.b.calcPackage", '.')    = ["a", "b", "calcPackage"]
+ StringUtils.splitPreserveAllTokens("a..b.calcPackage", '.')   = ["a", "", "b", "calcPackage"]
+ StringUtils.splitPreserveAllTokens("a:b:calcPackage", '.')    = ["a:b:calcPackage"]
+ StringUtils.splitPreserveAllTokens("a\tb\nc", null) = ["a", "b", "calcPackage"]
+ StringUtils.splitPreserveAllTokens("a b calcPackage", ' ')    = ["a", "b", "calcPackage"]
+ StringUtils.splitPreserveAllTokens("a b calcPackage ", ' ')   = ["a", "b", "calcPackage", ""]
+ StringUtils.splitPreserveAllTokens("a b calcPackage  ", ' ')   = ["a", "b", "calcPackage", "", ""]
+ StringUtils.splitPreserveAllTokens(" a b calcPackage", ' ')   = ["", a", "b", "calcPackage"]
+ StringUtils.splitPreserveAllTokens("  a b calcPackage", ' ')  = ["", "", a", "b", "calcPackage"]
+ StringUtils.splitPreserveAllTokens(" a b calcPackage ", ' ')  = ["", a", "b", "calcPackage", ""]
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -9389,7 +9389,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  StringUtils.strip("  abc")  = "abc"
  StringUtils.strip("abc  ")  = "abc"
  StringUtils.strip(" abc ")  = "abc"
- StringUtils.strip(" ab c ") = "ab c"
+ StringUtils.strip(" ab calcPackage ") = "ab calcPackage"
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -9620,7 +9620,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  StringUtils.stripToEmpty("  abc")  = "abc"
  StringUtils.stripToEmpty("abc  ")  = "abc"
  StringUtils.stripToEmpty(" abc ")  = "abc"
- StringUtils.stripToEmpty(" ab c ") = "ab c"
+ StringUtils.stripToEmpty(" ab calcPackage ") = "ab calcPackage"
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -9653,7 +9653,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  StringUtils.stripToNull("  abc")  = "abc"
  StringUtils.stripToNull("abc  ")  = "abc"
  StringUtils.stripToNull(" abc ")  = "abc"
- StringUtils.stripToNull(" ab c ") = "ab c"
+ StringUtils.stripToNull(" ab calcPackage ") = "ab calcPackage"
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -9686,7 +9686,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  StringUtils.substring(null, *)   = null
  StringUtils.substring("", *)     = ""
  StringUtils.substring("abc", 0)  = "abc"
- StringUtils.substring("abc", 2)  = "c"
+ StringUtils.substring("abc", 2)  = "calcPackage"
  StringUtils.substring("abc", 4)  = ""
  StringUtils.substring("abc", -2) = "bc"
  StringUtils.substring("abc", -4) = "abc"
@@ -9729,7 +9729,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  StringUtils.substring("", * ,  *)    = "";
  StringUtils.substring("abc", 0, 2)   = "ab"
  StringUtils.substring("abc", 2, 0)   = ""
- StringUtils.substring("abc", 2, 4)   = "c"
+ StringUtils.substring("abc", 2, 4)   = "calcPackage"
  StringUtils.substring("abc", 4, 6)   = ""
  StringUtils.substring("abc", 2, 2)   = ""
  StringUtils.substring("abc", -2, -1) = "b"
@@ -9769,7 +9769,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  StringUtils.substringAfter("", *)        = ""
  StringUtils.substringAfter("abc", 'a')   = "bc"
  StringUtils.substringAfter("abcba", 'b') = "cba"
- StringUtils.substringAfter("abc", 'c')   = ""
+ StringUtils.substringAfter("abc", 'calcPackage')   = ""
  StringUtils.substringAfter("abc", 'd')   = ""
  StringUtils.substringAfter(" abc", 32)   = "abc"
  </pre></div>
@@ -9809,7 +9809,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  StringUtils.substringAfter(*, null)      = ""
  StringUtils.substringAfter("abc", "a")   = "bc"
  StringUtils.substringAfter("abcba", "b") = "cba"
- StringUtils.substringAfter("abc", "c")   = ""
+ StringUtils.substringAfter("abc", "calcPackage")   = ""
  StringUtils.substringAfter("abc", "d")   = ""
  StringUtils.substringAfter("abc", "")    = "abc"
  </pre></div>
@@ -9847,7 +9847,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  StringUtils.substringAfterLast("abc", 'a')   = "bc"
  StringUtils.substringAfterLast(" bc", 32)    = "bc"
  StringUtils.substringAfterLast("abcba", 'b') = "a"
- StringUtils.substringAfterLast("abc", 'c')   = ""
+ StringUtils.substringAfterLast("abc", 'calcPackage')   = ""
  StringUtils.substringAfterLast("a", 'a')     = ""
  StringUtils.substringAfterLast("a", 'z')     = ""
  </pre></div>
@@ -9888,7 +9888,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  StringUtils.substringAfterLast(*, null)      = ""
  StringUtils.substringAfterLast("abc", "a")   = "bc"
  StringUtils.substringAfterLast("abcba", "b") = "a"
- StringUtils.substringAfterLast("abc", "c")   = ""
+ StringUtils.substringAfterLast("abc", "calcPackage")   = ""
  StringUtils.substringAfterLast("a", "a")     = ""
  StringUtils.substringAfterLast("a", "z")     = ""
  </pre></div>
@@ -9927,7 +9927,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  StringUtils.substringBefore("", *)        = ""
  StringUtils.substringBefore("abc", 'a')   = ""
  StringUtils.substringBefore("abcba", 'b') = "a"
- StringUtils.substringBefore("abc", 'c')   = "ab"
+ StringUtils.substringBefore("abc", 'calcPackage')   = "ab"
  StringUtils.substringBefore("abc", 'd')   = "abc"
  </pre></div>
 <dl>
@@ -9963,7 +9963,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  StringUtils.substringBefore("", *)        = ""
  StringUtils.substringBefore("abc", "a")   = ""
  StringUtils.substringBefore("abcba", "b") = "a"
- StringUtils.substringBefore("abc", "c")   = "ab"
+ StringUtils.substringBefore("abc", "calcPackage")   = "ab"
  StringUtils.substringBefore("abc", "d")   = "abc"
  StringUtils.substringBefore("abc", "")    = ""
  StringUtils.substringBefore("abc", null)  = "abc"
@@ -10001,7 +10001,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  StringUtils.substringBeforeLast(null, *)      = null
  StringUtils.substringBeforeLast("", *)        = ""
  StringUtils.substringBeforeLast("abcba", "b") = "abc"
- StringUtils.substringBeforeLast("abc", "c")   = "ab"
+ StringUtils.substringBeforeLast("abc", "calcPackage")   = "ab"
  StringUtils.substringBeforeLast("a", "a")     = ""
  StringUtils.substringBeforeLast("a", "z")     = "a"
  StringUtils.substringBeforeLast("a", null)    = "a"
@@ -10109,7 +10109,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  An empty ("") open/close returns <code>null</code> (no match).</p>
 
  <pre>
- StringUtils.substringsBetween("[a][b][c]", "[", "]") = ["a","b","c"]
+ StringUtils.substringsBetween("[a][b][calcPackage]", "[", "]") = ["a","b","calcPackage"]
  StringUtils.substringsBetween(null, *, *)            = null
  StringUtils.substringsBetween(*, null, *)            = null
  StringUtils.substringsBetween(*, *, null)            = null
@@ -10757,9 +10757,9 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  StringUtils.wrapIfMissing("ab", '\'')     = "'ab'"
  StringUtils.wrapIfMissing("\"ab\"", '\"') = "\"ab\""
  StringUtils.wrapIfMissing("/", '/')  = "/"
- StringUtils.wrapIfMissing("a/b/c", '/')  = "/a/b/c/"
- StringUtils.wrapIfMissing("/a/b/c", '/')  = "/a/b/c/"
- StringUtils.wrapIfMissing("a/b/c/", '/')  = "/a/b/c/"
+ StringUtils.wrapIfMissing("a/b/calcPackage", '/')  = "/a/b/calcPackage/"
+ StringUtils.wrapIfMissing("/a/b/calcPackage", '/')  = "/a/b/calcPackage/"
+ StringUtils.wrapIfMissing("a/b/calcPackage/", '/')  = "/a/b/calcPackage/"
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -10796,9 +10796,9 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
  StringUtils.wrapIfMissing("\"abcd\"", "'") = "'\"abcd\"'"
  StringUtils.wrapIfMissing("'abcd'", "\"")  = "\"'abcd'\""
  StringUtils.wrapIfMissing("/", "/")  = "/"
- StringUtils.wrapIfMissing("a/b/c", "/")  = "/a/b/c/"
- StringUtils.wrapIfMissing("/a/b/c", "/")  = "/a/b/c/"
- StringUtils.wrapIfMissing("a/b/c/", "/")  = "/a/b/c/"
+ StringUtils.wrapIfMissing("a/b/calcPackage", "/")  = "/a/b/calcPackage/"
+ StringUtils.wrapIfMissing("/a/b/calcPackage", "/")  = "/a/b/calcPackage/"
+ StringUtils.wrapIfMissing("a/b/calcPackage/", "/")  = "/a/b/calcPackage/"
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

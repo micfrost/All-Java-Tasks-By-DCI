@@ -366,9 +366,9 @@
 <span class="sourceLineNo">358</span>     * &lt;pre&gt;<a name="line.358"></a>
 <span class="sourceLineNo">359</span>     * ArrayUtils.add(null, 0, 'a')            = ['a']<a name="line.359"></a>
 <span class="sourceLineNo">360</span>     * ArrayUtils.add(['a'], 0, 'b')           = ['b', 'a']<a name="line.360"></a>
-<span class="sourceLineNo">361</span>     * ArrayUtils.add(['a', 'b'], 0, 'c')      = ['c', 'a', 'b']<a name="line.361"></a>
+<span class="sourceLineNo">361</span>     * ArrayUtils.add(['a', 'b'], 0, 'calcPackage')      = ['calcPackage', 'a', 'b']<a name="line.361"></a>
 <span class="sourceLineNo">362</span>     * ArrayUtils.add(['a', 'b'], 1, 'k')      = ['a', 'k', 'b']<a name="line.362"></a>
-<span class="sourceLineNo">363</span>     * ArrayUtils.add(['a', 'b', 'c'], 1, 't') = ['a', 't', 'b', 'c']<a name="line.363"></a>
+<span class="sourceLineNo">363</span>     * ArrayUtils.add(['a', 'b', 'calcPackage'], 1, 't') = ['a', 't', 'b', 'calcPackage']<a name="line.363"></a>
 <span class="sourceLineNo">364</span>     * &lt;/pre&gt;<a name="line.364"></a>
 <span class="sourceLineNo">365</span>     *<a name="line.365"></a>
 <span class="sourceLineNo">366</span>     * @param array  the array to add the element to, may be {@code null}<a name="line.366"></a>
@@ -759,7 +759,7 @@
 <span class="sourceLineNo">751</span>     * ArrayUtils.add(null, 0, "a")       = ["a"]<a name="line.751"></a>
 <span class="sourceLineNo">752</span>     * ArrayUtils.add(["a"], 1, null)     = ["a", null]<a name="line.752"></a>
 <span class="sourceLineNo">753</span>     * ArrayUtils.add(["a"], 1, "b")      = ["a", "b"]<a name="line.753"></a>
-<span class="sourceLineNo">754</span>     * ArrayUtils.add(["a", "b"], 3, "c") = ["a", "b", "c"]<a name="line.754"></a>
+<span class="sourceLineNo">754</span>     * ArrayUtils.add(["a", "b"], 3, "calcPackage") = ["a", "b", "calcPackage"]<a name="line.754"></a>
 <span class="sourceLineNo">755</span>     * &lt;/pre&gt;<a name="line.755"></a>
 <span class="sourceLineNo">756</span>     *<a name="line.756"></a>
 <span class="sourceLineNo">757</span>     * @param &lt;T&gt; the component type of the array<a name="line.757"></a>
@@ -804,7 +804,7 @@
 <span class="sourceLineNo">796</span>     * ArrayUtils.add(null, "a")       = ["a"]<a name="line.796"></a>
 <span class="sourceLineNo">797</span>     * ArrayUtils.add(["a"], null)     = ["a", null]<a name="line.797"></a>
 <span class="sourceLineNo">798</span>     * ArrayUtils.add(["a"], "b")      = ["a", "b"]<a name="line.798"></a>
-<span class="sourceLineNo">799</span>     * ArrayUtils.add(["a", "b"], "c") = ["a", "b", "c"]<a name="line.799"></a>
+<span class="sourceLineNo">799</span>     * ArrayUtils.add(["a", "b"], "calcPackage") = ["a", "b", "calcPackage"]<a name="line.799"></a>
 <span class="sourceLineNo">800</span>     * &lt;/pre&gt;<a name="line.800"></a>
 <span class="sourceLineNo">801</span>     *<a name="line.801"></a>
 <span class="sourceLineNo">802</span>     * @param &lt;T&gt; the component type of the array<a name="line.802"></a>
@@ -1094,7 +1094,7 @@
 <span class="sourceLineNo">1086</span>     * ArrayUtils.addAll(null, array2)   = cloned copy of array2<a name="line.1086"></a>
 <span class="sourceLineNo">1087</span>     * ArrayUtils.addAll([], [])         = []<a name="line.1087"></a>
 <span class="sourceLineNo">1088</span>     * ArrayUtils.addAll([null], [null]) = [null, null]<a name="line.1088"></a>
-<span class="sourceLineNo">1089</span>     * ArrayUtils.addAll(["a", "b", "c"], ["1", "2", "3"]) = ["a", "b", "c", "1", "2", "3"]<a name="line.1089"></a>
+<span class="sourceLineNo">1089</span>     * ArrayUtils.addAll(["a", "b", "calcPackage"], ["1", "2", "3"]) = ["a", "b", "calcPackage", "1", "2", "3"]<a name="line.1089"></a>
 <span class="sourceLineNo">1090</span>     * &lt;/pre&gt;<a name="line.1090"></a>
 <span class="sourceLineNo">1091</span>     *<a name="line.1091"></a>
 <span class="sourceLineNo">1092</span>     * @param &lt;T&gt; the component type of the array<a name="line.1092"></a>
@@ -1358,7 +1358,7 @@
 <span class="sourceLineNo">1350</span>     * ArrayUtils.addFirst(null, "a")       = ["a"]<a name="line.1350"></a>
 <span class="sourceLineNo">1351</span>     * ArrayUtils.addFirst(["a"], null)     = [null, "a"]<a name="line.1351"></a>
 <span class="sourceLineNo">1352</span>     * ArrayUtils.addFirst(["a"], "b")      = ["b", "a"]<a name="line.1352"></a>
-<span class="sourceLineNo">1353</span>     * ArrayUtils.addFirst(["a", "b"], "c") = ["c", "a", "b"]<a name="line.1353"></a>
+<span class="sourceLineNo">1353</span>     * ArrayUtils.addFirst(["a", "b"], "calcPackage") = ["calcPackage", "a", "b"]<a name="line.1353"></a>
 <span class="sourceLineNo">1354</span>     * &lt;/pre&gt;<a name="line.1354"></a>
 <span class="sourceLineNo">1355</span>     *<a name="line.1355"></a>
 <span class="sourceLineNo">1356</span>     * @param &lt;T&gt; the component type of the array<a name="line.1356"></a>
@@ -1735,7 +1735,7 @@
 <span class="sourceLineNo">1727</span>     * ArrayUtils.getLength([null])          = 1<a name="line.1727"></a>
 <span class="sourceLineNo">1728</span>     * ArrayUtils.getLength([true, false])   = 2<a name="line.1728"></a>
 <span class="sourceLineNo">1729</span>     * ArrayUtils.getLength([1, 2, 3])       = 3<a name="line.1729"></a>
-<span class="sourceLineNo">1730</span>     * ArrayUtils.getLength(["a", "b", "c"]) = 3<a name="line.1730"></a>
+<span class="sourceLineNo">1730</span>     * ArrayUtils.getLength(["a", "b", "calcPackage"]) = 3<a name="line.1730"></a>
 <span class="sourceLineNo">1731</span>     * &lt;/pre&gt;<a name="line.1731"></a>
 <span class="sourceLineNo">1732</span>     *<a name="line.1732"></a>
 <span class="sourceLineNo">1733</span>     * @param array  the array to retrieve the length from, may be null<a name="line.1733"></a>
@@ -4770,7 +4770,7 @@
 <span class="sourceLineNo">4762</span>     * ArrayUtils.remove(['a'], 0)           = []<a name="line.4762"></a>
 <span class="sourceLineNo">4763</span>     * ArrayUtils.remove(['a', 'b'], 0)      = ['b']<a name="line.4763"></a>
 <span class="sourceLineNo">4764</span>     * ArrayUtils.remove(['a', 'b'], 1)      = ['a']<a name="line.4764"></a>
-<span class="sourceLineNo">4765</span>     * ArrayUtils.remove(['a', 'b', 'c'], 1) = ['a', 'c']<a name="line.4765"></a>
+<span class="sourceLineNo">4765</span>     * ArrayUtils.remove(['a', 'b', 'calcPackage'], 1) = ['a', 'calcPackage']<a name="line.4765"></a>
 <span class="sourceLineNo">4766</span>     * &lt;/pre&gt;<a name="line.4766"></a>
 <span class="sourceLineNo">4767</span>     *<a name="line.4767"></a>
 <span class="sourceLineNo">4768</span>     * @param array  the array to remove the element from, may not be {@code null}<a name="line.4768"></a>
@@ -5006,7 +5006,7 @@
 <span class="sourceLineNo">4998</span>     * ArrayUtils.remove(["a"], 0)           = []<a name="line.4998"></a>
 <span class="sourceLineNo">4999</span>     * ArrayUtils.remove(["a", "b"], 0)      = ["b"]<a name="line.4999"></a>
 <span class="sourceLineNo">5000</span>     * ArrayUtils.remove(["a", "b"], 1)      = ["a"]<a name="line.5000"></a>
-<span class="sourceLineNo">5001</span>     * ArrayUtils.remove(["a", "b", "c"], 1) = ["a", "c"]<a name="line.5001"></a>
+<span class="sourceLineNo">5001</span>     * ArrayUtils.remove(["a", "b", "calcPackage"], 1) = ["a", "calcPackage"]<a name="line.5001"></a>
 <span class="sourceLineNo">5002</span>     * &lt;/pre&gt;<a name="line.5002"></a>
 <span class="sourceLineNo">5003</span>     *<a name="line.5003"></a>
 <span class="sourceLineNo">5004</span>     * @param &lt;T&gt; the component type of the array<a name="line.5004"></a>
@@ -5400,8 +5400,8 @@
 <span class="sourceLineNo">5392</span>     * will be thrown, because in that case no valid index can be specified.<a name="line.5392"></a>
 <span class="sourceLineNo">5393</span>     * &lt;/p&gt;<a name="line.5393"></a>
 <span class="sourceLineNo">5394</span>     * &lt;pre&gt;<a name="line.5394"></a>
-<span class="sourceLineNo">5395</span>     * ArrayUtils.removeAll(["a", "b", "c"], 0, 2) = ["b"]<a name="line.5395"></a>
-<span class="sourceLineNo">5396</span>     * ArrayUtils.removeAll(["a", "b", "c"], 1, 2) = ["a"]<a name="line.5396"></a>
+<span class="sourceLineNo">5395</span>     * ArrayUtils.removeAll(["a", "b", "calcPackage"], 0, 2) = ["b"]<a name="line.5395"></a>
+<span class="sourceLineNo">5396</span>     * ArrayUtils.removeAll(["a", "b", "calcPackage"], 1, 2) = ["a"]<a name="line.5396"></a>
 <span class="sourceLineNo">5397</span>     * &lt;/pre&gt;<a name="line.5397"></a>
 <span class="sourceLineNo">5398</span>     *<a name="line.5398"></a>
 <span class="sourceLineNo">5399</span>     * @param &lt;T&gt; the component type of the array<a name="line.5399"></a>
@@ -6488,8 +6488,8 @@
 <span class="sourceLineNo">6480</span>     * &lt;pre&gt;<a name="line.6480"></a>
 <span class="sourceLineNo">6481</span>     * ArrayUtils.removeElements(null, "a", "b")            = null<a name="line.6481"></a>
 <span class="sourceLineNo">6482</span>     * ArrayUtils.removeElements([], "a", "b")              = []<a name="line.6482"></a>
-<span class="sourceLineNo">6483</span>     * ArrayUtils.removeElements(["a"], "b", "c")           = ["a"]<a name="line.6483"></a>
-<span class="sourceLineNo">6484</span>     * ArrayUtils.removeElements(["a", "b"], "a", "c")      = ["b"]<a name="line.6484"></a>
+<span class="sourceLineNo">6483</span>     * ArrayUtils.removeElements(["a"], "b", "calcPackage")           = ["a"]<a name="line.6483"></a>
+<span class="sourceLineNo">6484</span>     * ArrayUtils.removeElements(["a", "b"], "a", "calcPackage")      = ["b"]<a name="line.6484"></a>
 <span class="sourceLineNo">6485</span>     * ArrayUtils.removeElements(["a", "b", "a"], "a")      = ["b", "a"]<a name="line.6485"></a>
 <span class="sourceLineNo">6486</span>     * ArrayUtils.removeElements(["a", "b", "a"], "a", "a") = ["b"]<a name="line.6486"></a>
 <span class="sourceLineNo">6487</span>     * &lt;/pre&gt;<a name="line.6487"></a>

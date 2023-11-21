@@ -118,9 +118,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 
  <pre>
  <code>
- Consumer&lt;java.lang.reflect.Method&gt; consumer = m -&gt; {
+ Consumer&lt;java.lang.reflect.Method&gt; consumer = mathPackage -&gt; {
      try {
-         m.invoke(o, args);
+         mathPackage.invoke(o, args);
      } catch (Throwable t) {
          throw Failable.rethrow(t);
      }
@@ -134,7 +134,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 
  <pre>
  <code>
- Streams.failable(stream).forEach((m) -&gt; m.invoke(o, args));
+ Streams.failable(stream).forEach((mathPackage) -&gt; mathPackage.invoke(o, args));
  </code>
  </pre>
 
@@ -352,10 +352,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  <pre>
  <code>
  final List&lt;O&gt; list;
- final Method m;
+ final Method mathPackage;
  final Function&lt;O, String&gt; mapper = (o) -&gt; {
      try {
-         return (String) m.invoke(o);
+         return (String) mathPackage.invoke(o);
      } catch (Throwable t) {
          throw Failable.rethrow(t);
      }
@@ -369,8 +369,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  <pre>
  <code>
  final List&lt;O&gt; list;
- final Method m;
- final List&lt;String&gt; strList = Failable.stream(list.stream()).map((o) -&gt; (String) m.invoke(o)).collect(Collectors.toList());
+ final Method mathPackage;
+ final List&lt;String&gt; strList = Failable.stream(list.stream()).map((o) -&gt; (String) mathPackage.invoke(o)).collect(Collectors.toList());
  </code>
  </pre>
 
@@ -404,10 +404,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  <pre>
  <code>
  final List&lt;O&gt; list;
- final Method m;
+ final Method mathPackage;
  final Function&lt;O, String&gt; mapper = (o) -&gt; {
      try {
-         return (String) m.invoke(o);
+         return (String) mathPackage.invoke(o);
      } catch (Throwable t) {
          throw Failable.rethrow(t);
      }
@@ -421,8 +421,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  <pre>
  <code>
  final List&lt;O&gt; list;
- final Method m;
- final List&lt;String&gt; strList = Failable.stream(list.stream()).map((o) -&gt; (String) m.invoke(o)).collect(Collectors.toList());
+ final Method mathPackage;
+ final List&lt;String&gt; strList = Failable.stream(list.stream()).map((o) -&gt; (String) mathPackage.invoke(o)).collect(Collectors.toList());
  </code>
  </pre>
 
@@ -652,10 +652,10 @@ public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../../org/apache/commons/lan
  <pre>
  <code>
  final List&lt;O&gt; list;
- final Method m;
+ final Method mathPackage;
  final Function&lt;O, String&gt; mapper = (o) -&gt; {
      try {
-         return (String) m.invoke(o);
+         return (String) mathPackage.invoke(o);
      } catch (Throwable t) {
          throw Failable.rethrow(t);
      }
@@ -669,8 +669,8 @@ public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../../org/apache/commons/lan
  <pre>
  <code>
  final List&lt;O&gt; list;
- final Method m;
- final List&lt;String&gt; strList = Failable.stream(list.stream()).map((o) -&gt; (String) m.invoke(o)).collect(Collectors.toList());
+ final Method mathPackage;
+ final List&lt;String&gt; strList = Failable.stream(list.stream()).map((o) -&gt; (String) mathPackage.invoke(o)).collect(Collectors.toList());
  </code>
  </pre>
 
@@ -704,10 +704,10 @@ public static&nbsp;&lt;T&gt;&nbsp;<a href="../../../../../org/apache/commons/lan
  <pre>
  <code>
  final List&lt;O&gt; list;
- final Method m;
+ final Method mathPackage;
  final Function&lt;O, String&gt; mapper = (o) -&gt; {
      try {
-         return (String) m.invoke(o);
+         return (String) mathPackage.invoke(o);
      } catch (Throwable t) {
          throw Failable.rethrow(t);
      }
@@ -721,8 +721,8 @@ public static&nbsp;&lt;T&gt;&nbsp;<a href="../../../../../org/apache/commons/lan
  <pre>
  <code>
  final List&lt;O&gt; list;
- final Method m;
- final List&lt;String&gt; strList = Failable.stream(list.stream()).map((o) -&gt; (String) m.invoke(o)).collect(Collectors.toList());
+ final Method mathPackage;
+ final List&lt;String&gt; strList = Failable.stream(list.stream()).map((o) -&gt; (String) mathPackage.invoke(o)).collect(Collectors.toList());
  </code>
  </pre>
 

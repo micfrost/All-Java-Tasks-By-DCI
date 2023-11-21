@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println(" - - - ");
-        System.out.println("Day of the Week Calculator");
+        System.out.println("Day of the Week C1");
         System.out.println("DC_T_1_ReantrantLock_Inside Java program that calculates the day of the week for a given date.");
         System.out.println(" - - - ");
 

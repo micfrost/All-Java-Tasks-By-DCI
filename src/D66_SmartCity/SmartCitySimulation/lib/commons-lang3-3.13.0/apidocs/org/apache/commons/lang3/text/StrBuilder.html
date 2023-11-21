@@ -4265,10 +4265,10 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequ
  b.append("a b ");
  StrTokenizer t = b.asTokenizer();
  String[] tokens1 = t.getTokenArray();  // returns a,b
- b.append("c d ");
- String[] tokens2 = t.getTokenArray();  // returns a,b (c and d ignored)
+ b.append("calcPackage d ");
+ String[] tokens2 = t.getTokenArray();  // returns a,b (calcPackage and d ignored)
  t.reset();              // reset causes builder changes to be picked up
- String[] tokens3 = t.getTokenArray();  // returns a,b,c,d
+ String[] tokens3 = t.getTokenArray();  // returns a,b,calcPackage,d
  </pre>
  <p>
  In addition to simply intermixing appends and tokenization, you can also

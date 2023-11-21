@@ -2,7 +2,7 @@ package D20_Methods.D20_T1_ArithmeticCalculator;
 
 public class ArithmeticCalculator {
     double add(double value1, double value2) {
-        System.out.print("Addition: ");
+        System.out.print("AdditionFromMathsModule: ");
         double result = value1+value2;
         System.out.print(value1 + " + " + value2 + " = ");
         return result;

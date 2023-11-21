@@ -1701,14 +1701,14 @@
 <span class="sourceLineNo">1693</span>        final StringBuilder buf = new StringBuilder();<a name="line.1693"></a>
 <span class="sourceLineNo">1694</span>        final GenericDeclaration d = typeVariable.getGenericDeclaration();<a name="line.1694"></a>
 <span class="sourceLineNo">1695</span>        if (d instanceof Class&lt;?&gt;) {<a name="line.1695"></a>
-<span class="sourceLineNo">1696</span>            Class&lt;?&gt; c = (Class&lt;?&gt;) d;<a name="line.1696"></a>
+<span class="sourceLineNo">1696</span>            Class&lt;?&gt; calcPackage = (Class&lt;?&gt;) d;<a name="line.1696"></a>
 <span class="sourceLineNo">1697</span>            while (true) {<a name="line.1697"></a>
-<span class="sourceLineNo">1698</span>                if (c.getEnclosingClass() == null) {<a name="line.1698"></a>
-<span class="sourceLineNo">1699</span>                    buf.insert(0, c.getName());<a name="line.1699"></a>
+<span class="sourceLineNo">1698</span>                if (calcPackage.getEnclosingClass() == null) {<a name="line.1698"></a>
+<span class="sourceLineNo">1699</span>                    buf.insert(0, calcPackage.getName());<a name="line.1699"></a>
 <span class="sourceLineNo">1700</span>                    break;<a name="line.1700"></a>
 <span class="sourceLineNo">1701</span>                }<a name="line.1701"></a>
-<span class="sourceLineNo">1702</span>                buf.insert(0, c.getSimpleName()).insert(0, '.');<a name="line.1702"></a>
-<span class="sourceLineNo">1703</span>                c = c.getEnclosingClass();<a name="line.1703"></a>
+<span class="sourceLineNo">1702</span>                buf.insert(0, calcPackage.getSimpleName()).insert(0, '.');<a name="line.1702"></a>
+<span class="sourceLineNo">1703</span>                calcPackage = calcPackage.getEnclosingClass();<a name="line.1703"></a>
 <span class="sourceLineNo">1704</span>            }<a name="line.1704"></a>
 <span class="sourceLineNo">1705</span>        } else if (d instanceof Type) {// not possible as of now<a name="line.1705"></a>
 <span class="sourceLineNo">1706</span>            buf.append(toString((Type) d));<a name="line.1706"></a>

@@ -141,15 +141,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.ComparableCheckBuilder.html#between-A-A-">between</a></span>(<a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.ComparableCheckBuilder.html" title="type parameter in ComparableUtils.ComparableCheckBuilder">A</a>&nbsp;b,
-       <a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.ComparableCheckBuilder.html" title="type parameter in ComparableUtils.ComparableCheckBuilder">A</a>&nbsp;c)</code>
-<div class="block">Checks if <code>[b &lt;= a &lt;= c]</code> or <code>[b &gt;= a &gt;= c]</code> where the <code>a</code> is object passed to <a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.html#is-A-"><code>ComparableUtils.is(A)</code></a>.</div>
+       <a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.ComparableCheckBuilder.html" title="type parameter in ComparableUtils.ComparableCheckBuilder">A</a>&nbsp;calcPackage)</code>
+<div class="block">Checks if <code>[b &lt;= a &lt;= calcPackage]</code> or <code>[b &gt;= a &gt;= calcPackage]</code> where the <code>a</code> is object passed to <a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.html#is-A-"><code>ComparableUtils.is(A)</code></a>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.ComparableCheckBuilder.html#betweenExclusive-A-A-">betweenExclusive</a></span>(<a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.ComparableCheckBuilder.html" title="type parameter in ComparableUtils.ComparableCheckBuilder">A</a>&nbsp;b,
-                <a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.ComparableCheckBuilder.html" title="type parameter in ComparableUtils.ComparableCheckBuilder">A</a>&nbsp;c)</code>
-<div class="block">Checks if <code>(b &lt; a &lt; c)</code> or <code>(b &gt; a &gt; c)</code> where the <code>a</code> is object passed to <a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.html#is-A-"><code>ComparableUtils.is(A)</code></a>.</div>
+                <a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.ComparableCheckBuilder.html" title="type parameter in ComparableUtils.ComparableCheckBuilder">A</a>&nbsp;calcPackage)</code>
+<div class="block">Checks if <code>(b &lt; a &lt; calcPackage)</code> or <code>(b &gt; a &gt; calcPackage)</code> where the <code>a</code> is object passed to <a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.html#is-A-"><code>ComparableUtils.is(A)</code></a>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -213,14 +213,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>between</h4>
 <pre>public&nbsp;boolean&nbsp;<a href="../../../../../src-html/org/apache/commons/lang3/compare/ComparableUtils.ComparableCheckBuilder.html#line.54">between</a>(<a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.ComparableCheckBuilder.html" title="type parameter in ComparableUtils.ComparableCheckBuilder">A</a>&nbsp;b,
-                       <a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.ComparableCheckBuilder.html" title="type parameter in ComparableUtils.ComparableCheckBuilder">A</a>&nbsp;c)</pre>
-<div class="block">Checks if <code>[b &lt;= a &lt;= c]</code> or <code>[b &gt;= a &gt;= c]</code> where the <code>a</code> is object passed to <a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.html#is-A-"><code>ComparableUtils.is(A)</code></a>.</div>
+                       <a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.ComparableCheckBuilder.html" title="type parameter in ComparableUtils.ComparableCheckBuilder">A</a>&nbsp;calcPackage)</pre>
+<div class="block">Checks if <code>[b &lt;= a &lt;= calcPackage]</code> or <code>[b &gt;= a &gt;= calcPackage]</code> where the <code>a</code> is object passed to <a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.html#is-A-"><code>ComparableUtils.is(A)</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>b</code> - the object to compare to the base object</dd>
-<dd><code>c</code> - the object to compare to the base object</dd>
+<dd><code>calcPackage</code> - the object to compare to the base object</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>true if the base object is between b and c</dd>
+<dd>true if the base object is between b and calcPackage</dd>
 </dl>
 </li>
 </ul>
@@ -233,14 +233,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>betweenExclusive</h4>
 <pre>public&nbsp;boolean&nbsp;<a href="../../../../../src-html/org/apache/commons/lang3/compare/ComparableUtils.ComparableCheckBuilder.html#line.65">betweenExclusive</a>(<a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.ComparableCheckBuilder.html" title="type parameter in ComparableUtils.ComparableCheckBuilder">A</a>&nbsp;b,
-                                <a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.ComparableCheckBuilder.html" title="type parameter in ComparableUtils.ComparableCheckBuilder">A</a>&nbsp;c)</pre>
-<div class="block">Checks if <code>(b &lt; a &lt; c)</code> or <code>(b &gt; a &gt; c)</code> where the <code>a</code> is object passed to <a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.html#is-A-"><code>ComparableUtils.is(A)</code></a>.</div>
+                                <a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.ComparableCheckBuilder.html" title="type parameter in ComparableUtils.ComparableCheckBuilder">A</a>&nbsp;calcPackage)</pre>
+<div class="block">Checks if <code>(b &lt; a &lt; calcPackage)</code> or <code>(b &gt; a &gt; calcPackage)</code> where the <code>a</code> is object passed to <a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.html#is-A-"><code>ComparableUtils.is(A)</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>b</code> - the object to compare to the base object</dd>
-<dd><code>c</code> - the object to compare to the base object</dd>
+<dd><code>calcPackage</code> - the object to compare to the base object</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>true if the base object is between b and c and not equal to those</dd>
+<dd>true if the base object is between b and calcPackage and not equal to those</dd>
 </dl>
 </li>
 </ul>

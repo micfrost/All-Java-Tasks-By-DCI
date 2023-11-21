@@ -7,7 +7,7 @@ public class Sample1 {
 
     public static void main(String[] args) {
 
-        System.out.println("Welcome to the Simple Calculator!");
+        System.out.println("Welcome to the Simple C1!");
         Scanner scanner = new Scanner(System.in);
 //        secure the input if given non integer input from a user ( try catch InputMismatchException)
 
@@ -18,7 +18,7 @@ public class Sample1 {
         int num2 = scanner.nextInt();
 
         System.out.println("Select an operation:");
-        System.out.println("1. Addition");
+        System.out.println("1. AdditionFromMathsModule");
         System.out.println("2. Subtraction");
         System.out.println("3. Multiplication");
         System.out.println("4. Division");

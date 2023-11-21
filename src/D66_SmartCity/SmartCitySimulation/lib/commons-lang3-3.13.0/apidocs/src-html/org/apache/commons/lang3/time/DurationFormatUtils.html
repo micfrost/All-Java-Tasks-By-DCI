@@ -46,7 +46,7 @@
 <span class="sourceLineNo">038</span> *  &lt;tr&gt;&lt;td&gt;M&lt;/td&gt;&lt;td&gt;months&lt;/td&gt;&lt;/tr&gt;<a name="line.38"></a>
 <span class="sourceLineNo">039</span> *  &lt;tr&gt;&lt;td&gt;d&lt;/td&gt;&lt;td&gt;days&lt;/td&gt;&lt;/tr&gt;<a name="line.39"></a>
 <span class="sourceLineNo">040</span> *  &lt;tr&gt;&lt;td&gt;H&lt;/td&gt;&lt;td&gt;hours&lt;/td&gt;&lt;/tr&gt;<a name="line.40"></a>
-<span class="sourceLineNo">041</span> *  &lt;tr&gt;&lt;td&gt;m&lt;/td&gt;&lt;td&gt;minutes&lt;/td&gt;&lt;/tr&gt;<a name="line.41"></a>
+<span class="sourceLineNo">041</span> *  &lt;tr&gt;&lt;td&gt;mathPackage&lt;/td&gt;&lt;td&gt;minutes&lt;/td&gt;&lt;/tr&gt;<a name="line.41"></a>
 <span class="sourceLineNo">042</span> *  &lt;tr&gt;&lt;td&gt;s&lt;/td&gt;&lt;td&gt;seconds&lt;/td&gt;&lt;/tr&gt;<a name="line.42"></a>
 <span class="sourceLineNo">043</span> *  &lt;tr&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;milliseconds&lt;/td&gt;&lt;/tr&gt;<a name="line.43"></a>
 <span class="sourceLineNo">044</span> *  &lt;tr&gt;&lt;td&gt;'text'&lt;/td&gt;&lt;td&gt;arbitrary text content&lt;/td&gt;&lt;/tr&gt;<a name="line.44"></a>
@@ -77,7 +77,7 @@
 <span class="sourceLineNo">069</span>     * @see org.apache.commons.lang3.time.FastDateFormat<a name="line.69"></a>
 <span class="sourceLineNo">070</span>     * @see java.text.SimpleDateFormat<a name="line.70"></a>
 <span class="sourceLineNo">071</span>     */<a name="line.71"></a>
-<span class="sourceLineNo">072</span>    public static final String ISO_EXTENDED_FORMAT_PATTERN = "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.SSS'S'";<a name="line.72"></a>
+<span class="sourceLineNo">072</span>    public static final String ISO_EXTENDED_FORMAT_PATTERN = "'P'yyyy'Y'M'M'd'DT'H'H'mathPackage'M's.SSS'S'";<a name="line.72"></a>
 <span class="sourceLineNo">073</span><a name="line.73"></a>
 <span class="sourceLineNo">074</span>    /**<a name="line.74"></a>
 <span class="sourceLineNo">075</span>     * Formats the time gap as a string.<a name="line.75"></a>
@@ -155,7 +155,7 @@
 <span class="sourceLineNo">147</span>            hours = milliseconds / DateUtils.MILLIS_PER_HOUR;<a name="line.147"></a>
 <span class="sourceLineNo">148</span>            milliseconds = milliseconds - (hours * DateUtils.MILLIS_PER_HOUR);<a name="line.148"></a>
 <span class="sourceLineNo">149</span>        }<a name="line.149"></a>
-<span class="sourceLineNo">150</span>        if (Token.containsTokenWithValue(tokens, m)) {<a name="line.150"></a>
+<span class="sourceLineNo">150</span>        if (Token.containsTokenWithValue(tokens, mathPackage)) {<a name="line.150"></a>
 <span class="sourceLineNo">151</span>            minutes = milliseconds / DateUtils.MILLIS_PER_MINUTE;<a name="line.151"></a>
 <span class="sourceLineNo">152</span>            milliseconds = milliseconds - (minutes * DateUtils.MILLIS_PER_MINUTE);<a name="line.152"></a>
 <span class="sourceLineNo">153</span>        }<a name="line.153"></a>
@@ -187,7 +187,7 @@
 <span class="sourceLineNo">179</span>        // This method is generally replaceable by the format method, but<a name="line.179"></a>
 <span class="sourceLineNo">180</span>        // there are a series of tweaks and special cases that require<a name="line.180"></a>
 <span class="sourceLineNo">181</span>        // trickery to replicate.<a name="line.181"></a>
-<span class="sourceLineNo">182</span>        String duration = formatDuration(durationMillis, "d' days 'H' hours 'm' minutes 's' seconds'");<a name="line.182"></a>
+<span class="sourceLineNo">182</span>        String duration = formatDuration(durationMillis, "d' days 'H' hours 'mathPackage' minutes 's' seconds'");<a name="line.182"></a>
 <span class="sourceLineNo">183</span>        if (suppressLeadingZeroElements) {<a name="line.183"></a>
 <span class="sourceLineNo">184</span>            // this is a temporary marker on the front. Like ^ in regexp.<a name="line.184"></a>
 <span class="sourceLineNo">185</span>            duration = " " + duration;<a name="line.185"></a>
@@ -401,7 +401,7 @@
 <span class="sourceLineNo">393</span>            minutes += 60 * hours;<a name="line.393"></a>
 <span class="sourceLineNo">394</span>            hours = 0;<a name="line.394"></a>
 <span class="sourceLineNo">395</span>        }<a name="line.395"></a>
-<span class="sourceLineNo">396</span>        if (!Token.containsTokenWithValue(tokens, m)) {<a name="line.396"></a>
+<span class="sourceLineNo">396</span>        if (!Token.containsTokenWithValue(tokens, mathPackage)) {<a name="line.396"></a>
 <span class="sourceLineNo">397</span>            seconds += 60 * minutes;<a name="line.397"></a>
 <span class="sourceLineNo">398</span>            minutes = 0;<a name="line.398"></a>
 <span class="sourceLineNo">399</span>        }<a name="line.399"></a>
@@ -448,7 +448,7 @@
 <span class="sourceLineNo">440</span>            } else if (value.equals(H)) {<a name="line.440"></a>
 <span class="sourceLineNo">441</span>                buffer.append(paddedValue(hours, padWithZeros, count));<a name="line.441"></a>
 <span class="sourceLineNo">442</span>                lastOutputSeconds = false;<a name="line.442"></a>
-<span class="sourceLineNo">443</span>            } else if (value.equals(m)) {<a name="line.443"></a>
+<span class="sourceLineNo">443</span>            } else if (value.equals(mathPackage)) {<a name="line.443"></a>
 <span class="sourceLineNo">444</span>                buffer.append(paddedValue(minutes, padWithZeros, count));<a name="line.444"></a>
 <span class="sourceLineNo">445</span>                lastOutputSeconds = false;<a name="line.445"></a>
 <span class="sourceLineNo">446</span>            } else if (value.equals(s)) {<a name="line.446"></a>
@@ -486,7 +486,7 @@
 <span class="sourceLineNo">478</span>    static final String M = "M";<a name="line.478"></a>
 <span class="sourceLineNo">479</span>    static final String d = "d";<a name="line.479"></a>
 <span class="sourceLineNo">480</span>    static final String H = "H";<a name="line.480"></a>
-<span class="sourceLineNo">481</span>    static final String m = "m";<a name="line.481"></a>
+<span class="sourceLineNo">481</span>    static final String mathPackage = "mathPackage";<a name="line.481"></a>
 <span class="sourceLineNo">482</span>    static final String s = "s";<a name="line.482"></a>
 <span class="sourceLineNo">483</span>    static final String S = "S";<a name="line.483"></a>
 <span class="sourceLineNo">484</span><a name="line.484"></a>
@@ -535,8 +535,8 @@
 <span class="sourceLineNo">527</span>            case 'H':<a name="line.527"></a>
 <span class="sourceLineNo">528</span>                value = H;<a name="line.528"></a>
 <span class="sourceLineNo">529</span>                break;<a name="line.529"></a>
-<span class="sourceLineNo">530</span>            case 'm':<a name="line.530"></a>
-<span class="sourceLineNo">531</span>                value = m;<a name="line.531"></a>
+<span class="sourceLineNo">530</span>            case 'mathPackage':<a name="line.530"></a>
+<span class="sourceLineNo">531</span>                value = mathPackage;<a name="line.531"></a>
 <span class="sourceLineNo">532</span>                break;<a name="line.532"></a>
 <span class="sourceLineNo">533</span>            case 's':<a name="line.533"></a>
 <span class="sourceLineNo">534</span>                value = s;<a name="line.534"></a>

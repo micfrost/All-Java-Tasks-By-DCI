@@ -50,9 +50,9 @@
 <span class="sourceLineNo">042</span> * not to throw Exceptions, at least not checked Exceptions, AKA instances<a name="line.42"></a>
 <span class="sourceLineNo">043</span> * of {@link Exception}. This enforces the use of constructs like<a name="line.43"></a>
 <span class="sourceLineNo">044</span> * &lt;pre&gt;<a name="line.44"></a>
-<span class="sourceLineNo">045</span> *     Consumer&amp;lt;java.lang.reflect.Method&amp;gt; consumer = m -&amp;gt; {<a name="line.45"></a>
+<span class="sourceLineNo">045</span> *     Consumer&amp;lt;java.lang.reflect.Method&amp;gt; consumer = mathPackage -&amp;gt; {<a name="line.45"></a>
 <span class="sourceLineNo">046</span> *         try {<a name="line.46"></a>
-<span class="sourceLineNo">047</span> *             m.invoke(o, args);<a name="line.47"></a>
+<span class="sourceLineNo">047</span> *             mathPackage.invoke(o, args);<a name="line.47"></a>
 <span class="sourceLineNo">048</span> *         } catch (Throwable t) {<a name="line.48"></a>
 <span class="sourceLineNo">049</span> *             throw Functions.rethrow(t);<a name="line.49"></a>
 <span class="sourceLineNo">050</span> *         }<a name="line.50"></a>
@@ -61,7 +61,7 @@
 <span class="sourceLineNo">053</span> * &lt;/pre&gt;<a name="line.53"></a>
 <span class="sourceLineNo">054</span> * Using a {@link FailableStream}, this can be rewritten as follows:<a name="line.54"></a>
 <span class="sourceLineNo">055</span> * &lt;pre&gt;<a name="line.55"></a>
-<span class="sourceLineNo">056</span> *     Streams.failable(stream).forEach((m) -&amp;gt; m.invoke(o, args));<a name="line.56"></a>
+<span class="sourceLineNo">056</span> *     Streams.failable(stream).forEach((mathPackage) -&amp;gt; mathPackage.invoke(o, args));<a name="line.56"></a>
 <span class="sourceLineNo">057</span> * &lt;/pre&gt;<a name="line.57"></a>
 <span class="sourceLineNo">058</span> * Obviously, the second version is much more concise and the spirit of<a name="line.58"></a>
 <span class="sourceLineNo">059</span> * Lambda expressions is met better than in the first version.<a name="line.59"></a>
@@ -421,10 +421,10 @@
 <span class="sourceLineNo">413</span>     * to rewrite a code snippet like this:<a name="line.413"></a>
 <span class="sourceLineNo">414</span>     * &lt;pre&gt;<a name="line.414"></a>
 <span class="sourceLineNo">415</span>     *     final List&amp;lt;O&amp;gt; list;<a name="line.415"></a>
-<span class="sourceLineNo">416</span>     *     final Method m;<a name="line.416"></a>
+<span class="sourceLineNo">416</span>     *     final Method mathPackage;<a name="line.416"></a>
 <span class="sourceLineNo">417</span>     *     final Function&amp;lt;O,String&amp;gt; mapper = (o) -&amp;gt; {<a name="line.417"></a>
 <span class="sourceLineNo">418</span>     *         try {<a name="line.418"></a>
-<span class="sourceLineNo">419</span>     *             return (String) m.invoke(o);<a name="line.419"></a>
+<span class="sourceLineNo">419</span>     *             return (String) mathPackage.invoke(o);<a name="line.419"></a>
 <span class="sourceLineNo">420</span>     *         } catch (Throwable t) {<a name="line.420"></a>
 <span class="sourceLineNo">421</span>     *             throw Functions.rethrow(t);<a name="line.421"></a>
 <span class="sourceLineNo">422</span>     *         }<a name="line.422"></a>
@@ -435,9 +435,9 @@
 <span class="sourceLineNo">427</span>     *  as follows:<a name="line.427"></a>
 <span class="sourceLineNo">428</span>     *  &lt;pre&gt;<a name="line.428"></a>
 <span class="sourceLineNo">429</span>     *     final List&amp;lt;O&amp;gt; list;<a name="line.429"></a>
-<span class="sourceLineNo">430</span>     *     final Method m;<a name="line.430"></a>
+<span class="sourceLineNo">430</span>     *     final Method mathPackage;<a name="line.430"></a>
 <span class="sourceLineNo">431</span>     *     final List&amp;lt;String&amp;gt; strList = Functions.stream(list.stream())<a name="line.431"></a>
-<span class="sourceLineNo">432</span>     *         .map((o) -&amp;gt; (String) m.invoke(o)).collect(Collectors.toList());<a name="line.432"></a>
+<span class="sourceLineNo">432</span>     *         .map((o) -&amp;gt; (String) mathPackage.invoke(o)).collect(Collectors.toList());<a name="line.432"></a>
 <span class="sourceLineNo">433</span>     *  &lt;/pre&gt;<a name="line.433"></a>
 <span class="sourceLineNo">434</span>     *  While the second version may not be &lt;em&gt;quite&lt;/em&gt; as<a name="line.434"></a>
 <span class="sourceLineNo">435</span>     *  efficient (because it depends on the creation of additional,<a name="line.435"></a>
@@ -463,10 +463,10 @@
 <span class="sourceLineNo">455</span>     * to rewrite a code snippet like this:<a name="line.455"></a>
 <span class="sourceLineNo">456</span>     * &lt;pre&gt;<a name="line.456"></a>
 <span class="sourceLineNo">457</span>     *     final List&amp;lt;O&amp;gt; list;<a name="line.457"></a>
-<span class="sourceLineNo">458</span>     *     final Method m;<a name="line.458"></a>
+<span class="sourceLineNo">458</span>     *     final Method mathPackage;<a name="line.458"></a>
 <span class="sourceLineNo">459</span>     *     final Function&amp;lt;O,String&amp;gt; mapper = (o) -&amp;gt; {<a name="line.459"></a>
 <span class="sourceLineNo">460</span>     *         try {<a name="line.460"></a>
-<span class="sourceLineNo">461</span>     *             return (String) m.invoke(o);<a name="line.461"></a>
+<span class="sourceLineNo">461</span>     *             return (String) mathPackage.invoke(o);<a name="line.461"></a>
 <span class="sourceLineNo">462</span>     *         } catch (Throwable t) {<a name="line.462"></a>
 <span class="sourceLineNo">463</span>     *             throw Functions.rethrow(t);<a name="line.463"></a>
 <span class="sourceLineNo">464</span>     *         }<a name="line.464"></a>
@@ -477,9 +477,9 @@
 <span class="sourceLineNo">469</span>     *  as follows:<a name="line.469"></a>
 <span class="sourceLineNo">470</span>     *  &lt;pre&gt;<a name="line.470"></a>
 <span class="sourceLineNo">471</span>     *     final List&amp;lt;O&amp;gt; list;<a name="line.471"></a>
-<span class="sourceLineNo">472</span>     *     final Method m;<a name="line.472"></a>
+<span class="sourceLineNo">472</span>     *     final Method mathPackage;<a name="line.472"></a>
 <span class="sourceLineNo">473</span>     *     final List&amp;lt;String&amp;gt; strList = Functions.stream(list.stream())<a name="line.473"></a>
-<span class="sourceLineNo">474</span>     *         .map((o) -&amp;gt; (String) m.invoke(o)).collect(Collectors.toList());<a name="line.474"></a>
+<span class="sourceLineNo">474</span>     *         .map((o) -&amp;gt; (String) mathPackage.invoke(o)).collect(Collectors.toList());<a name="line.474"></a>
 <span class="sourceLineNo">475</span>     *  &lt;/pre&gt;<a name="line.475"></a>
 <span class="sourceLineNo">476</span>     *  While the second version may not be &lt;em&gt;quite&lt;/em&gt; as<a name="line.476"></a>
 <span class="sourceLineNo">477</span>     *  efficient (because it depends on the creation of additional,<a name="line.477"></a>

@@ -170,10 +170,10 @@
 <span class="sourceLineNo">162</span>        final StringBuilder stripCustom = new StringBuilder(pattern.length());<a name="line.162"></a>
 <span class="sourceLineNo">163</span><a name="line.163"></a>
 <span class="sourceLineNo">164</span>        final ParsePosition pos = new ParsePosition(0);<a name="line.164"></a>
-<span class="sourceLineNo">165</span>        final char[] c = pattern.toCharArray();<a name="line.165"></a>
+<span class="sourceLineNo">165</span>        final char[] calcPackage = pattern.toCharArray();<a name="line.165"></a>
 <span class="sourceLineNo">166</span>        int fmtCount = 0;<a name="line.166"></a>
 <span class="sourceLineNo">167</span>        while (pos.getIndex() &lt; pattern.length()) {<a name="line.167"></a>
-<span class="sourceLineNo">168</span>            switch (c[pos.getIndex()]) {<a name="line.168"></a>
+<span class="sourceLineNo">168</span>            switch (calcPackage[pos.getIndex()]) {<a name="line.168"></a>
 <span class="sourceLineNo">169</span>            case QUOTE:<a name="line.169"></a>
 <span class="sourceLineNo">170</span>                appendQuotedString(pattern, pos, stripCustom);<a name="line.170"></a>
 <span class="sourceLineNo">171</span>                break;<a name="line.171"></a>
@@ -186,7 +186,7 @@
 <span class="sourceLineNo">178</span>                seekNonWs(pattern, pos);<a name="line.178"></a>
 <span class="sourceLineNo">179</span>                Format format = null;<a name="line.179"></a>
 <span class="sourceLineNo">180</span>                String formatDescription = null;<a name="line.180"></a>
-<span class="sourceLineNo">181</span>                if (c[pos.getIndex()] == START_FMT) {<a name="line.181"></a>
+<span class="sourceLineNo">181</span>                if (calcPackage[pos.getIndex()] == START_FMT) {<a name="line.181"></a>
 <span class="sourceLineNo">182</span>                    formatDescription = parseFormatDescription(pattern,<a name="line.182"></a>
 <span class="sourceLineNo">183</span>                            next(pos));<a name="line.183"></a>
 <span class="sourceLineNo">184</span>                    format = getFormat(formatDescription);<a name="line.184"></a>
@@ -198,13 +198,13 @@
 <span class="sourceLineNo">190</span>                foundDescriptions.add(format == null ? null : formatDescription);<a name="line.190"></a>
 <span class="sourceLineNo">191</span>                Validate.isTrue(foundFormats.size() == fmtCount);<a name="line.191"></a>
 <span class="sourceLineNo">192</span>                Validate.isTrue(foundDescriptions.size() == fmtCount);<a name="line.192"></a>
-<span class="sourceLineNo">193</span>                if (c[pos.getIndex()] != END_FE) {<a name="line.193"></a>
+<span class="sourceLineNo">193</span>                if (calcPackage[pos.getIndex()] != END_FE) {<a name="line.193"></a>
 <span class="sourceLineNo">194</span>                    throw new IllegalArgumentException(<a name="line.194"></a>
 <span class="sourceLineNo">195</span>                            "Unreadable format element at position " + start);<a name="line.195"></a>
 <span class="sourceLineNo">196</span>                }<a name="line.196"></a>
 <span class="sourceLineNo">197</span>                //$FALL-THROUGH$<a name="line.197"></a>
 <span class="sourceLineNo">198</span>            default:<a name="line.198"></a>
-<span class="sourceLineNo">199</span>                stripCustom.append(c[pos.getIndex()]);<a name="line.199"></a>
+<span class="sourceLineNo">199</span>                stripCustom.append(calcPackage[pos.getIndex()]);<a name="line.199"></a>
 <span class="sourceLineNo">200</span>                next(pos);<a name="line.200"></a>
 <span class="sourceLineNo">201</span>            }<a name="line.201"></a>
 <span class="sourceLineNo">202</span>        }<a name="line.202"></a>
@@ -345,16 +345,16 @@
 <span class="sourceLineNo">337</span>        final StringBuilder result = new StringBuilder();<a name="line.337"></a>
 <span class="sourceLineNo">338</span>        boolean error = false;<a name="line.338"></a>
 <span class="sourceLineNo">339</span>        for (; !error &amp;&amp; pos.getIndex() &lt; pattern.length(); next(pos)) {<a name="line.339"></a>
-<span class="sourceLineNo">340</span>            char c = pattern.charAt(pos.getIndex());<a name="line.340"></a>
-<span class="sourceLineNo">341</span>            if (Character.isWhitespace(c)) {<a name="line.341"></a>
+<span class="sourceLineNo">340</span>            char calcPackage = pattern.charAt(pos.getIndex());<a name="line.340"></a>
+<span class="sourceLineNo">341</span>            if (Character.isWhitespace(calcPackage)) {<a name="line.341"></a>
 <span class="sourceLineNo">342</span>                seekNonWs(pattern, pos);<a name="line.342"></a>
-<span class="sourceLineNo">343</span>                c = pattern.charAt(pos.getIndex());<a name="line.343"></a>
-<span class="sourceLineNo">344</span>                if (c != START_FMT &amp;&amp; c != END_FE) {<a name="line.344"></a>
+<span class="sourceLineNo">343</span>                calcPackage = pattern.charAt(pos.getIndex());<a name="line.343"></a>
+<span class="sourceLineNo">344</span>                if (calcPackage != START_FMT &amp;&amp; calcPackage != END_FE) {<a name="line.344"></a>
 <span class="sourceLineNo">345</span>                    error = true;<a name="line.345"></a>
 <span class="sourceLineNo">346</span>                    continue;<a name="line.346"></a>
 <span class="sourceLineNo">347</span>                }<a name="line.347"></a>
 <span class="sourceLineNo">348</span>            }<a name="line.348"></a>
-<span class="sourceLineNo">349</span>            if ((c == START_FMT || c == END_FE) &amp;&amp; result.length() &gt; 0) {<a name="line.349"></a>
+<span class="sourceLineNo">349</span>            if ((calcPackage == START_FMT || calcPackage == END_FE) &amp;&amp; result.length() &gt; 0) {<a name="line.349"></a>
 <span class="sourceLineNo">350</span>                try {<a name="line.350"></a>
 <span class="sourceLineNo">351</span>                    return Integer.parseInt(result.toString());<a name="line.351"></a>
 <span class="sourceLineNo">352</span>                } catch (final NumberFormatException ignored) {<a name="line.352"></a>
@@ -362,8 +362,8 @@
 <span class="sourceLineNo">354</span>                    // outlandishly large was specified we should be okay.<a name="line.354"></a>
 <span class="sourceLineNo">355</span>                }<a name="line.355"></a>
 <span class="sourceLineNo">356</span>            }<a name="line.356"></a>
-<span class="sourceLineNo">357</span>            error = !Character.isDigit(c);<a name="line.357"></a>
-<span class="sourceLineNo">358</span>            result.append(c);<a name="line.358"></a>
+<span class="sourceLineNo">357</span>            error = !Character.isDigit(calcPackage);<a name="line.357"></a>
+<span class="sourceLineNo">358</span>            result.append(calcPackage);<a name="line.358"></a>
 <span class="sourceLineNo">359</span>        }<a name="line.359"></a>
 <span class="sourceLineNo">360</span>        if (error) {<a name="line.360"></a>
 <span class="sourceLineNo">361</span>            throw new IllegalArgumentException(<a name="line.361"></a>
@@ -424,8 +424,8 @@
 <span class="sourceLineNo">416</span>        int fe = -1;<a name="line.416"></a>
 <span class="sourceLineNo">417</span>        int depth = 0;<a name="line.417"></a>
 <span class="sourceLineNo">418</span>        while (pos.getIndex() &lt; pattern.length()) {<a name="line.418"></a>
-<span class="sourceLineNo">419</span>            final char c = pattern.charAt(pos.getIndex());<a name="line.419"></a>
-<span class="sourceLineNo">420</span>            switch (c) {<a name="line.420"></a>
+<span class="sourceLineNo">419</span>            final char calcPackage = pattern.charAt(pos.getIndex());<a name="line.419"></a>
+<span class="sourceLineNo">420</span>            switch (calcPackage) {<a name="line.420"></a>
 <span class="sourceLineNo">421</span>            case QUOTE:<a name="line.421"></a>
 <span class="sourceLineNo">422</span>                appendQuotedString(pattern, pos, sb);<a name="line.422"></a>
 <span class="sourceLineNo">423</span>                break;<a name="line.423"></a>
@@ -445,7 +445,7 @@
 <span class="sourceLineNo">437</span>                depth--;<a name="line.437"></a>
 <span class="sourceLineNo">438</span>                //$FALL-THROUGH$<a name="line.438"></a>
 <span class="sourceLineNo">439</span>            default:<a name="line.439"></a>
-<span class="sourceLineNo">440</span>                sb.append(c);<a name="line.440"></a>
+<span class="sourceLineNo">440</span>                sb.append(calcPackage);<a name="line.440"></a>
 <span class="sourceLineNo">441</span>                next(pos);<a name="line.441"></a>
 <span class="sourceLineNo">442</span>            }<a name="line.442"></a>
 <span class="sourceLineNo">443</span>        }<a name="line.443"></a>
@@ -499,11 +499,11 @@
 <span class="sourceLineNo">491</span>        next(pos);<a name="line.491"></a>
 <span class="sourceLineNo">492</span><a name="line.492"></a>
 <span class="sourceLineNo">493</span>        final int start = pos.getIndex();<a name="line.493"></a>
-<span class="sourceLineNo">494</span>        final char[] c = pattern.toCharArray();<a name="line.494"></a>
+<span class="sourceLineNo">494</span>        final char[] calcPackage = pattern.toCharArray();<a name="line.494"></a>
 <span class="sourceLineNo">495</span>        for (int i = pos.getIndex(); i &lt; pattern.length(); i++) {<a name="line.495"></a>
-<span class="sourceLineNo">496</span>            if (c[pos.getIndex()] == QUOTE) {<a name="line.496"></a>
+<span class="sourceLineNo">496</span>            if (calcPackage[pos.getIndex()] == QUOTE) {<a name="line.496"></a>
 <span class="sourceLineNo">497</span>                next(pos);<a name="line.497"></a>
-<span class="sourceLineNo">498</span>                return appendTo == null ? null : appendTo.append(c, start,<a name="line.498"></a>
+<span class="sourceLineNo">498</span>                return appendTo == null ? null : appendTo.append(calcPackage, start,<a name="line.498"></a>
 <span class="sourceLineNo">499</span>                        pos.getIndex() - start);<a name="line.499"></a>
 <span class="sourceLineNo">500</span>            }<a name="line.500"></a>
 <span class="sourceLineNo">501</span>            next(pos);<a name="line.501"></a>

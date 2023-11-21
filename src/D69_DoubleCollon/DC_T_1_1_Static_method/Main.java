@@ -40,7 +40,7 @@ public class Main {
         int resultSubtract = performOperation(4, 5, operationSub);
         int resultMultiply = performOperation(4, 5, Main::multiplyNumbers);
 
-        System.out.println("Addition 4+5: " + resultAdd);
+        System.out.println("AdditionFromMathsModule 4+5: " + resultAdd);
         System.out.println("Subtraction 4-5: " + resultSubtract);
         System.out.println("Multiplication 4*5: " + resultMultiply);
     }

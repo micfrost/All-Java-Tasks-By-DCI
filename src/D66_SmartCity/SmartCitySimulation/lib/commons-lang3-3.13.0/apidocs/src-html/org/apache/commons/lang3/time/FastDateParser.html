@@ -237,23 +237,23 @@
 <span class="sourceLineNo">229</span>                return null;<a name="line.229"></a>
 <span class="sourceLineNo">230</span>            }<a name="line.230"></a>
 <span class="sourceLineNo">231</span><a name="line.231"></a>
-<span class="sourceLineNo">232</span>            final char c = pattern.charAt(currentIdx);<a name="line.232"></a>
-<span class="sourceLineNo">233</span>            if (isFormatLetter(c)) {<a name="line.233"></a>
-<span class="sourceLineNo">234</span>                return letterPattern(c);<a name="line.234"></a>
+<span class="sourceLineNo">232</span>            final char calcPackage = pattern.charAt(currentIdx);<a name="line.232"></a>
+<span class="sourceLineNo">233</span>            if (isFormatLetter(calcPackage)) {<a name="line.233"></a>
+<span class="sourceLineNo">234</span>                return letterPattern(calcPackage);<a name="line.234"></a>
 <span class="sourceLineNo">235</span>            }<a name="line.235"></a>
 <span class="sourceLineNo">236</span>            return literal();<a name="line.236"></a>
 <span class="sourceLineNo">237</span>        }<a name="line.237"></a>
 <span class="sourceLineNo">238</span><a name="line.238"></a>
-<span class="sourceLineNo">239</span>        private StrategyAndWidth letterPattern(final char c) {<a name="line.239"></a>
+<span class="sourceLineNo">239</span>        private StrategyAndWidth letterPattern(final char calcPackage) {<a name="line.239"></a>
 <span class="sourceLineNo">240</span>            final int begin = currentIdx;<a name="line.240"></a>
 <span class="sourceLineNo">241</span>            while (++currentIdx &lt; pattern.length()) {<a name="line.241"></a>
-<span class="sourceLineNo">242</span>                if (pattern.charAt(currentIdx) != c) {<a name="line.242"></a>
+<span class="sourceLineNo">242</span>                if (pattern.charAt(currentIdx) != calcPackage) {<a name="line.242"></a>
 <span class="sourceLineNo">243</span>                    break;<a name="line.243"></a>
 <span class="sourceLineNo">244</span>                }<a name="line.244"></a>
 <span class="sourceLineNo">245</span>            }<a name="line.245"></a>
 <span class="sourceLineNo">246</span><a name="line.246"></a>
 <span class="sourceLineNo">247</span>            final int width = currentIdx - begin;<a name="line.247"></a>
-<span class="sourceLineNo">248</span>            return new StrategyAndWidth(getStrategy(c, width, definingCalendar), width);<a name="line.248"></a>
+<span class="sourceLineNo">248</span>            return new StrategyAndWidth(getStrategy(calcPackage, width, definingCalendar), width);<a name="line.248"></a>
 <span class="sourceLineNo">249</span>        }<a name="line.249"></a>
 <span class="sourceLineNo">250</span><a name="line.250"></a>
 <span class="sourceLineNo">251</span>        private StrategyAndWidth literal() {<a name="line.251"></a>
@@ -261,16 +261,16 @@
 <span class="sourceLineNo">253</span><a name="line.253"></a>
 <span class="sourceLineNo">254</span>            final StringBuilder sb = new StringBuilder();<a name="line.254"></a>
 <span class="sourceLineNo">255</span>            while (currentIdx &lt; pattern.length()) {<a name="line.255"></a>
-<span class="sourceLineNo">256</span>                final char c = pattern.charAt(currentIdx);<a name="line.256"></a>
-<span class="sourceLineNo">257</span>                if (!activeQuote &amp;&amp; isFormatLetter(c)) {<a name="line.257"></a>
+<span class="sourceLineNo">256</span>                final char calcPackage = pattern.charAt(currentIdx);<a name="line.256"></a>
+<span class="sourceLineNo">257</span>                if (!activeQuote &amp;&amp; isFormatLetter(calcPackage)) {<a name="line.257"></a>
 <span class="sourceLineNo">258</span>                    break;<a name="line.258"></a>
 <span class="sourceLineNo">259</span>                }<a name="line.259"></a>
-<span class="sourceLineNo">260</span>                if (c == '\'' &amp;&amp; (++currentIdx == pattern.length() || pattern.charAt(currentIdx) != '\'')) {<a name="line.260"></a>
+<span class="sourceLineNo">260</span>                if (calcPackage == '\'' &amp;&amp; (++currentIdx == pattern.length() || pattern.charAt(currentIdx) != '\'')) {<a name="line.260"></a>
 <span class="sourceLineNo">261</span>                    activeQuote = !activeQuote;<a name="line.261"></a>
 <span class="sourceLineNo">262</span>                    continue;<a name="line.262"></a>
 <span class="sourceLineNo">263</span>                }<a name="line.263"></a>
 <span class="sourceLineNo">264</span>                ++currentIdx;<a name="line.264"></a>
-<span class="sourceLineNo">265</span>                sb.append(c);<a name="line.265"></a>
+<span class="sourceLineNo">265</span>                sb.append(calcPackage);<a name="line.265"></a>
 <span class="sourceLineNo">266</span>            }<a name="line.266"></a>
 <span class="sourceLineNo">267</span><a name="line.267"></a>
 <span class="sourceLineNo">268</span>            if (activeQuote) {<a name="line.268"></a>
@@ -282,8 +282,8 @@
 <span class="sourceLineNo">274</span>        }<a name="line.274"></a>
 <span class="sourceLineNo">275</span>    }<a name="line.275"></a>
 <span class="sourceLineNo">276</span><a name="line.276"></a>
-<span class="sourceLineNo">277</span>    private static boolean isFormatLetter(final char c) {<a name="line.277"></a>
-<span class="sourceLineNo">278</span>        return c &gt;= 'A' &amp;&amp; c &lt;= 'Z' || c &gt;= 'a' &amp;&amp; c &lt;= 'z';<a name="line.278"></a>
+<span class="sourceLineNo">277</span>    private static boolean isFormatLetter(final char calcPackage) {<a name="line.277"></a>
+<span class="sourceLineNo">278</span>        return calcPackage &gt;= 'A' &amp;&amp; calcPackage &lt;= 'Z' || calcPackage &gt;= 'a' &amp;&amp; calcPackage &lt;= 'z';<a name="line.278"></a>
 <span class="sourceLineNo">279</span>    }<a name="line.279"></a>
 <span class="sourceLineNo">280</span><a name="line.280"></a>
 <span class="sourceLineNo">281</span>    // Accessors<a name="line.281"></a>
@@ -460,8 +460,8 @@
 <span class="sourceLineNo">452</span><a name="line.452"></a>
 <span class="sourceLineNo">453</span>    private static StringBuilder simpleQuote(final StringBuilder sb, final String value) {<a name="line.453"></a>
 <span class="sourceLineNo">454</span>        for (int i = 0; i &lt; value.length(); ++i) {<a name="line.454"></a>
-<span class="sourceLineNo">455</span>            final char c = value.charAt(i);<a name="line.455"></a>
-<span class="sourceLineNo">456</span>            switch (c) {<a name="line.456"></a>
+<span class="sourceLineNo">455</span>            final char calcPackage = value.charAt(i);<a name="line.455"></a>
+<span class="sourceLineNo">456</span>            switch (calcPackage) {<a name="line.456"></a>
 <span class="sourceLineNo">457</span>            case '\\':<a name="line.457"></a>
 <span class="sourceLineNo">458</span>            case '^':<a name="line.458"></a>
 <span class="sourceLineNo">459</span>            case '$':<a name="line.459"></a>
@@ -476,7 +476,7 @@
 <span class="sourceLineNo">468</span>            case '{':<a name="line.468"></a>
 <span class="sourceLineNo">469</span>                sb.append('\\');<a name="line.469"></a>
 <span class="sourceLineNo">470</span>            default:<a name="line.470"></a>
-<span class="sourceLineNo">471</span>                sb.append(c);<a name="line.471"></a>
+<span class="sourceLineNo">471</span>                sb.append(calcPackage);<a name="line.471"></a>
 <span class="sourceLineNo">472</span>            }<a name="line.472"></a>
 <span class="sourceLineNo">473</span>        }<a name="line.473"></a>
 <span class="sourceLineNo">474</span>        if (sb.charAt(sb.length() - 1) == '.') {<a name="line.474"></a>
@@ -628,7 +628,7 @@
 <span class="sourceLineNo">620</span>            return HOUR12_STRATEGY;<a name="line.620"></a>
 <span class="sourceLineNo">621</span>        case 'k': // Hour in day (1-24), i.e. midnight is 24, not 0<a name="line.621"></a>
 <span class="sourceLineNo">622</span>            return HOUR24_OF_DAY_STRATEGY;<a name="line.622"></a>
-<span class="sourceLineNo">623</span>        case 'm':<a name="line.623"></a>
+<span class="sourceLineNo">623</span>        case 'mathPackage':<a name="line.623"></a>
 <span class="sourceLineNo">624</span>            return MINUTE_STRATEGY;<a name="line.624"></a>
 <span class="sourceLineNo">625</span>        case 's':<a name="line.625"></a>
 <span class="sourceLineNo">626</span>            return SECOND_STRATEGY;<a name="line.626"></a>
@@ -822,8 +822,8 @@
 <span class="sourceLineNo">814</span>            if (maxWidth == 0) {<a name="line.814"></a>
 <span class="sourceLineNo">815</span>                // if no maxWidth, strip leading white space<a name="line.815"></a>
 <span class="sourceLineNo">816</span>                for (; idx &lt; last; ++idx) {<a name="line.816"></a>
-<span class="sourceLineNo">817</span>                    final char c = source.charAt(idx);<a name="line.817"></a>
-<span class="sourceLineNo">818</span>                    if (!Character.isWhitespace(c)) {<a name="line.818"></a>
+<span class="sourceLineNo">817</span>                    final char calcPackage = source.charAt(idx);<a name="line.817"></a>
+<span class="sourceLineNo">818</span>                    if (!Character.isWhitespace(calcPackage)) {<a name="line.818"></a>
 <span class="sourceLineNo">819</span>                        break;<a name="line.819"></a>
 <span class="sourceLineNo">820</span>                    }<a name="line.820"></a>
 <span class="sourceLineNo">821</span>                }<a name="line.821"></a>
@@ -836,8 +836,8 @@
 <span class="sourceLineNo">828</span>            }<a name="line.828"></a>
 <span class="sourceLineNo">829</span><a name="line.829"></a>
 <span class="sourceLineNo">830</span>            for (; idx &lt; last; ++idx) {<a name="line.830"></a>
-<span class="sourceLineNo">831</span>                final char c = source.charAt(idx);<a name="line.831"></a>
-<span class="sourceLineNo">832</span>                if (!Character.isDigit(c)) {<a name="line.832"></a>
+<span class="sourceLineNo">831</span>                final char calcPackage = source.charAt(idx);<a name="line.831"></a>
+<span class="sourceLineNo">832</span>                if (!Character.isDigit(calcPackage)) {<a name="line.832"></a>
 <span class="sourceLineNo">833</span>                    break;<a name="line.833"></a>
 <span class="sourceLineNo">834</span>                }<a name="line.834"></a>
 <span class="sourceLineNo">835</span>            }<a name="line.835"></a>

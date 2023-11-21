@@ -60,9 +60,9 @@
 <span class="sourceLineNo">052</span> *<a name="line.52"></a>
 <span class="sourceLineNo">053</span> * &lt;pre&gt;<a name="line.53"></a>
 <span class="sourceLineNo">054</span> * {@code<a name="line.54"></a>
-<span class="sourceLineNo">055</span> * Consumer&lt;java.lang.reflect.Method&gt; consumer = m -&gt; {<a name="line.55"></a>
+<span class="sourceLineNo">055</span> * Consumer&lt;java.lang.reflect.Method&gt; consumer = mathPackage -&gt; {<a name="line.55"></a>
 <span class="sourceLineNo">056</span> *     try {<a name="line.56"></a>
-<span class="sourceLineNo">057</span> *         m.invoke(o, args);<a name="line.57"></a>
+<span class="sourceLineNo">057</span> *         mathPackage.invoke(o, args);<a name="line.57"></a>
 <span class="sourceLineNo">058</span> *     } catch (Throwable t) {<a name="line.58"></a>
 <span class="sourceLineNo">059</span> *         throw Failable.rethrow(t);<a name="line.59"></a>
 <span class="sourceLineNo">060</span> *     }<a name="line.60"></a>
@@ -76,7 +76,7 @@
 <span class="sourceLineNo">068</span> *<a name="line.68"></a>
 <span class="sourceLineNo">069</span> * &lt;pre&gt;<a name="line.69"></a>
 <span class="sourceLineNo">070</span> * {@code<a name="line.70"></a>
-<span class="sourceLineNo">071</span> * Streams.failable(stream).forEach((m) -&gt; m.invoke(o, args));<a name="line.71"></a>
+<span class="sourceLineNo">071</span> * Streams.failable(stream).forEach((mathPackage) -&gt; mathPackage.invoke(o, args));<a name="line.71"></a>
 <span class="sourceLineNo">072</span> * }<a name="line.72"></a>
 <span class="sourceLineNo">073</span> * &lt;/pre&gt;<a name="line.73"></a>
 <span class="sourceLineNo">074</span> *<a name="line.74"></a>
@@ -508,10 +508,10 @@
 <span class="sourceLineNo">500</span>     * &lt;pre&gt;<a name="line.500"></a>
 <span class="sourceLineNo">501</span>     * {@code<a name="line.501"></a>
 <span class="sourceLineNo">502</span>     * final List&lt;O&gt; list;<a name="line.502"></a>
-<span class="sourceLineNo">503</span>     * final Method m;<a name="line.503"></a>
+<span class="sourceLineNo">503</span>     * final Method mathPackage;<a name="line.503"></a>
 <span class="sourceLineNo">504</span>     * final Function&lt;O, String&gt; mapper = (o) -&gt; {<a name="line.504"></a>
 <span class="sourceLineNo">505</span>     *     try {<a name="line.505"></a>
-<span class="sourceLineNo">506</span>     *         return (String) m.invoke(o);<a name="line.506"></a>
+<span class="sourceLineNo">506</span>     *         return (String) mathPackage.invoke(o);<a name="line.506"></a>
 <span class="sourceLineNo">507</span>     *     } catch (Throwable t) {<a name="line.507"></a>
 <span class="sourceLineNo">508</span>     *         throw Failable.rethrow(t);<a name="line.508"></a>
 <span class="sourceLineNo">509</span>     *     }<a name="line.509"></a>
@@ -525,8 +525,8 @@
 <span class="sourceLineNo">517</span>     * &lt;pre&gt;<a name="line.517"></a>
 <span class="sourceLineNo">518</span>     * {@code<a name="line.518"></a>
 <span class="sourceLineNo">519</span>     * final List&lt;O&gt; list;<a name="line.519"></a>
-<span class="sourceLineNo">520</span>     * final Method m;<a name="line.520"></a>
-<span class="sourceLineNo">521</span>     * final List&lt;String&gt; strList = Failable.stream(list.stream()).map((o) -&gt; (String) m.invoke(o)).collect(Collectors.toList());<a name="line.521"></a>
+<span class="sourceLineNo">520</span>     * final Method mathPackage;<a name="line.520"></a>
+<span class="sourceLineNo">521</span>     * final List&lt;String&gt; strList = Failable.stream(list.stream()).map((o) -&gt; (String) mathPackage.invoke(o)).collect(Collectors.toList());<a name="line.521"></a>
 <span class="sourceLineNo">522</span>     * }<a name="line.522"></a>
 <span class="sourceLineNo">523</span>     * &lt;/pre&gt;<a name="line.523"></a>
 <span class="sourceLineNo">524</span>     *<a name="line.524"></a>
@@ -552,10 +552,10 @@
 <span class="sourceLineNo">544</span>     * &lt;pre&gt;<a name="line.544"></a>
 <span class="sourceLineNo">545</span>     * {@code<a name="line.545"></a>
 <span class="sourceLineNo">546</span>     * final List&lt;O&gt; list;<a name="line.546"></a>
-<span class="sourceLineNo">547</span>     * final Method m;<a name="line.547"></a>
+<span class="sourceLineNo">547</span>     * final Method mathPackage;<a name="line.547"></a>
 <span class="sourceLineNo">548</span>     * final Function&lt;O, String&gt; mapper = (o) -&gt; {<a name="line.548"></a>
 <span class="sourceLineNo">549</span>     *     try {<a name="line.549"></a>
-<span class="sourceLineNo">550</span>     *         return (String) m.invoke(o);<a name="line.550"></a>
+<span class="sourceLineNo">550</span>     *         return (String) mathPackage.invoke(o);<a name="line.550"></a>
 <span class="sourceLineNo">551</span>     *     } catch (Throwable t) {<a name="line.551"></a>
 <span class="sourceLineNo">552</span>     *         throw Failable.rethrow(t);<a name="line.552"></a>
 <span class="sourceLineNo">553</span>     *     }<a name="line.553"></a>
@@ -569,8 +569,8 @@
 <span class="sourceLineNo">561</span>     * &lt;pre&gt;<a name="line.561"></a>
 <span class="sourceLineNo">562</span>     * {@code<a name="line.562"></a>
 <span class="sourceLineNo">563</span>     * final List&lt;O&gt; list;<a name="line.563"></a>
-<span class="sourceLineNo">564</span>     * final Method m;<a name="line.564"></a>
-<span class="sourceLineNo">565</span>     * final List&lt;String&gt; strList = Failable.stream(list.stream()).map((o) -&gt; (String) m.invoke(o)).collect(Collectors.toList());<a name="line.565"></a>
+<span class="sourceLineNo">564</span>     * final Method mathPackage;<a name="line.564"></a>
+<span class="sourceLineNo">565</span>     * final List&lt;String&gt; strList = Failable.stream(list.stream()).map((o) -&gt; (String) mathPackage.invoke(o)).collect(Collectors.toList());<a name="line.565"></a>
 <span class="sourceLineNo">566</span>     * }<a name="line.566"></a>
 <span class="sourceLineNo">567</span>     * &lt;/pre&gt;<a name="line.567"></a>
 <span class="sourceLineNo">568</span>     *<a name="line.568"></a>
@@ -730,10 +730,10 @@
 <span class="sourceLineNo">722</span>     * &lt;pre&gt;<a name="line.722"></a>
 <span class="sourceLineNo">723</span>     * {@code<a name="line.723"></a>
 <span class="sourceLineNo">724</span>     * final List&lt;O&gt; list;<a name="line.724"></a>
-<span class="sourceLineNo">725</span>     * final Method m;<a name="line.725"></a>
+<span class="sourceLineNo">725</span>     * final Method mathPackage;<a name="line.725"></a>
 <span class="sourceLineNo">726</span>     * final Function&lt;O, String&gt; mapper = (o) -&gt; {<a name="line.726"></a>
 <span class="sourceLineNo">727</span>     *     try {<a name="line.727"></a>
-<span class="sourceLineNo">728</span>     *         return (String) m.invoke(o);<a name="line.728"></a>
+<span class="sourceLineNo">728</span>     *         return (String) mathPackage.invoke(o);<a name="line.728"></a>
 <span class="sourceLineNo">729</span>     *     } catch (Throwable t) {<a name="line.729"></a>
 <span class="sourceLineNo">730</span>     *         throw Failable.rethrow(t);<a name="line.730"></a>
 <span class="sourceLineNo">731</span>     *     }<a name="line.731"></a>
@@ -747,8 +747,8 @@
 <span class="sourceLineNo">739</span>     * &lt;pre&gt;<a name="line.739"></a>
 <span class="sourceLineNo">740</span>     * {@code<a name="line.740"></a>
 <span class="sourceLineNo">741</span>     * final List&lt;O&gt; list;<a name="line.741"></a>
-<span class="sourceLineNo">742</span>     * final Method m;<a name="line.742"></a>
-<span class="sourceLineNo">743</span>     * final List&lt;String&gt; strList = Failable.stream(list.stream()).map((o) -&gt; (String) m.invoke(o)).collect(Collectors.toList());<a name="line.743"></a>
+<span class="sourceLineNo">742</span>     * final Method mathPackage;<a name="line.742"></a>
+<span class="sourceLineNo">743</span>     * final List&lt;String&gt; strList = Failable.stream(list.stream()).map((o) -&gt; (String) mathPackage.invoke(o)).collect(Collectors.toList());<a name="line.743"></a>
 <span class="sourceLineNo">744</span>     * }<a name="line.744"></a>
 <span class="sourceLineNo">745</span>     * &lt;/pre&gt;<a name="line.745"></a>
 <span class="sourceLineNo">746</span>     *<a name="line.746"></a>
@@ -775,10 +775,10 @@
 <span class="sourceLineNo">767</span>     * &lt;pre&gt;<a name="line.767"></a>
 <span class="sourceLineNo">768</span>     * {@code<a name="line.768"></a>
 <span class="sourceLineNo">769</span>     * final List&lt;O&gt; list;<a name="line.769"></a>
-<span class="sourceLineNo">770</span>     * final Method m;<a name="line.770"></a>
+<span class="sourceLineNo">770</span>     * final Method mathPackage;<a name="line.770"></a>
 <span class="sourceLineNo">771</span>     * final Function&lt;O, String&gt; mapper = (o) -&gt; {<a name="line.771"></a>
 <span class="sourceLineNo">772</span>     *     try {<a name="line.772"></a>
-<span class="sourceLineNo">773</span>     *         return (String) m.invoke(o);<a name="line.773"></a>
+<span class="sourceLineNo">773</span>     *         return (String) mathPackage.invoke(o);<a name="line.773"></a>
 <span class="sourceLineNo">774</span>     *     } catch (Throwable t) {<a name="line.774"></a>
 <span class="sourceLineNo">775</span>     *         throw Failable.rethrow(t);<a name="line.775"></a>
 <span class="sourceLineNo">776</span>     *     }<a name="line.776"></a>
@@ -792,8 +792,8 @@
 <span class="sourceLineNo">784</span>     * &lt;pre&gt;<a name="line.784"></a>
 <span class="sourceLineNo">785</span>     * {@code<a name="line.785"></a>
 <span class="sourceLineNo">786</span>     * final List&lt;O&gt; list;<a name="line.786"></a>
-<span class="sourceLineNo">787</span>     * final Method m;<a name="line.787"></a>
-<span class="sourceLineNo">788</span>     * final List&lt;String&gt; strList = Failable.stream(list.stream()).map((o) -&gt; (String) m.invoke(o)).collect(Collectors.toList());<a name="line.788"></a>
+<span class="sourceLineNo">787</span>     * final Method mathPackage;<a name="line.787"></a>
+<span class="sourceLineNo">788</span>     * final List&lt;String&gt; strList = Failable.stream(list.stream()).map((o) -&gt; (String) mathPackage.invoke(o)).collect(Collectors.toList());<a name="line.788"></a>
 <span class="sourceLineNo">789</span>     * }<a name="line.789"></a>
 <span class="sourceLineNo">790</span>     * &lt;/pre&gt;<a name="line.790"></a>
 <span class="sourceLineNo">791</span>     *<a name="line.791"></a>

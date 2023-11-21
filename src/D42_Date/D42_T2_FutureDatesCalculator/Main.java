@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println(" - - - ");
-        System.out.println("Future Dates Calculator");
+        System.out.println("Future Dates C1");
         System.out.println("DC_T_1_ReantrantLock_Inside Java program that calculates future dates based on a given starting date and a number of days into the future.");
         System.out.println(" - - - ");
 

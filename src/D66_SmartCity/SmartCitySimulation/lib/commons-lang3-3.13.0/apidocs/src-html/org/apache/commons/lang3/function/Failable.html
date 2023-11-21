@@ -51,9 +51,9 @@
 <span class="sourceLineNo">043</span> * constructs like:<a name="line.43"></a>
 <span class="sourceLineNo">044</span> *<a name="line.44"></a>
 <span class="sourceLineNo">045</span> * &lt;pre&gt;<a name="line.45"></a>
-<span class="sourceLineNo">046</span> * Consumer&amp;lt;java.lang.reflect.Method&amp;gt; consumer = m -&amp;gt; {<a name="line.46"></a>
+<span class="sourceLineNo">046</span> * Consumer&amp;lt;java.lang.reflect.Method&amp;gt; consumer = mathPackage -&amp;gt; {<a name="line.46"></a>
 <span class="sourceLineNo">047</span> *     try {<a name="line.47"></a>
-<span class="sourceLineNo">048</span> *         m.invoke(o, args);<a name="line.48"></a>
+<span class="sourceLineNo">048</span> *         mathPackage.invoke(o, args);<a name="line.48"></a>
 <span class="sourceLineNo">049</span> *     } catch (Throwable t) {<a name="line.49"></a>
 <span class="sourceLineNo">050</span> *         throw Failable.rethrow(t);<a name="line.50"></a>
 <span class="sourceLineNo">051</span> *     }<a name="line.51"></a>
@@ -66,7 +66,7 @@
 <span class="sourceLineNo">058</span> * &lt;/p&gt;<a name="line.58"></a>
 <span class="sourceLineNo">059</span> *<a name="line.59"></a>
 <span class="sourceLineNo">060</span> * &lt;pre&gt;<a name="line.60"></a>
-<span class="sourceLineNo">061</span> * Functions.accept((m) -&amp;gt; m.invoke(o, args));<a name="line.61"></a>
+<span class="sourceLineNo">061</span> * Functions.accept((mathPackage) -&amp;gt; mathPackage.invoke(o, args));<a name="line.61"></a>
 <span class="sourceLineNo">062</span> * &lt;/pre&gt;<a name="line.62"></a>
 <span class="sourceLineNo">063</span> *<a name="line.63"></a>
 <span class="sourceLineNo">064</span> * &lt;p&gt;<a name="line.64"></a>

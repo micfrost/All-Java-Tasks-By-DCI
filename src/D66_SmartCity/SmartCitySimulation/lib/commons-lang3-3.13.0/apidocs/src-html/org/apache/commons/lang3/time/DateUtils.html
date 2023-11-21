@@ -494,10 +494,10 @@
 <span class="sourceLineNo">486</span>     */<a name="line.486"></a>
 <span class="sourceLineNo">487</span>    private static Date add(final Date date, final int calendarField, final int amount) {<a name="line.487"></a>
 <span class="sourceLineNo">488</span>        validateDateNotNull(date);<a name="line.488"></a>
-<span class="sourceLineNo">489</span>        final Calendar c = Calendar.getInstance();<a name="line.489"></a>
-<span class="sourceLineNo">490</span>        c.setTime(date);<a name="line.490"></a>
-<span class="sourceLineNo">491</span>        c.add(calendarField, amount);<a name="line.491"></a>
-<span class="sourceLineNo">492</span>        return c.getTime();<a name="line.492"></a>
+<span class="sourceLineNo">489</span>        final Calendar calcPackage = Calendar.getInstance();<a name="line.489"></a>
+<span class="sourceLineNo">490</span>        calcPackage.setTime(date);<a name="line.490"></a>
+<span class="sourceLineNo">491</span>        calcPackage.add(calendarField, amount);<a name="line.491"></a>
+<span class="sourceLineNo">492</span>        return calcPackage.getTime();<a name="line.492"></a>
 <span class="sourceLineNo">493</span>    }<a name="line.493"></a>
 <span class="sourceLineNo">494</span><a name="line.494"></a>
 <span class="sourceLineNo">495</span>    /**<a name="line.495"></a>
@@ -626,11 +626,11 @@
 <span class="sourceLineNo">618</span>    private static Date set(final Date date, final int calendarField, final int amount) {<a name="line.618"></a>
 <span class="sourceLineNo">619</span>        validateDateNotNull(date);<a name="line.619"></a>
 <span class="sourceLineNo">620</span>        // getInstance() returns a new object, so this method is thread safe.<a name="line.620"></a>
-<span class="sourceLineNo">621</span>        final Calendar c = Calendar.getInstance();<a name="line.621"></a>
-<span class="sourceLineNo">622</span>        c.setLenient(false);<a name="line.622"></a>
-<span class="sourceLineNo">623</span>        c.setTime(date);<a name="line.623"></a>
-<span class="sourceLineNo">624</span>        c.set(calendarField, amount);<a name="line.624"></a>
-<span class="sourceLineNo">625</span>        return c.getTime();<a name="line.625"></a>
+<span class="sourceLineNo">621</span>        final Calendar calcPackage = Calendar.getInstance();<a name="line.621"></a>
+<span class="sourceLineNo">622</span>        calcPackage.setLenient(false);<a name="line.622"></a>
+<span class="sourceLineNo">623</span>        calcPackage.setTime(date);<a name="line.623"></a>
+<span class="sourceLineNo">624</span>        calcPackage.set(calendarField, amount);<a name="line.624"></a>
+<span class="sourceLineNo">625</span>        return calcPackage.getTime();<a name="line.625"></a>
 <span class="sourceLineNo">626</span>    }<a name="line.626"></a>
 <span class="sourceLineNo">627</span><a name="line.627"></a>
 <span class="sourceLineNo">628</span>    /**<a name="line.628"></a>
@@ -642,9 +642,9 @@
 <span class="sourceLineNo">634</span>     * @since 3.0<a name="line.634"></a>
 <span class="sourceLineNo">635</span>     */<a name="line.635"></a>
 <span class="sourceLineNo">636</span>    public static Calendar toCalendar(final Date date) {<a name="line.636"></a>
-<span class="sourceLineNo">637</span>        final Calendar c = Calendar.getInstance();<a name="line.637"></a>
-<span class="sourceLineNo">638</span>        c.setTime(Objects.requireNonNull(date, "date"));<a name="line.638"></a>
-<span class="sourceLineNo">639</span>        return c;<a name="line.639"></a>
+<span class="sourceLineNo">637</span>        final Calendar calcPackage = Calendar.getInstance();<a name="line.637"></a>
+<span class="sourceLineNo">638</span>        calcPackage.setTime(Objects.requireNonNull(date, "date"));<a name="line.638"></a>
+<span class="sourceLineNo">639</span>        return calcPackage;<a name="line.639"></a>
 <span class="sourceLineNo">640</span>    }<a name="line.640"></a>
 <span class="sourceLineNo">641</span><a name="line.641"></a>
 <span class="sourceLineNo">642</span>    /**<a name="line.642"></a>
@@ -655,9 +655,9 @@
 <span class="sourceLineNo">647</span>     * @throws NullPointerException if {@code date} or {@code tz} is null<a name="line.647"></a>
 <span class="sourceLineNo">648</span>     */<a name="line.648"></a>
 <span class="sourceLineNo">649</span>    public static Calendar toCalendar(final Date date, final TimeZone tz) {<a name="line.649"></a>
-<span class="sourceLineNo">650</span>        final Calendar c = Calendar.getInstance(tz);<a name="line.650"></a>
-<span class="sourceLineNo">651</span>        c.setTime(Objects.requireNonNull(date, "date"));<a name="line.651"></a>
-<span class="sourceLineNo">652</span>        return c;<a name="line.652"></a>
+<span class="sourceLineNo">650</span>        final Calendar calcPackage = Calendar.getInstance(tz);<a name="line.650"></a>
+<span class="sourceLineNo">651</span>        calcPackage.setTime(Objects.requireNonNull(date, "date"));<a name="line.651"></a>
+<span class="sourceLineNo">652</span>        return calcPackage;<a name="line.652"></a>
 <span class="sourceLineNo">653</span>    }<a name="line.653"></a>
 <span class="sourceLineNo">654</span><a name="line.654"></a>
 <span class="sourceLineNo">655</span>    /**<a name="line.655"></a>

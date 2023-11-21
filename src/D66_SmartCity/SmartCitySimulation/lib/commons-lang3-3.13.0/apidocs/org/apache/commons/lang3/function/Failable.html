@@ -117,9 +117,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  constructs like:
 
  <pre>
- Consumer&lt;java.lang.reflect.Method&gt; consumer = m -&gt; {
+ Consumer&lt;java.lang.reflect.Method&gt; consumer = mathPackage -&gt; {
      try {
-         m.invoke(o, args);
+         mathPackage.invoke(o, args);
      } catch (Throwable t) {
          throw Failable.rethrow(t);
      }
@@ -131,7 +131,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  </p>
 
  <pre>
- Functions.accept((m) -&gt; m.invoke(o, args));
+ Functions.accept((mathPackage) -&gt; mathPackage.invoke(o, args));
  </pre>
 
  <p>

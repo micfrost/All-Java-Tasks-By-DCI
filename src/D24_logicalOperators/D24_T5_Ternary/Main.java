@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Grade Calculator with Ternary Operator");
+        System.out.println("Grade C1 with Ternary Operator");
         System.out.println("Java program to calculate the letter grade for a student based on their numerical score.");
 
         Scanner scanner = new Scanner(System.in);

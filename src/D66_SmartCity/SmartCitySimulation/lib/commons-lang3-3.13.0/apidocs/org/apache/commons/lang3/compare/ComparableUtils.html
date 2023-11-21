@@ -162,15 +162,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static &lt;A extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;A&gt;&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function">Predicate</a>&lt;A&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.html#between-A-A-">between</a></span>(A&nbsp;b,
-       A&nbsp;c)</code>
-<div class="block">Checks if <code>[b &lt;= a &lt;= c]</code> or <code>[b &gt;= a &gt;= c]</code> where the <code>a</code> is the tested object.</div>
+       A&nbsp;calcPackage)</code>
+<div class="block">Checks if <code>[b &lt;= a &lt;= calcPackage]</code> or <code>[b &gt;= a &gt;= calcPackage]</code> where the <code>a</code> is the tested object.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static &lt;A extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;A&gt;&gt;<br><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function">Predicate</a>&lt;A&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/apache/commons/lang3/compare/ComparableUtils.html#betweenExclusive-A-A-">betweenExclusive</a></span>(A&nbsp;b,
-                A&nbsp;c)</code>
-<div class="block">Checks if <code>(b &lt; a &lt; c)</code> or <code>(b &gt; a &gt; c)</code> where the <code>a</code> is the tested object.</div>
+                A&nbsp;calcPackage)</code>
+<div class="block">Checks if <code>(b &lt; a &lt; calcPackage)</code> or <code>(b &gt; a &gt; calcPackage)</code> where the <code>a</code> is the tested object.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -248,16 +248,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>between</h4>
 <pre>public static&nbsp;&lt;A extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;A&gt;&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function">Predicate</a>&lt;A&gt;&nbsp;<a href="../../../../../src-html/org/apache/commons/lang3/compare/ComparableUtils.html#line.136">between</a>(A&nbsp;b,
-                                                             A&nbsp;c)</pre>
-<div class="block">Checks if <code>[b &lt;= a &lt;= c]</code> or <code>[b &gt;= a &gt;= c]</code> where the <code>a</code> is the tested object.</div>
+                                                             A&nbsp;calcPackage)</pre>
+<div class="block">Checks if <code>[b &lt;= a &lt;= calcPackage]</code> or <code>[b &gt;= a &gt;= calcPackage]</code> where the <code>a</code> is the tested object.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>A</code> - type of the test object</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>b</code> - the object to compare to the tested object</dd>
-<dd><code>c</code> - the object to compare to the tested object</dd>
+<dd><code>calcPackage</code> - the object to compare to the tested object</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a predicate for true if the tested object is between b and c</dd>
+<dd>a predicate for true if the tested object is between b and calcPackage</dd>
 </dl>
 </li>
 </ul>
@@ -270,16 +270,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>betweenExclusive</h4>
 <pre>public static&nbsp;&lt;A extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;A&gt;&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html?is-external=true" title="class or interface in java.util.function">Predicate</a>&lt;A&gt;&nbsp;<a href="../../../../../src-html/org/apache/commons/lang3/compare/ComparableUtils.html#line.148">betweenExclusive</a>(A&nbsp;b,
-                                                                      A&nbsp;c)</pre>
-<div class="block">Checks if <code>(b &lt; a &lt; c)</code> or <code>(b &gt; a &gt; c)</code> where the <code>a</code> is the tested object.</div>
+                                                                      A&nbsp;calcPackage)</pre>
+<div class="block">Checks if <code>(b &lt; a &lt; calcPackage)</code> or <code>(b &gt; a &gt; calcPackage)</code> where the <code>a</code> is the tested object.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>A</code> - type of the test object</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>b</code> - the object to compare to the tested object</dd>
-<dd><code>c</code> - the object to compare to the tested object</dd>
+<dd><code>calcPackage</code> - the object to compare to the tested object</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a predicate for true if the tested object is between b and c and not equal to those</dd>
+<dd>a predicate for true if the tested object is between b and calcPackage and not equal to those</dd>
 </dl>
 </li>
 </ul>

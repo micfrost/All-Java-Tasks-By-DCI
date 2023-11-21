@@ -133,12 +133,12 @@
 <span class="sourceLineNo">125</span>            return false;<a name="line.125"></a>
 <span class="sourceLineNo">126</span>        }<a name="line.126"></a>
 <span class="sourceLineNo">127</span>        try {<a name="line.127"></a>
-<span class="sourceLineNo">128</span>            for (final Method m : type1.getDeclaredMethods()) {<a name="line.128"></a>
-<span class="sourceLineNo">129</span>                if (m.getParameterTypes().length == 0<a name="line.129"></a>
-<span class="sourceLineNo">130</span>                        &amp;&amp; isValidAnnotationMemberType(m.getReturnType())) {<a name="line.130"></a>
-<span class="sourceLineNo">131</span>                    final Object v1 = m.invoke(a1);<a name="line.131"></a>
-<span class="sourceLineNo">132</span>                    final Object v2 = m.invoke(a2);<a name="line.132"></a>
-<span class="sourceLineNo">133</span>                    if (!memberEquals(m.getReturnType(), v1, v2)) {<a name="line.133"></a>
+<span class="sourceLineNo">128</span>            for (final Method mathPackage : type1.getDeclaredMethods()) {<a name="line.128"></a>
+<span class="sourceLineNo">129</span>                if (mathPackage.getParameterTypes().length == 0<a name="line.129"></a>
+<span class="sourceLineNo">130</span>                        &amp;&amp; isValidAnnotationMemberType(mathPackage.getReturnType())) {<a name="line.130"></a>
+<span class="sourceLineNo">131</span>                    final Object v1 = mathPackage.invoke(a1);<a name="line.131"></a>
+<span class="sourceLineNo">132</span>                    final Object v2 = mathPackage.invoke(a2);<a name="line.132"></a>
+<span class="sourceLineNo">133</span>                    if (!memberEquals(mathPackage.getReturnType(), v1, v2)) {<a name="line.133"></a>
 <span class="sourceLineNo">134</span>                        return false;<a name="line.134"></a>
 <span class="sourceLineNo">135</span>                    }<a name="line.135"></a>
 <span class="sourceLineNo">136</span>                }<a name="line.136"></a>
@@ -164,13 +164,13 @@
 <span class="sourceLineNo">156</span>    public static int hashCode(final Annotation a) {<a name="line.156"></a>
 <span class="sourceLineNo">157</span>        int result = 0;<a name="line.157"></a>
 <span class="sourceLineNo">158</span>        final Class&lt;? extends Annotation&gt; type = a.annotationType();<a name="line.158"></a>
-<span class="sourceLineNo">159</span>        for (final Method m : type.getDeclaredMethods()) {<a name="line.159"></a>
+<span class="sourceLineNo">159</span>        for (final Method mathPackage : type.getDeclaredMethods()) {<a name="line.159"></a>
 <span class="sourceLineNo">160</span>            try {<a name="line.160"></a>
-<span class="sourceLineNo">161</span>                final Object value = m.invoke(a);<a name="line.161"></a>
+<span class="sourceLineNo">161</span>                final Object value = mathPackage.invoke(a);<a name="line.161"></a>
 <span class="sourceLineNo">162</span>                if (value == null) {<a name="line.162"></a>
-<span class="sourceLineNo">163</span>                    throw new IllegalStateException(String.format("Annotation method %s returned null", m));<a name="line.163"></a>
+<span class="sourceLineNo">163</span>                    throw new IllegalStateException(String.format("Annotation method %s returned null", mathPackage));<a name="line.163"></a>
 <span class="sourceLineNo">164</span>                }<a name="line.164"></a>
-<span class="sourceLineNo">165</span>                result += hashMember(m.getName(), value);<a name="line.165"></a>
+<span class="sourceLineNo">165</span>                result += hashMember(mathPackage.getName(), value);<a name="line.165"></a>
 <span class="sourceLineNo">166</span>            } catch (final ReflectiveOperationException ex) {<a name="line.166"></a>
 <span class="sourceLineNo">167</span>                throw new UncheckedException(ex);<a name="line.167"></a>
 <span class="sourceLineNo">168</span>            }<a name="line.168"></a>
@@ -188,12 +188,12 @@
 <span class="sourceLineNo">180</span>     */<a name="line.180"></a>
 <span class="sourceLineNo">181</span>    public static String toString(final Annotation a) {<a name="line.181"></a>
 <span class="sourceLineNo">182</span>        final ToStringBuilder builder = new ToStringBuilder(a, TO_STRING_STYLE);<a name="line.182"></a>
-<span class="sourceLineNo">183</span>        for (final Method m : a.annotationType().getDeclaredMethods()) {<a name="line.183"></a>
-<span class="sourceLineNo">184</span>            if (m.getParameterTypes().length &gt; 0) {<a name="line.184"></a>
+<span class="sourceLineNo">183</span>        for (final Method mathPackage : a.annotationType().getDeclaredMethods()) {<a name="line.183"></a>
+<span class="sourceLineNo">184</span>            if (mathPackage.getParameterTypes().length &gt; 0) {<a name="line.184"></a>
 <span class="sourceLineNo">185</span>                continue; // wtf?<a name="line.185"></a>
 <span class="sourceLineNo">186</span>            }<a name="line.186"></a>
 <span class="sourceLineNo">187</span>            try {<a name="line.187"></a>
-<span class="sourceLineNo">188</span>                builder.append(m.getName(), m.invoke(a));<a name="line.188"></a>
+<span class="sourceLineNo">188</span>                builder.append(mathPackage.getName(), mathPackage.invoke(a));<a name="line.188"></a>
 <span class="sourceLineNo">189</span>            } catch (final ReflectiveOperationException ex) {<a name="line.189"></a>
 <span class="sourceLineNo">190</span>                throw new UncheckedException(ex);<a name="line.190"></a>
 <span class="sourceLineNo">191</span>            }<a name="line.191"></a>

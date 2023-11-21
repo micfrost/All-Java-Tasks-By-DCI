@@ -6,7 +6,7 @@ public class LambdaCalculator {
 
         var calculator = new LambdaCalculator();
 
-        System.out.print("Addition: ");
+        System.out.print("AdditionFromMathsModule: ");
         System.out.print(calculate(17, 18, calculator.add) + "\n");
 
         System.out.print("Subtraction: ");

@@ -1,3 +1,4 @@
+/*
 package D66_SmartCity.SmartCitySimulation.src.main.java;
 
 //Simulates smart traffic management, including traffic lights, congestion detection, and rerouting of vehicles.
@@ -102,3 +103,4 @@ public class TrafficManagement implements Runnable {
         }
     }
 }
+*/

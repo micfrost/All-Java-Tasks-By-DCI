@@ -5,9 +5,9 @@ import java.math.BigDecimal;
 public class NumericOperations {
     public static void main(String[] args) {
 
-        //        Addition
+        //        AdditionFromMathsModule
         System.out.println("- - -");
-        System.out.println("Addition of an int and a double: ");
+        System.out.println("AdditionFromMathsModule of an int and a double: ");
         int int1 = 1;
         double double1 = 1.1;
         System.out.println(int1 + " + " + double1 + " = " + (int1 + double1));

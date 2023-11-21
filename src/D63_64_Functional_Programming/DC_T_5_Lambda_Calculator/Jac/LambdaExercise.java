@@ -20,7 +20,7 @@ public class LambdaExercise {
 
         BiFunction<Double, Double, Double>  multi = ((a, b) -> a * b);
 
-        System.out.printf("%,.2f %c %,.2f = %,.2f\n", x, '\u00d7', y, performOperation(x, y, multi));
-        System.out.printf("%,.2f %c %,.2f = %,.2f\n", x, '\u00F7', y, performOperation(x, y, (a, b) -> a / b));
+        System.out.printf("%,.2f %calcPackage %,.2f = %,.2f\n", x, '\u00d7', y, performOperation(x, y, multi));
+        System.out.printf("%,.2f %calcPackage %,.2f = %,.2f\n", x, '\u00F7', y, performOperation(x, y, (a, b) -> a / b));
     }
 }

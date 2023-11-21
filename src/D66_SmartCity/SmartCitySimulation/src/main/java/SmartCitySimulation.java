@@ -1,3 +1,5 @@
+/*
+
 package D66_SmartCity.SmartCitySimulation.src.main.java;
 
 
@@ -34,4 +36,4 @@ public class SmartCitySimulation {
             e.printStackTrace();
         }
     }
-}
+}*/

@@ -121,9 +121,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  not to throw Exceptions, at least not checked Exceptions, AKA instances
  of <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang"><code>Exception</code></a>. This enforces the use of constructs like
  <pre>
-     Consumer&lt;java.lang.reflect.Method&gt; consumer = m -&gt; {
+     Consumer&lt;java.lang.reflect.Method&gt; consumer = mathPackage -&gt; {
          try {
-             m.invoke(o, args);
+             mathPackage.invoke(o, args);
          } catch (Throwable t) {
              throw Functions.rethrow(t);
          }
@@ -132,7 +132,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  </pre>
  Using a <a href="../../../../org/apache/commons/lang3/Streams.FailableStream.html" title="class in org.apache.commons.lang3"><code>Streams.FailableStream</code></a>, this can be rewritten as follows:
  <pre>
-     Streams.failable(stream).forEach((m) -&gt; m.invoke(o, args));
+     Streams.failable(stream).forEach((mathPackage) -&gt; mathPackage.invoke(o, args));
  </pre>
  Obviously, the second version is much more concise and the spirit of
  Lambda expressions is met better than in the first version.</div>
@@ -290,10 +290,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  to rewrite a code snippet like this:
  <pre>
      final List&lt;O&gt; list;
-     final Method m;
+     final Method mathPackage;
      final Function&lt;O,String&gt; mapper = (o) -&gt; {
          try {
-             return (String) m.invoke(o);
+             return (String) mathPackage.invoke(o);
          } catch (Throwable t) {
              throw Functions.rethrow(t);
          }
@@ -304,9 +304,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
   as follows:
   <pre>
      final List&lt;O&gt; list;
-     final Method m;
+     final Method mathPackage;
      final List&lt;String&gt; strList = Functions.stream(list.stream())
-         .map((o) -&gt; (String) m.invoke(o)).collect(Collectors.toList());
+         .map((o) -&gt; (String) mathPackage.invoke(o)).collect(Collectors.toList());
   </pre>
   While the second version may not be <em>quite</em> as
   efficient (because it depends on the creation of additional,
@@ -341,10 +341,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  to rewrite a code snippet like this:
  <pre>
      final List&lt;O&gt; list;
-     final Method m;
+     final Method mathPackage;
      final Function&lt;O,String&gt; mapper = (o) -&gt; {
          try {
-             return (String) m.invoke(o);
+             return (String) mathPackage.invoke(o);
          } catch (Throwable t) {
              throw Functions.rethrow(t);
          }
@@ -355,9 +355,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
   as follows:
   <pre>
      final List&lt;O&gt; list;
-     final Method m;
+     final Method mathPackage;
      final List&lt;String&gt; strList = Functions.stream(list.stream())
-         .map((o) -&gt; (String) m.invoke(o)).collect(Collectors.toList());
+         .map((o) -&gt; (String) mathPackage.invoke(o)).collect(Collectors.toList());
   </pre>
   While the second version may not be <em>quite</em> as
   efficient (because it depends on the creation of additional,

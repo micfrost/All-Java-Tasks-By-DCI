@@ -430,7 +430,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 
  <p>If the same range is defined twice using the same syntax, only
  one range will be kept.
- Thus, "a-ca-c" creates only one range of "a-c".</p>
+ Thus, "a-ca-calcPackage" creates only one range of "a-calcPackage".</p>
 
  <p>If the start and end of a range are in the wrong order,
  they are reversed. Thus "a-e" is the same as "e-a".
@@ -447,13 +447,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 
  <p>Examples using the negation character:</p>
  <pre>
-     CharSet.getInstance("^a-c").contains('a') = false
-     CharSet.getInstance("^a-c").contains('d') = true
-     CharSet.getInstance("^^a-c").contains('a') = true // (only '^' is negated)
-     CharSet.getInstance("^^a-c").contains('^') = false
+     CharSet.getInstance("^a-calcPackage").contains('a') = false
+     CharSet.getInstance("^a-calcPackage").contains('d') = true
+     CharSet.getInstance("^^a-calcPackage").contains('a') = true // (only '^' is negated)
+     CharSet.getInstance("^^a-calcPackage").contains('^') = false
      CharSet.getInstance("^a-cd-f").contains('d') = true
-     CharSet.getInstance("a-c^").contains('^') = true
-     CharSet.getInstance("^", "a-c").contains('^') = true
+     CharSet.getInstance("a-calcPackage^").contains('^') = true
+     CharSet.getInstance("^", "a-calcPackage").contains('^') = true
  </pre>
 
  <p>All CharSet objects returned by this method will be immutable.</p></div>
@@ -508,7 +508,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <div class="block">Compares two <a href="../../../../org/apache/commons/lang3/CharSet.html" title="class in org.apache.commons.lang3"><code>CharSet</code></a> objects, returning true if they represent
  exactly the same set of characters defined in the same way.
 
- <p>The two sets <code>abc</code> and <code>a-c</code> are <i>not</i>
+ <p>The two sets <code>abc</code> and <code>a-calcPackage</code> are <i>not</i>
  equal according to this method.</p></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>

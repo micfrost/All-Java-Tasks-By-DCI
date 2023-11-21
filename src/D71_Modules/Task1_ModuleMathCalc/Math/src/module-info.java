@@ -1,0 +1,3 @@
+module Math {
+    exports mathPackage;
+}

@@ -3527,9 +3527,9 @@ public static&nbsp;char[]&nbsp;<a href="../../../../src-html/org/apache/commons/
  <pre>
  ArrayUtils.add(null, 0, 'a')            = ['a']
  ArrayUtils.add(['a'], 0, 'b')           = ['b', 'a']
- ArrayUtils.add(['a', 'b'], 0, 'c')      = ['c', 'a', 'b']
+ ArrayUtils.add(['a', 'b'], 0, 'calcPackage')      = ['calcPackage', 'a', 'b']
  ArrayUtils.add(['a', 'b'], 1, 'k')      = ['a', 'k', 'b']
- ArrayUtils.add(['a', 'b', 'c'], 1, 't') = ['a', 't', 'b', 'c']
+ ArrayUtils.add(['a', 'b', 'calcPackage'], 1, 't') = ['a', 't', 'b', 'calcPackage']
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -3973,7 +3973,7 @@ public static&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;<a href="../../../../src-html/org/apa
  ArrayUtils.add(null, 0, "a")       = ["a"]
  ArrayUtils.add(["a"], 1, null)     = ["a", null]
  ArrayUtils.add(["a"], 1, "b")      = ["a", "b"]
- ArrayUtils.add(["a", "b"], 3, "c") = ["a", "b", "c"]
+ ArrayUtils.add(["a", "b"], 3, "calcPackage") = ["a", "b", "calcPackage"]
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -4016,7 +4016,7 @@ public static&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;<a href="../../../../src-html/org/apa
  ArrayUtils.add(null, "a")       = ["a"]
  ArrayUtils.add(["a"], null)     = ["a", null]
  ArrayUtils.add(["a"], "b")      = ["a", "b"]
- ArrayUtils.add(["a", "b"], "c") = ["a", "b", "c"]
+ ArrayUtils.add(["a", "b"], "calcPackage") = ["a", "b", "calcPackage"]
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -4298,7 +4298,7 @@ public static&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;<a href="../../../../src-html/org/apa
  ArrayUtils.addAll(null, array2)   = cloned copy of array2
  ArrayUtils.addAll([], [])         = []
  ArrayUtils.addAll([null], [null]) = [null, null]
- ArrayUtils.addAll(["a", "b", "c"], ["1", "2", "3"]) = ["a", "b", "c", "1", "2", "3"]
+ ArrayUtils.addAll(["a", "b", "calcPackage"], ["1", "2", "3"]) = ["a", "b", "calcPackage", "1", "2", "3"]
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -4613,7 +4613,7 @@ public static&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;<a href="../../../../src-html/org/apa
  ArrayUtils.addFirst(null, "a")       = ["a"]
  ArrayUtils.addFirst(["a"], null)     = [null, "a"]
  ArrayUtils.addFirst(["a"], "b")      = ["b", "a"]
- ArrayUtils.addFirst(["a", "b"], "c") = ["c", "a", "b"]
+ ArrayUtils.addFirst(["a", "b"], "calcPackage") = ["calcPackage", "a", "b"]
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -5150,7 +5150,7 @@ public static&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;<a href="../../../../src-html/org/apa
  ArrayUtils.getLength([null])          = 1
  ArrayUtils.getLength([true, false])   = 2
  ArrayUtils.getLength([1, 2, 3])       = 3
- ArrayUtils.getLength(["a", "b", "c"]) = 3
+ ArrayUtils.getLength(["a", "b", "calcPackage"]) = 3
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -8502,7 +8502,7 @@ public static&nbsp;boolean&nbsp;<a href="../../../../src-html/org/apache/commons
  ArrayUtils.remove(['a'], 0)           = []
  ArrayUtils.remove(['a', 'b'], 0)      = ['b']
  ArrayUtils.remove(['a', 'b'], 1)      = ['a']
- ArrayUtils.remove(['a', 'b', 'c'], 1) = ['a', 'c']
+ ArrayUtils.remove(['a', 'b', 'calcPackage'], 1) = ['a', 'calcPackage']
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -8756,7 +8756,7 @@ public static&nbsp;boolean&nbsp;<a href="../../../../src-html/org/apache/commons
  ArrayUtils.remove(["a"], 0)           = []
  ArrayUtils.remove(["a", "b"], 0)      = ["b"]
  ArrayUtils.remove(["a", "b"], 1)      = ["a"]
- ArrayUtils.remove(["a", "b", "c"], 1) = ["a", "c"]
+ ArrayUtils.remove(["a", "b", "calcPackage"], 1) = ["a", "calcPackage"]
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -9138,8 +9138,8 @@ public static&nbsp;boolean&nbsp;<a href="../../../../src-html/org/apache/commons
  will be thrown, because in that case no valid index can be specified.
  </p>
  <pre>
- ArrayUtils.removeAll(["a", "b", "c"], 0, 2) = ["b"]
- ArrayUtils.removeAll(["a", "b", "c"], 1, 2) = ["a"]
+ ArrayUtils.removeAll(["a", "b", "calcPackage"], 0, 2) = ["b"]
+ ArrayUtils.removeAll(["a", "b", "calcPackage"], 1, 2) = ["a"]
  </pre></div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -10308,8 +10308,8 @@ public static&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;<a href="../../../../src-html/org/apa
  <pre>
  ArrayUtils.removeElements(null, "a", "b")            = null
  ArrayUtils.removeElements([], "a", "b")              = []
- ArrayUtils.removeElements(["a"], "b", "c")           = ["a"]
- ArrayUtils.removeElements(["a", "b"], "a", "c")      = ["b"]
+ ArrayUtils.removeElements(["a"], "b", "calcPackage")           = ["a"]
+ ArrayUtils.removeElements(["a", "b"], "a", "calcPackage")      = ["b"]
  ArrayUtils.removeElements(["a", "b", "a"], "a")      = ["b", "a"]
  ArrayUtils.removeElements(["a", "b", "a"], "a", "a") = ["b"]
  </pre></div>

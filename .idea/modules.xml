@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/src/D72_Localization/CA1_Localization/CA1_Localization.iml" filepath="$PROJECT_DIR$/src/D72_Localization/CA1_Localization/CA1_Localization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/D71_Modules/CA1_ModuleCalculatore/CA1_ModuleCalculatore.iml" filepath="$PROJECT_DIR$/src/D71_Modules/CA1_ModuleCalculatore/CA1_ModuleCalculatore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/D71_Modules/CA1_ModuleMath/CA1_ModuleMath.iml" filepath="$PROJECT_DIR$/src/D71_Modules/CA1_ModuleMath/CA1_ModuleMath.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/D72_Localization/CA2_LocalizationExample/CA2_LocalizationExample.iml" filepath="$PROJECT_DIR$/src/D72_Localization/CA2_LocalizationExample/CA2_LocalizationExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/D72_Localization/D72_Localization.iml" filepath="$PROJECT_DIR$/src/D72_Localization/D72_Localization.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaFbw.iml" filepath="$PROJECT_DIR$/JavaFbw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/D71_Modules/Task1_ModuleMathCalc/Task1_ModuleMathCalc.iml" filepath="$PROJECT_DIR$/src/D71_Modules/Task1_ModuleMathCalc/Task1_ModuleMathCalc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/D72_Localization/Task1_MultilingualQuizApp/Task1_MultilingualQuizApp.iml" filepath="$PROJECT_DIR$/src/D72_Localization/Task1_MultilingualQuizApp/Task1_MultilingualQuizApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/experiment/exper2/child/child.iml" filepath="$PROJECT_DIR$/experiment/exper2/child/child.iml" />
+      <module fileurl="file://$PROJECT_DIR$/experiment/exper2/exper2.iml" filepath="$PROJECT_DIR$/experiment/exper2/exper2.iml" />
     </modules>
   </component>
 </project>

@@ -440,8 +440,8 @@ o LANG-1564: Use Collections.singletonList insteadof Arrays.asList when there be
 o LANG-1553: Change array style from `int a[]` to `int[] a` #537. Thanks to XenoAmess.
 o LANG-1552: Change from addAll to constructors for some List #536. Thanks to XenoAmess.
 o LANG-1558: Simplify if as some conditions are covered by others #543. Thanks to XenoAmess.
-o LANG-1567: Fixed Javadocs for setTestRecursive() #556. Thanks to Miguel Muñoz, Bruno P. Kinoshita, Gary Gregory.
-o LANG-1542: ToStringBuilder.reflectionToString - Wrong JSON format when object has a List of Enum. Thanks to Tr?n Ng?c Khoa, Gary Gregory.
+o LANG-1567: Fixed Javadocs for setTestRecursive() #556. Thanks to Miguel Muï¿½oz, Bruno P. Kinoshita, Gary Gregory.
+o LANG-1542: ToStringBuilder.reflectionToString - Wrong JSON format when object has a List of Enum. Thanks to Tr?n Ng?calcPackage Khoa, Gary Gregory.
 o            Make org.apache.commons.lang3.CharSequenceUtils.toCharArray(CharSequence) public.
 o            org.apache.commons:commons-parent 50 -> 51.
 o            org.junit-pioneer:junit-pioneer 0.5.4 -> 0.6.0.
@@ -681,7 +681,7 @@ Changes in this version include:
 
 New features:
 o LANG-1352: EnumUtils.getEnumIgnoreCase and isValidEnumIgnoreCase methods added Thanks to Ruslan Sibgatullin.
-o LANG-1372: Add ToStringSummary annotation Thanks to Sérgio Ozaki.
+o LANG-1372: Add ToStringSummary annotation Thanks to Sï¿½rgio Ozaki.
 o LANG-1356: Add bypass option for classes to recursive and reflective EqualsBuilder Thanks to Yathos UG.
 o LANG-1391: Improve Javadoc for StringUtils.isAnyEmpty(null) Thanks to Sauro Matulli, Oleg Chubaryov.
 o LANG-1393: Add API SystemUtils.String getEnvironmentVariable(final String name, final String defaultValue) Thanks to Gary Gregory.
@@ -893,7 +893,7 @@ o LANG-1292: WordUtils.wrap throws StringIndexOutOfBoundsException.
 o LANG-1287: RandomStringUtils#random can enter infinite loop if end parameter
              is to small. Thanks to Ivan Morozov.
 o LANG-1285: NullPointerException in FastDateParser$TimeZoneStrategy.
-             Thanks to Francesco Chicchiriccò.
+             Thanks to Francesco Chicchiriccï¿½.
 o LANG-1281: Javadoc of StringUtils.ordinalIndexOf is contradictory.
              Thanks to Andreas Lundblad.
 o LANG-1188: StringUtils#join(T...): warning: [unchecked] Possible heap
@@ -1211,9 +1211,9 @@ o LANG-1176: Improve ArrayUtils removeElements time complexity to O(n). Thanks
              to Jeffery Yuan.
 o LANG-1234: getLevenshteinDistance with a threshold: optimize implementation
              if the strings lengths differ more than the threshold. Thanks to
-             Jonatan Jönsson.
+             Jonatan Jï¿½nsson.
 o LANG-1151: Performance improvements for NumberUtils.isParsable. Thanks to
-             Juan Pablo Santos Rodríguez.
+             Juan Pablo Santos Rodrï¿½guez.
 o LANG-1218: EqualsBuilder.append(Object,Object) is too big to be inlined,
              which prevents whole builder to be scalarized. Thanks to
              Ruslan Cheremin.
@@ -1225,7 +1225,7 @@ o LANG-1182: Clarify Javadoc of StringUtils.containsAny(). Thanks to
 o LANG-1183: Making replacePattern/removePattern methods null safe in
              StringUtils.
 o LANG-1057: Replace StringBuilder with String concatenation for better
-             optimization. Thanks to Otávio Santana.
+             optimization. Thanks to Otï¿½vio Santana.
 o LANG-1075: Deprecate SystemUtils.FILE_SEPARATOR and
              SystemUtils.PATH_SEPARATOR.
 o LANG-979:  TypeUtils.parameterizeWithOwner - wrong format descriptor for
@@ -1272,13 +1272,13 @@ o LANG-1080: Add NoClassNameToStringStyle implementation of ToStringStyle.
              Thanks to Innokenty Shuvalov.
 o LANG-883:  Add StringUtils.containsAny(CharSequence, CharSequence...) method.
              Thanks to Daniel Stewart.
-o LANG-1052: Multiline recursive to string style. Thanks to Jan Matèrne.
+o LANG-1052: Multiline recursive to string style. Thanks to Jan Matï¿½rne.
 o LANG-536:  Add isSorted() to ArrayUtils. Thanks to James Sawle.
 o LANG-1033: Add StringUtils.countMatches(CharSequence, char)
 o LANG-1021: Provide methods to retrieve all fields/methods annotated with a
-             specific type. Thanks to Alexander Müller.
+             specific type. Thanks to Alexander Mï¿½ller.
 o LANG-1016: NumberUtils#isParsable method(s). Thanks to
-             Juan Pablo Santos Rodríguez.
+             Juan Pablo Santos Rodrï¿½guez.
 o LANG-999:  Add fuzzy String matching logic to StringUtils. Thanks to
              Ben Ripkens.
 o LANG-994:  Add zero copy read method to StrBuilder. Thanks to
@@ -1453,12 +1453,12 @@ o LANG-943:  Test DurationFormatUtilsTest.testEdgeDuration fails in
 o LANG-613:  ConstructorUtils.getAccessibleConstructor() Does Not Check the
              Accessibility of Enclosing Classes
 o LANG-951:  Fragments are wrong by 1 day when using fragment YEAR or MONTH.
-             Thanks to Sebastian Götz.
+             Thanks to Sebastian Gï¿½tz.
 o LANG-950:  FastDateParser does not handle two digit year parsing like
              SimpleDateFormat
 o LANG-949:  FastDateParserTest.testParses does not test FastDateParser
 o LANG-915:  Wrong locale handling in LocaleUtils.toLocale().
-             Thanks to Sergio Fernández.
+             Thanks to Sergio Fernï¿½ndez.
 
 CHANGES
 =========
@@ -1557,7 +1557,7 @@ o LANG-462:  FastDateFormat supports parse methods.
 BUG FIXES
 ===========
 
-o LANG-932:  Spelling fixes. Thanks to Ville Skyttä.
+o LANG-932:  Spelling fixes. Thanks to Ville Skyttï¿½.
 o LANG-929:  OctalUnescaper tried to parse all of \279.
 o LANG-928:  OctalUnescaper had bugs when parsing octals starting with a zero.
 o LANG-905:  EqualsBuilder returned true when comparing arrays, even when the
@@ -1700,7 +1700,7 @@ o LANG-444:  StringUtils.emptyToNull.
 o LANG-482:  Enhance StrSubstitutor to support nested ${var-${subvr}} expansion
 o LANG-482:  StrSubstitutor now supports substitution in variable names.
 o LANG-496:  A generic implementation of the Lazy initialization pattern.
-o LANG-497:  Addition of ContextedException and ContextedRuntimeException.
+o LANG-497:  math.Addition of ContextedException and ContextedRuntimeException.
 o LANG-498:  Add StringEscapeUtils.escapeText() methods.
 o LANG-499:  Add support for the handling of ExecutionExceptions.
 o LANG-501:  Add support for background initialization.

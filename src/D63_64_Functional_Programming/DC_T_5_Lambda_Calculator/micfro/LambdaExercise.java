@@ -24,7 +24,7 @@ public class LambdaExercise {
         BiFunction<Double, Double, Double> calculatorDivision = ((a, b) -> a / b);
 
         System.out.println("- - -");
-        System.out.print("Addition: ");
+        System.out.print("AdditionFromMathsModule: ");
         System.out.println(performOperation(2, 4, calculatorAddition));
 
         System.out.print("Subtraction: ");

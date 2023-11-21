@@ -1593,7 +1593,7 @@
 <span class="sourceLineNo">1585</span>     * StringUtils.deleteWhitespace(null)         = null<a name="line.1585"></a>
 <span class="sourceLineNo">1586</span>     * StringUtils.deleteWhitespace("")           = ""<a name="line.1586"></a>
 <span class="sourceLineNo">1587</span>     * StringUtils.deleteWhitespace("abc")        = "abc"<a name="line.1587"></a>
-<span class="sourceLineNo">1588</span>     * StringUtils.deleteWhitespace("   ab  c  ") = "abc"<a name="line.1588"></a>
+<span class="sourceLineNo">1588</span>     * StringUtils.deleteWhitespace("   ab  calcPackage  ") = "abc"<a name="line.1588"></a>
 <span class="sourceLineNo">1589</span>     * &lt;/pre&gt;<a name="line.1589"></a>
 <span class="sourceLineNo">1590</span>     *<a name="line.1590"></a>
 <span class="sourceLineNo">1591</span>     * @param str  the String to delete whitespace from, may be null<a name="line.1591"></a>
@@ -1624,7 +1624,7 @@
 <span class="sourceLineNo">1616</span>     * Compares two Strings, and returns the portion where they differ.<a name="line.1616"></a>
 <span class="sourceLineNo">1617</span>     * More precisely, return the remainder of the second String,<a name="line.1617"></a>
 <span class="sourceLineNo">1618</span>     * starting from where it's different from the first. This means that<a name="line.1618"></a>
-<span class="sourceLineNo">1619</span>     * the difference between "abc" and "ab" is the empty String and not "c".<a name="line.1619"></a>
+<span class="sourceLineNo">1619</span>     * the difference between "abc" and "ab" is the empty String and not "calcPackage".<a name="line.1619"></a>
 <span class="sourceLineNo">1620</span>     *<a name="line.1620"></a>
 <span class="sourceLineNo">1621</span>     * &lt;p&gt;For example,<a name="line.1621"></a>
 <span class="sourceLineNo">1622</span>     * {@code difference("i am a machine", "i am a robot") -&gt; "robot"}.&lt;/p&gt;<a name="line.1622"></a>
@@ -2285,11 +2285,11 @@
 <span class="sourceLineNo">2277</span>        }<a name="line.2277"></a>
 <span class="sourceLineNo">2278</span><a name="line.2278"></a>
 <span class="sourceLineNo">2279</span>        final int[] mtp = matches(first, second);<a name="line.2279"></a>
-<span class="sourceLineNo">2280</span>        final double m = mtp[0];<a name="line.2280"></a>
-<span class="sourceLineNo">2281</span>        if (m == 0) {<a name="line.2281"></a>
+<span class="sourceLineNo">2280</span>        final double mathPackage = mtp[0];<a name="line.2280"></a>
+<span class="sourceLineNo">2281</span>        if (mathPackage == 0) {<a name="line.2281"></a>
 <span class="sourceLineNo">2282</span>            return 0D;<a name="line.2282"></a>
 <span class="sourceLineNo">2283</span>        }<a name="line.2283"></a>
-<span class="sourceLineNo">2284</span>        final double j = (m / first.length() + m / second.length() + (m - mtp[1]) / m) / 3;<a name="line.2284"></a>
+<span class="sourceLineNo">2284</span>        final double j = (mathPackage / first.length() + mathPackage / second.length() + (mathPackage - mtp[1]) / mathPackage) / 3;<a name="line.2284"></a>
 <span class="sourceLineNo">2285</span>        final double jw = j &lt; 0.7D ? j : j + Math.min(DEFAULT_SCALING_FACTOR, 1D / mtp[3]) * mtp[2] * (1D - j);<a name="line.2285"></a>
 <span class="sourceLineNo">2286</span>        return Math.round(jw * 100.0D) / 100.0D;<a name="line.2286"></a>
 <span class="sourceLineNo">2287</span>    }<a name="line.2287"></a>
@@ -2302,8 +2302,8 @@
 <span class="sourceLineNo">2294</span>     * insertion or substitution).&lt;/p&gt;<a name="line.2294"></a>
 <span class="sourceLineNo">2295</span>     *<a name="line.2295"></a>
 <span class="sourceLineNo">2296</span>     * &lt;p&gt;The implementation uses a single-dimensional array of length s.length() + 1. See<a name="line.2296"></a>
-<span class="sourceLineNo">2297</span>     * &lt;a href="https://blog.softwx.net/2014/12/optimizing-levenshtein-algorithm-in-c.html"&gt;<a name="line.2297"></a>
-<span class="sourceLineNo">2298</span>     * https://blog.softwx.net/2014/12/optimizing-levenshtein-algorithm-in-c.html&lt;/a&gt; for details.&lt;/p&gt;<a name="line.2298"></a>
+<span class="sourceLineNo">2297</span>     * &lt;a href="https://blog.softwx.net/2014/12/optimizing-levenshtein-algorithm-in-calcPackage.html"&gt;<a name="line.2297"></a>
+<span class="sourceLineNo">2298</span>     * https://blog.softwx.net/2014/12/optimizing-levenshtein-algorithm-in-calcPackage.html&lt;/a&gt; for details.&lt;/p&gt;<a name="line.2298"></a>
 <span class="sourceLineNo">2299</span>     *<a name="line.2299"></a>
 <span class="sourceLineNo">2300</span>     * &lt;pre&gt;<a name="line.2300"></a>
 <span class="sourceLineNo">2301</span>     * StringUtils.getLevenshteinDistance(null, *)             = IllegalArgumentException<a name="line.2301"></a>
@@ -2336,22 +2336,22 @@
 <span class="sourceLineNo">2328</span>        }<a name="line.2328"></a>
 <span class="sourceLineNo">2329</span><a name="line.2329"></a>
 <span class="sourceLineNo">2330</span>        int n = s.length();<a name="line.2330"></a>
-<span class="sourceLineNo">2331</span>        int m = t.length();<a name="line.2331"></a>
+<span class="sourceLineNo">2331</span>        int mathPackage = t.length();<a name="line.2331"></a>
 <span class="sourceLineNo">2332</span><a name="line.2332"></a>
 <span class="sourceLineNo">2333</span>        if (n == 0) {<a name="line.2333"></a>
-<span class="sourceLineNo">2334</span>            return m;<a name="line.2334"></a>
+<span class="sourceLineNo">2334</span>            return mathPackage;<a name="line.2334"></a>
 <span class="sourceLineNo">2335</span>        }<a name="line.2335"></a>
-<span class="sourceLineNo">2336</span>        if (m == 0) {<a name="line.2336"></a>
+<span class="sourceLineNo">2336</span>        if (mathPackage == 0) {<a name="line.2336"></a>
 <span class="sourceLineNo">2337</span>            return n;<a name="line.2337"></a>
 <span class="sourceLineNo">2338</span>        }<a name="line.2338"></a>
 <span class="sourceLineNo">2339</span><a name="line.2339"></a>
-<span class="sourceLineNo">2340</span>        if (n &gt; m) {<a name="line.2340"></a>
+<span class="sourceLineNo">2340</span>        if (n &gt; mathPackage) {<a name="line.2340"></a>
 <span class="sourceLineNo">2341</span>            // swap the input strings to consume less memory<a name="line.2341"></a>
 <span class="sourceLineNo">2342</span>            final CharSequence tmp = s;<a name="line.2342"></a>
 <span class="sourceLineNo">2343</span>            s = t;<a name="line.2343"></a>
 <span class="sourceLineNo">2344</span>            t = tmp;<a name="line.2344"></a>
-<span class="sourceLineNo">2345</span>            n = m;<a name="line.2345"></a>
-<span class="sourceLineNo">2346</span>            m = t.length();<a name="line.2346"></a>
+<span class="sourceLineNo">2345</span>            n = mathPackage;<a name="line.2345"></a>
+<span class="sourceLineNo">2346</span>            mathPackage = t.length();<a name="line.2346"></a>
 <span class="sourceLineNo">2347</span>        }<a name="line.2347"></a>
 <span class="sourceLineNo">2348</span><a name="line.2348"></a>
 <span class="sourceLineNo">2349</span>        final int[] p = new int[n + 1];<a name="line.2349"></a>
@@ -2368,7 +2368,7 @@
 <span class="sourceLineNo">2360</span>            p[i] = i;<a name="line.2360"></a>
 <span class="sourceLineNo">2361</span>        }<a name="line.2361"></a>
 <span class="sourceLineNo">2362</span><a name="line.2362"></a>
-<span class="sourceLineNo">2363</span>        for (j = 1; j &lt;= m; j++) {<a name="line.2363"></a>
+<span class="sourceLineNo">2363</span>        for (j = 1; j &lt;= mathPackage; j++) {<a name="line.2363"></a>
 <span class="sourceLineNo">2364</span>            upperleft = p[0];<a name="line.2364"></a>
 <span class="sourceLineNo">2365</span>            jOfT = t.charAt(j - 1);<a name="line.2365"></a>
 <span class="sourceLineNo">2366</span>            p[0] = j;<a name="line.2366"></a>
@@ -2466,7 +2466,7 @@
 <span class="sourceLineNo">2458</span><a name="line.2458"></a>
 <span class="sourceLineNo">2459</span>        Additionally, this implementation decreases memory usage by using two<a name="line.2459"></a>
 <span class="sourceLineNo">2460</span>        single-dimensional arrays and swapping them back and forth instead of allocating<a name="line.2460"></a>
-<span class="sourceLineNo">2461</span>        an entire n by m matrix.  This requires a few minor changes, such as immediately returning<a name="line.2461"></a>
+<span class="sourceLineNo">2461</span>        an entire n by mathPackage matrix.  This requires a few minor changes, such as immediately returning<a name="line.2461"></a>
 <span class="sourceLineNo">2462</span>        when it's detected that the stripe has run off the matrix and initially filling the arrays with<a name="line.2462"></a>
 <span class="sourceLineNo">2463</span>        large values so that entries we don't compute are ignored.<a name="line.2463"></a>
 <span class="sourceLineNo">2464</span><a name="line.2464"></a>
@@ -2474,27 +2474,27 @@
 <span class="sourceLineNo">2466</span>         */<a name="line.2466"></a>
 <span class="sourceLineNo">2467</span><a name="line.2467"></a>
 <span class="sourceLineNo">2468</span>        int n = s.length(); // length of s<a name="line.2468"></a>
-<span class="sourceLineNo">2469</span>        int m = t.length(); // length of t<a name="line.2469"></a>
+<span class="sourceLineNo">2469</span>        int mathPackage = t.length(); // length of t<a name="line.2469"></a>
 <span class="sourceLineNo">2470</span><a name="line.2470"></a>
 <span class="sourceLineNo">2471</span>        // if one string is empty, the edit distance is necessarily the length of the other<a name="line.2471"></a>
 <span class="sourceLineNo">2472</span>        if (n == 0) {<a name="line.2472"></a>
-<span class="sourceLineNo">2473</span>            return m &lt;= threshold ? m : -1;<a name="line.2473"></a>
+<span class="sourceLineNo">2473</span>            return mathPackage &lt;= threshold ? mathPackage : -1;<a name="line.2473"></a>
 <span class="sourceLineNo">2474</span>        }<a name="line.2474"></a>
-<span class="sourceLineNo">2475</span>        if (m == 0) {<a name="line.2475"></a>
+<span class="sourceLineNo">2475</span>        if (mathPackage == 0) {<a name="line.2475"></a>
 <span class="sourceLineNo">2476</span>            return n &lt;= threshold ? n : -1;<a name="line.2476"></a>
 <span class="sourceLineNo">2477</span>        }<a name="line.2477"></a>
-<span class="sourceLineNo">2478</span>        if (Math.abs(n - m) &gt; threshold) {<a name="line.2478"></a>
+<span class="sourceLineNo">2478</span>        if (Math.abs(n - mathPackage) &gt; threshold) {<a name="line.2478"></a>
 <span class="sourceLineNo">2479</span>            // no need to calculate the distance if the length difference is greater than the threshold<a name="line.2479"></a>
 <span class="sourceLineNo">2480</span>            return -1;<a name="line.2480"></a>
 <span class="sourceLineNo">2481</span>        }<a name="line.2481"></a>
 <span class="sourceLineNo">2482</span><a name="line.2482"></a>
-<span class="sourceLineNo">2483</span>        if (n &gt; m) {<a name="line.2483"></a>
+<span class="sourceLineNo">2483</span>        if (n &gt; mathPackage) {<a name="line.2483"></a>
 <span class="sourceLineNo">2484</span>            // swap the two strings to consume less memory<a name="line.2484"></a>
 <span class="sourceLineNo">2485</span>            final CharSequence tmp = s;<a name="line.2485"></a>
 <span class="sourceLineNo">2486</span>            s = t;<a name="line.2486"></a>
 <span class="sourceLineNo">2487</span>            t = tmp;<a name="line.2487"></a>
-<span class="sourceLineNo">2488</span>            n = m;<a name="line.2488"></a>
-<span class="sourceLineNo">2489</span>            m = t.length();<a name="line.2489"></a>
+<span class="sourceLineNo">2488</span>            n = mathPackage;<a name="line.2488"></a>
+<span class="sourceLineNo">2489</span>            mathPackage = t.length();<a name="line.2489"></a>
 <span class="sourceLineNo">2490</span>        }<a name="line.2490"></a>
 <span class="sourceLineNo">2491</span><a name="line.2491"></a>
 <span class="sourceLineNo">2492</span>        int[] p = new int[n + 1]; // 'previous' cost array, horizontally<a name="line.2492"></a>
@@ -2512,7 +2512,7 @@
 <span class="sourceLineNo">2504</span>        Arrays.fill(d, Integer.MAX_VALUE);<a name="line.2504"></a>
 <span class="sourceLineNo">2505</span><a name="line.2505"></a>
 <span class="sourceLineNo">2506</span>        // iterates through t<a name="line.2506"></a>
-<span class="sourceLineNo">2507</span>        for (int j = 1; j &lt;= m; j++) {<a name="line.2507"></a>
+<span class="sourceLineNo">2507</span>        for (int j = 1; j &lt;= mathPackage; j++) {<a name="line.2507"></a>
 <span class="sourceLineNo">2508</span>            final char jOfT = t.charAt(j - 1); // jth character of t<a name="line.2508"></a>
 <span class="sourceLineNo">2509</span>            d[0] = j;<a name="line.2509"></a>
 <span class="sourceLineNo">2510</span><a name="line.2510"></a>
@@ -3247,9 +3247,9 @@
 <span class="sourceLineNo">3239</span>     * StringUtils.isAllLowerCase("  ")   = false<a name="line.3239"></a>
 <span class="sourceLineNo">3240</span>     * StringUtils.isAllLowerCase("abc")  = true<a name="line.3240"></a>
 <span class="sourceLineNo">3241</span>     * StringUtils.isAllLowerCase("abC")  = false<a name="line.3241"></a>
-<span class="sourceLineNo">3242</span>     * StringUtils.isAllLowerCase("ab c") = false<a name="line.3242"></a>
+<span class="sourceLineNo">3242</span>     * StringUtils.isAllLowerCase("ab calcPackage") = false<a name="line.3242"></a>
 <span class="sourceLineNo">3243</span>     * StringUtils.isAllLowerCase("ab1c") = false<a name="line.3243"></a>
-<span class="sourceLineNo">3244</span>     * StringUtils.isAllLowerCase("ab/c") = false<a name="line.3244"></a>
+<span class="sourceLineNo">3244</span>     * StringUtils.isAllLowerCase("ab/calcPackage") = false<a name="line.3244"></a>
 <span class="sourceLineNo">3245</span>     * &lt;/pre&gt;<a name="line.3245"></a>
 <span class="sourceLineNo">3246</span>     *<a name="line.3246"></a>
 <span class="sourceLineNo">3247</span>     * @param cs  the CharSequence to check, may be null<a name="line.3247"></a>
@@ -3317,7 +3317,7 @@
 <span class="sourceLineNo">3309</span>     * StringUtils.isAlpha("  ")   = false<a name="line.3309"></a>
 <span class="sourceLineNo">3310</span>     * StringUtils.isAlpha("abc")  = true<a name="line.3310"></a>
 <span class="sourceLineNo">3311</span>     * StringUtils.isAlpha("ab2c") = false<a name="line.3311"></a>
-<span class="sourceLineNo">3312</span>     * StringUtils.isAlpha("ab-c") = false<a name="line.3312"></a>
+<span class="sourceLineNo">3312</span>     * StringUtils.isAlpha("ab-calcPackage") = false<a name="line.3312"></a>
 <span class="sourceLineNo">3313</span>     * &lt;/pre&gt;<a name="line.3313"></a>
 <span class="sourceLineNo">3314</span>     *<a name="line.3314"></a>
 <span class="sourceLineNo">3315</span>     * @param cs  the CharSequence to check, may be null<a name="line.3315"></a>
@@ -3349,9 +3349,9 @@
 <span class="sourceLineNo">3341</span>     * StringUtils.isAlphanumeric("")     = false<a name="line.3341"></a>
 <span class="sourceLineNo">3342</span>     * StringUtils.isAlphanumeric("  ")   = false<a name="line.3342"></a>
 <span class="sourceLineNo">3343</span>     * StringUtils.isAlphanumeric("abc")  = true<a name="line.3343"></a>
-<span class="sourceLineNo">3344</span>     * StringUtils.isAlphanumeric("ab c") = false<a name="line.3344"></a>
+<span class="sourceLineNo">3344</span>     * StringUtils.isAlphanumeric("ab calcPackage") = false<a name="line.3344"></a>
 <span class="sourceLineNo">3345</span>     * StringUtils.isAlphanumeric("ab2c") = true<a name="line.3345"></a>
-<span class="sourceLineNo">3346</span>     * StringUtils.isAlphanumeric("ab-c") = false<a name="line.3346"></a>
+<span class="sourceLineNo">3346</span>     * StringUtils.isAlphanumeric("ab-calcPackage") = false<a name="line.3346"></a>
 <span class="sourceLineNo">3347</span>     * &lt;/pre&gt;<a name="line.3347"></a>
 <span class="sourceLineNo">3348</span>     *<a name="line.3348"></a>
 <span class="sourceLineNo">3349</span>     * @param cs  the CharSequence to check, may be null<a name="line.3349"></a>
@@ -3385,9 +3385,9 @@
 <span class="sourceLineNo">3377</span>     * StringUtils.isAlphanumericSpace("")     = true<a name="line.3377"></a>
 <span class="sourceLineNo">3378</span>     * StringUtils.isAlphanumericSpace("  ")   = true<a name="line.3378"></a>
 <span class="sourceLineNo">3379</span>     * StringUtils.isAlphanumericSpace("abc")  = true<a name="line.3379"></a>
-<span class="sourceLineNo">3380</span>     * StringUtils.isAlphanumericSpace("ab c") = true<a name="line.3380"></a>
+<span class="sourceLineNo">3380</span>     * StringUtils.isAlphanumericSpace("ab calcPackage") = true<a name="line.3380"></a>
 <span class="sourceLineNo">3381</span>     * StringUtils.isAlphanumericSpace("ab2c") = true<a name="line.3381"></a>
-<span class="sourceLineNo">3382</span>     * StringUtils.isAlphanumericSpace("ab-c") = false<a name="line.3382"></a>
+<span class="sourceLineNo">3382</span>     * StringUtils.isAlphanumericSpace("ab-calcPackage") = false<a name="line.3382"></a>
 <span class="sourceLineNo">3383</span>     * &lt;/pre&gt;<a name="line.3383"></a>
 <span class="sourceLineNo">3384</span>     *<a name="line.3384"></a>
 <span class="sourceLineNo">3385</span>     * @param cs  the CharSequence to check, may be null<a name="line.3385"></a>
@@ -3421,9 +3421,9 @@
 <span class="sourceLineNo">3413</span>     * StringUtils.isAlphaSpace("")     = true<a name="line.3413"></a>
 <span class="sourceLineNo">3414</span>     * StringUtils.isAlphaSpace("  ")   = true<a name="line.3414"></a>
 <span class="sourceLineNo">3415</span>     * StringUtils.isAlphaSpace("abc")  = true<a name="line.3415"></a>
-<span class="sourceLineNo">3416</span>     * StringUtils.isAlphaSpace("ab c") = true<a name="line.3416"></a>
+<span class="sourceLineNo">3416</span>     * StringUtils.isAlphaSpace("ab calcPackage") = true<a name="line.3416"></a>
 <span class="sourceLineNo">3417</span>     * StringUtils.isAlphaSpace("ab2c") = false<a name="line.3417"></a>
-<span class="sourceLineNo">3418</span>     * StringUtils.isAlphaSpace("ab-c") = false<a name="line.3418"></a>
+<span class="sourceLineNo">3418</span>     * StringUtils.isAlphaSpace("ab-calcPackage") = false<a name="line.3418"></a>
 <span class="sourceLineNo">3419</span>     * &lt;/pre&gt;<a name="line.3419"></a>
 <span class="sourceLineNo">3420</span>     *<a name="line.3420"></a>
 <span class="sourceLineNo">3421</span>     * @param cs  the CharSequence to check, may be null<a name="line.3421"></a>
@@ -3524,7 +3524,7 @@
 <span class="sourceLineNo">3516</span>     * StringUtils.isAsciiPrintable(" ")      = true<a name="line.3516"></a>
 <span class="sourceLineNo">3517</span>     * StringUtils.isAsciiPrintable("Ceki")   = true<a name="line.3517"></a>
 <span class="sourceLineNo">3518</span>     * StringUtils.isAsciiPrintable("ab2c")   = true<a name="line.3518"></a>
-<span class="sourceLineNo">3519</span>     * StringUtils.isAsciiPrintable("!ab-c~") = true<a name="line.3519"></a>
+<span class="sourceLineNo">3519</span>     * StringUtils.isAsciiPrintable("!ab-calcPackage~") = true<a name="line.3519"></a>
 <span class="sourceLineNo">3520</span>     * StringUtils.isAsciiPrintable("\u0020") = true<a name="line.3520"></a>
 <span class="sourceLineNo">3521</span>     * StringUtils.isAsciiPrintable("\u0021") = true<a name="line.3521"></a>
 <span class="sourceLineNo">3522</span>     * StringUtils.isAsciiPrintable("\u007e") = true<a name="line.3522"></a>
@@ -3618,7 +3618,7 @@
 <span class="sourceLineNo">3610</span>     * StringUtils.isMixedCase("ABC")   = false<a name="line.3610"></a>
 <span class="sourceLineNo">3611</span>     * StringUtils.isMixedCase("abc")   = false<a name="line.3611"></a>
 <span class="sourceLineNo">3612</span>     * StringUtils.isMixedCase("aBc")   = true<a name="line.3612"></a>
-<span class="sourceLineNo">3613</span>     * StringUtils.isMixedCase("A c")   = true<a name="line.3613"></a>
+<span class="sourceLineNo">3613</span>     * StringUtils.isMixedCase("A calcPackage")   = true<a name="line.3613"></a>
 <span class="sourceLineNo">3614</span>     * StringUtils.isMixedCase("A1c")   = true<a name="line.3614"></a>
 <span class="sourceLineNo">3615</span>     * StringUtils.isMixedCase("a/C")   = true<a name="line.3615"></a>
 <span class="sourceLineNo">3616</span>     * StringUtils.isMixedCase("aC\t")  = true<a name="line.3616"></a>
@@ -3839,7 +3839,7 @@
 <span class="sourceLineNo">3831</span>     * StringUtils.isWhitespace("  ")   = true<a name="line.3831"></a>
 <span class="sourceLineNo">3832</span>     * StringUtils.isWhitespace("abc")  = false<a name="line.3832"></a>
 <span class="sourceLineNo">3833</span>     * StringUtils.isWhitespace("ab2c") = false<a name="line.3833"></a>
-<span class="sourceLineNo">3834</span>     * StringUtils.isWhitespace("ab-c") = false<a name="line.3834"></a>
+<span class="sourceLineNo">3834</span>     * StringUtils.isWhitespace("ab-calcPackage") = false<a name="line.3834"></a>
 <span class="sourceLineNo">3835</span>     * &lt;/pre&gt;<a name="line.3835"></a>
 <span class="sourceLineNo">3836</span>     *<a name="line.3836"></a>
 <span class="sourceLineNo">3837</span>     * @param cs  the CharSequence to check, may be null<a name="line.3837"></a>
@@ -4405,8 +4405,8 @@
 <span class="sourceLineNo">4397</span>     * StringUtils.join(null, *)               = null<a name="line.4397"></a>
 <span class="sourceLineNo">4398</span>     * StringUtils.join([], *)                 = ""<a name="line.4398"></a>
 <span class="sourceLineNo">4399</span>     * StringUtils.join([null], *)             = ""<a name="line.4399"></a>
-<span class="sourceLineNo">4400</span>     * StringUtils.join(["a", "b", "c"], ';')  = "a;b;c"<a name="line.4400"></a>
-<span class="sourceLineNo">4401</span>     * StringUtils.join(["a", "b", "c"], null) = "abc"<a name="line.4401"></a>
+<span class="sourceLineNo">4400</span>     * StringUtils.join(["a", "b", "calcPackage"], ';')  = "a;b;calcPackage"<a name="line.4400"></a>
+<span class="sourceLineNo">4401</span>     * StringUtils.join(["a", "b", "calcPackage"], null) = "abc"<a name="line.4401"></a>
 <span class="sourceLineNo">4402</span>     * StringUtils.join([null, "", "a"], ';')  = ";;a"<a name="line.4402"></a>
 <span class="sourceLineNo">4403</span>     * &lt;/pre&gt;<a name="line.4403"></a>
 <span class="sourceLineNo">4404</span>     *<a name="line.4404"></a>
@@ -4443,8 +4443,8 @@
 <span class="sourceLineNo">4435</span>     * StringUtils.join(null, *)               = null<a name="line.4435"></a>
 <span class="sourceLineNo">4436</span>     * StringUtils.join([], *)                 = ""<a name="line.4436"></a>
 <span class="sourceLineNo">4437</span>     * StringUtils.join([null], *)             = ""<a name="line.4437"></a>
-<span class="sourceLineNo">4438</span>     * StringUtils.join(["a", "b", "c"], ';')  = "a;b;c"<a name="line.4438"></a>
-<span class="sourceLineNo">4439</span>     * StringUtils.join(["a", "b", "c"], null) = "abc"<a name="line.4439"></a>
+<span class="sourceLineNo">4438</span>     * StringUtils.join(["a", "b", "calcPackage"], ';')  = "a;b;calcPackage"<a name="line.4438"></a>
+<span class="sourceLineNo">4439</span>     * StringUtils.join(["a", "b", "calcPackage"], null) = "abc"<a name="line.4439"></a>
 <span class="sourceLineNo">4440</span>     * StringUtils.join([null, "", "a"], ';')  = ";;a"<a name="line.4440"></a>
 <span class="sourceLineNo">4441</span>     * &lt;/pre&gt;<a name="line.4441"></a>
 <span class="sourceLineNo">4442</span>     *<a name="line.4442"></a>
@@ -4557,8 +4557,8 @@
 <span class="sourceLineNo">4549</span>     * StringUtils.join(null, *)               = null<a name="line.4549"></a>
 <span class="sourceLineNo">4550</span>     * StringUtils.join([], *)                 = ""<a name="line.4550"></a>
 <span class="sourceLineNo">4551</span>     * StringUtils.join([null], *)             = ""<a name="line.4551"></a>
-<span class="sourceLineNo">4552</span>     * StringUtils.join(["a", "b", "c"], ';')  = "a;b;c"<a name="line.4552"></a>
-<span class="sourceLineNo">4553</span>     * StringUtils.join(["a", "b", "c"], null) = "abc"<a name="line.4553"></a>
+<span class="sourceLineNo">4552</span>     * StringUtils.join(["a", "b", "calcPackage"], ';')  = "a;b;calcPackage"<a name="line.4552"></a>
+<span class="sourceLineNo">4553</span>     * StringUtils.join(["a", "b", "calcPackage"], null) = "abc"<a name="line.4553"></a>
 <span class="sourceLineNo">4554</span>     * StringUtils.join([null, "", "a"], ';')  = ";;a"<a name="line.4554"></a>
 <span class="sourceLineNo">4555</span>     * &lt;/pre&gt;<a name="line.4555"></a>
 <span class="sourceLineNo">4556</span>     *<a name="line.4556"></a>
@@ -4586,8 +4586,8 @@
 <span class="sourceLineNo">4578</span>     * StringUtils.join(null, *)               = null<a name="line.4578"></a>
 <span class="sourceLineNo">4579</span>     * StringUtils.join([], *)                 = ""<a name="line.4579"></a>
 <span class="sourceLineNo">4580</span>     * StringUtils.join([null], *)             = ""<a name="line.4580"></a>
-<span class="sourceLineNo">4581</span>     * StringUtils.join(["a", "b", "c"], ';')  = "a;b;c"<a name="line.4581"></a>
-<span class="sourceLineNo">4582</span>     * StringUtils.join(["a", "b", "c"], null) = "abc"<a name="line.4582"></a>
+<span class="sourceLineNo">4581</span>     * StringUtils.join(["a", "b", "calcPackage"], ';')  = "a;b;calcPackage"<a name="line.4581"></a>
+<span class="sourceLineNo">4582</span>     * StringUtils.join(["a", "b", "calcPackage"], null) = "abc"<a name="line.4582"></a>
 <span class="sourceLineNo">4583</span>     * StringUtils.join([null, "", "a"], ';')  = ";;a"<a name="line.4583"></a>
 <span class="sourceLineNo">4584</span>     * &lt;/pre&gt;<a name="line.4584"></a>
 <span class="sourceLineNo">4585</span>     *<a name="line.4585"></a>
@@ -4617,9 +4617,9 @@
 <span class="sourceLineNo">4609</span>     * StringUtils.join(null, *)                = null<a name="line.4609"></a>
 <span class="sourceLineNo">4610</span>     * StringUtils.join([], *)                  = ""<a name="line.4610"></a>
 <span class="sourceLineNo">4611</span>     * StringUtils.join([null], *)              = ""<a name="line.4611"></a>
-<span class="sourceLineNo">4612</span>     * StringUtils.join(["a", "b", "c"], "--")  = "a--b--c"<a name="line.4612"></a>
-<span class="sourceLineNo">4613</span>     * StringUtils.join(["a", "b", "c"], null)  = "abc"<a name="line.4613"></a>
-<span class="sourceLineNo">4614</span>     * StringUtils.join(["a", "b", "c"], "")    = "abc"<a name="line.4614"></a>
+<span class="sourceLineNo">4612</span>     * StringUtils.join(["a", "b", "calcPackage"], "--")  = "a--b--calcPackage"<a name="line.4612"></a>
+<span class="sourceLineNo">4613</span>     * StringUtils.join(["a", "b", "calcPackage"], null)  = "abc"<a name="line.4613"></a>
+<span class="sourceLineNo">4614</span>     * StringUtils.join(["a", "b", "calcPackage"], "")    = "abc"<a name="line.4614"></a>
 <span class="sourceLineNo">4615</span>     * StringUtils.join([null, "", "a"], ',')   = ",,a"<a name="line.4615"></a>
 <span class="sourceLineNo">4616</span>     * &lt;/pre&gt;<a name="line.4616"></a>
 <span class="sourceLineNo">4617</span>     *<a name="line.4617"></a>
@@ -4644,12 +4644,12 @@
 <span class="sourceLineNo">4636</span>     * StringUtils.join(null, *, *, *)                = null<a name="line.4636"></a>
 <span class="sourceLineNo">4637</span>     * StringUtils.join([], *, *, *)                  = ""<a name="line.4637"></a>
 <span class="sourceLineNo">4638</span>     * StringUtils.join([null], *, *, *)              = ""<a name="line.4638"></a>
-<span class="sourceLineNo">4639</span>     * StringUtils.join(["a", "b", "c"], "--", 0, 3)  = "a--b--c"<a name="line.4639"></a>
-<span class="sourceLineNo">4640</span>     * StringUtils.join(["a", "b", "c"], "--", 1, 3)  = "b--c"<a name="line.4640"></a>
-<span class="sourceLineNo">4641</span>     * StringUtils.join(["a", "b", "c"], "--", 2, 3)  = "c"<a name="line.4641"></a>
-<span class="sourceLineNo">4642</span>     * StringUtils.join(["a", "b", "c"], "--", 2, 2)  = ""<a name="line.4642"></a>
-<span class="sourceLineNo">4643</span>     * StringUtils.join(["a", "b", "c"], null, 0, 3)  = "abc"<a name="line.4643"></a>
-<span class="sourceLineNo">4644</span>     * StringUtils.join(["a", "b", "c"], "", 0, 3)    = "abc"<a name="line.4644"></a>
+<span class="sourceLineNo">4639</span>     * StringUtils.join(["a", "b", "calcPackage"], "--", 0, 3)  = "a--b--calcPackage"<a name="line.4639"></a>
+<span class="sourceLineNo">4640</span>     * StringUtils.join(["a", "b", "calcPackage"], "--", 1, 3)  = "b--calcPackage"<a name="line.4640"></a>
+<span class="sourceLineNo">4641</span>     * StringUtils.join(["a", "b", "calcPackage"], "--", 2, 3)  = "calcPackage"<a name="line.4641"></a>
+<span class="sourceLineNo">4642</span>     * StringUtils.join(["a", "b", "calcPackage"], "--", 2, 2)  = ""<a name="line.4642"></a>
+<span class="sourceLineNo">4643</span>     * StringUtils.join(["a", "b", "calcPackage"], null, 0, 3)  = "abc"<a name="line.4643"></a>
+<span class="sourceLineNo">4644</span>     * StringUtils.join(["a", "b", "calcPackage"], "", 0, 3)    = "abc"<a name="line.4644"></a>
 <span class="sourceLineNo">4645</span>     * StringUtils.join([null, "", "a"], ',', 0, 3)   = ",,a"<a name="line.4645"></a>
 <span class="sourceLineNo">4646</span>     * &lt;/pre&gt;<a name="line.4646"></a>
 <span class="sourceLineNo">4647</span>     *<a name="line.4647"></a>
@@ -4758,7 +4758,7 @@
 <span class="sourceLineNo">4750</span>     * StringUtils.join(null)            = null<a name="line.4750"></a>
 <span class="sourceLineNo">4751</span>     * StringUtils.join([])              = ""<a name="line.4751"></a>
 <span class="sourceLineNo">4752</span>     * StringUtils.join([null])          = ""<a name="line.4752"></a>
-<span class="sourceLineNo">4753</span>     * StringUtils.join(["a", "b", "c"]) = "abc"<a name="line.4753"></a>
+<span class="sourceLineNo">4753</span>     * StringUtils.join(["a", "b", "calcPackage"]) = "abc"<a name="line.4753"></a>
 <span class="sourceLineNo">4754</span>     * StringUtils.join([null, "", "a"]) = "a"<a name="line.4754"></a>
 <span class="sourceLineNo">4755</span>     * &lt;/pre&gt;<a name="line.4755"></a>
 <span class="sourceLineNo">4756</span>     *<a name="line.4756"></a>
@@ -5409,7 +5409,7 @@
 <span class="sourceLineNo">5401</span>     * StringUtils.mid("", 0, *)      = ""<a name="line.5401"></a>
 <span class="sourceLineNo">5402</span>     * StringUtils.mid("abc", 0, 2)   = "ab"<a name="line.5402"></a>
 <span class="sourceLineNo">5403</span>     * StringUtils.mid("abc", 0, 4)   = "abc"<a name="line.5403"></a>
-<span class="sourceLineNo">5404</span>     * StringUtils.mid("abc", 2, 4)   = "c"<a name="line.5404"></a>
+<span class="sourceLineNo">5404</span>     * StringUtils.mid("abc", 2, 4)   = "calcPackage"<a name="line.5404"></a>
 <span class="sourceLineNo">5405</span>     * StringUtils.mid("abc", 4, 2)   = ""<a name="line.5405"></a>
 <span class="sourceLineNo">5406</span>     * StringUtils.mid("abc", -2, 2)  = "ab"<a name="line.5406"></a>
 <span class="sourceLineNo">5407</span>     * &lt;/pre&gt;<a name="line.5407"></a>
@@ -7045,8 +7045,8 @@
 <span class="sourceLineNo">7037</span>     * &lt;pre&gt;<a name="line.7037"></a>
 <span class="sourceLineNo">7038</span>     * StringUtils.reverseDelimited(null, *)      = null<a name="line.7038"></a>
 <span class="sourceLineNo">7039</span>     * StringUtils.reverseDelimited("", *)        = ""<a name="line.7039"></a>
-<span class="sourceLineNo">7040</span>     * StringUtils.reverseDelimited("a.b.c", 'x') = "a.b.c"<a name="line.7040"></a>
-<span class="sourceLineNo">7041</span>     * StringUtils.reverseDelimited("a.b.c", ".") = "c.b.a"<a name="line.7041"></a>
+<span class="sourceLineNo">7040</span>     * StringUtils.reverseDelimited("a.b.calcPackage", 'x') = "a.b.calcPackage"<a name="line.7040"></a>
+<span class="sourceLineNo">7041</span>     * StringUtils.reverseDelimited("a.b.calcPackage", ".") = "calcPackage.b.a"<a name="line.7041"></a>
 <span class="sourceLineNo">7042</span>     * &lt;/pre&gt;<a name="line.7042"></a>
 <span class="sourceLineNo">7043</span>     *<a name="line.7043"></a>
 <span class="sourceLineNo">7044</span>     * @param str  the String to reverse, may be null<a name="line.7044"></a>
@@ -7292,10 +7292,10 @@
 <span class="sourceLineNo">7284</span>     * &lt;pre&gt;<a name="line.7284"></a>
 <span class="sourceLineNo">7285</span>     * StringUtils.split(null, *)         = null<a name="line.7285"></a>
 <span class="sourceLineNo">7286</span>     * StringUtils.split("", *)           = []<a name="line.7286"></a>
-<span class="sourceLineNo">7287</span>     * StringUtils.split("a.b.c", '.')    = ["a", "b", "c"]<a name="line.7287"></a>
-<span class="sourceLineNo">7288</span>     * StringUtils.split("a..b.c", '.')   = ["a", "b", "c"]<a name="line.7288"></a>
-<span class="sourceLineNo">7289</span>     * StringUtils.split("a:b:c", '.')    = ["a:b:c"]<a name="line.7289"></a>
-<span class="sourceLineNo">7290</span>     * StringUtils.split("a b c", ' ')    = ["a", "b", "c"]<a name="line.7290"></a>
+<span class="sourceLineNo">7287</span>     * StringUtils.split("a.b.calcPackage", '.')    = ["a", "b", "calcPackage"]<a name="line.7287"></a>
+<span class="sourceLineNo">7288</span>     * StringUtils.split("a..b.calcPackage", '.')   = ["a", "b", "calcPackage"]<a name="line.7288"></a>
+<span class="sourceLineNo">7289</span>     * StringUtils.split("a:b:calcPackage", '.')    = ["a:b:calcPackage"]<a name="line.7289"></a>
+<span class="sourceLineNo">7290</span>     * StringUtils.split("a b calcPackage", ' ')    = ["a", "b", "calcPackage"]<a name="line.7290"></a>
 <span class="sourceLineNo">7291</span>     * &lt;/pre&gt;<a name="line.7291"></a>
 <span class="sourceLineNo">7292</span>     *<a name="line.7292"></a>
 <span class="sourceLineNo">7293</span>     * @param str  the String to parse, may be null<a name="line.7293"></a>
@@ -7414,28 +7414,28 @@
 <span class="sourceLineNo">7406</span>        if (str.isEmpty()) {<a name="line.7406"></a>
 <span class="sourceLineNo">7407</span>            return ArrayUtils.EMPTY_STRING_ARRAY;<a name="line.7407"></a>
 <span class="sourceLineNo">7408</span>        }<a name="line.7408"></a>
-<span class="sourceLineNo">7409</span>        final char[] c = str.toCharArray();<a name="line.7409"></a>
+<span class="sourceLineNo">7409</span>        final char[] calcPackage = str.toCharArray();<a name="line.7409"></a>
 <span class="sourceLineNo">7410</span>        final List&lt;String&gt; list = new ArrayList&lt;&gt;();<a name="line.7410"></a>
 <span class="sourceLineNo">7411</span>        int tokenStart = 0;<a name="line.7411"></a>
-<span class="sourceLineNo">7412</span>        int currentType = Character.getType(c[tokenStart]);<a name="line.7412"></a>
-<span class="sourceLineNo">7413</span>        for (int pos = tokenStart + 1; pos &lt; c.length; pos++) {<a name="line.7413"></a>
-<span class="sourceLineNo">7414</span>            final int type = Character.getType(c[pos]);<a name="line.7414"></a>
+<span class="sourceLineNo">7412</span>        int currentType = Character.getType(calcPackage[tokenStart]);<a name="line.7412"></a>
+<span class="sourceLineNo">7413</span>        for (int pos = tokenStart + 1; pos &lt; calcPackage.length; pos++) {<a name="line.7413"></a>
+<span class="sourceLineNo">7414</span>            final int type = Character.getType(calcPackage[pos]);<a name="line.7414"></a>
 <span class="sourceLineNo">7415</span>            if (type == currentType) {<a name="line.7415"></a>
 <span class="sourceLineNo">7416</span>                continue;<a name="line.7416"></a>
 <span class="sourceLineNo">7417</span>            }<a name="line.7417"></a>
 <span class="sourceLineNo">7418</span>            if (camelCase &amp;&amp; type == Character.LOWERCASE_LETTER &amp;&amp; currentType == Character.UPPERCASE_LETTER) {<a name="line.7418"></a>
 <span class="sourceLineNo">7419</span>                final int newTokenStart = pos - 1;<a name="line.7419"></a>
 <span class="sourceLineNo">7420</span>                if (newTokenStart != tokenStart) {<a name="line.7420"></a>
-<span class="sourceLineNo">7421</span>                    list.add(new String(c, tokenStart, newTokenStart - tokenStart));<a name="line.7421"></a>
+<span class="sourceLineNo">7421</span>                    list.add(new String(calcPackage, tokenStart, newTokenStart - tokenStart));<a name="line.7421"></a>
 <span class="sourceLineNo">7422</span>                    tokenStart = newTokenStart;<a name="line.7422"></a>
 <span class="sourceLineNo">7423</span>                }<a name="line.7423"></a>
 <span class="sourceLineNo">7424</span>            } else {<a name="line.7424"></a>
-<span class="sourceLineNo">7425</span>                list.add(new String(c, tokenStart, pos - tokenStart));<a name="line.7425"></a>
+<span class="sourceLineNo">7425</span>                list.add(new String(calcPackage, tokenStart, pos - tokenStart));<a name="line.7425"></a>
 <span class="sourceLineNo">7426</span>                tokenStart = pos;<a name="line.7426"></a>
 <span class="sourceLineNo">7427</span>            }<a name="line.7427"></a>
 <span class="sourceLineNo">7428</span>            currentType = type;<a name="line.7428"></a>
 <span class="sourceLineNo">7429</span>        }<a name="line.7429"></a>
-<span class="sourceLineNo">7430</span>        list.add(new String(c, tokenStart, c.length - tokenStart));<a name="line.7430"></a>
+<span class="sourceLineNo">7430</span>        list.add(new String(calcPackage, tokenStart, calcPackage.length - tokenStart));<a name="line.7430"></a>
 <span class="sourceLineNo">7431</span>        return list.toArray(ArrayUtils.EMPTY_STRING_ARRAY);<a name="line.7431"></a>
 <span class="sourceLineNo">7432</span>    }<a name="line.7432"></a>
 <span class="sourceLineNo">7433</span><a name="line.7433"></a>
@@ -7709,16 +7709,16 @@
 <span class="sourceLineNo">7701</span>     * &lt;pre&gt;<a name="line.7701"></a>
 <span class="sourceLineNo">7702</span>     * StringUtils.splitPreserveAllTokens(null, *)         = null<a name="line.7702"></a>
 <span class="sourceLineNo">7703</span>     * StringUtils.splitPreserveAllTokens("", *)           = []<a name="line.7703"></a>
-<span class="sourceLineNo">7704</span>     * StringUtils.splitPreserveAllTokens("a.b.c", '.')    = ["a", "b", "c"]<a name="line.7704"></a>
-<span class="sourceLineNo">7705</span>     * StringUtils.splitPreserveAllTokens("a..b.c", '.')   = ["a", "", "b", "c"]<a name="line.7705"></a>
-<span class="sourceLineNo">7706</span>     * StringUtils.splitPreserveAllTokens("a:b:c", '.')    = ["a:b:c"]<a name="line.7706"></a>
-<span class="sourceLineNo">7707</span>     * StringUtils.splitPreserveAllTokens("a\tb\nc", null) = ["a", "b", "c"]<a name="line.7707"></a>
-<span class="sourceLineNo">7708</span>     * StringUtils.splitPreserveAllTokens("a b c", ' ')    = ["a", "b", "c"]<a name="line.7708"></a>
-<span class="sourceLineNo">7709</span>     * StringUtils.splitPreserveAllTokens("a b c ", ' ')   = ["a", "b", "c", ""]<a name="line.7709"></a>
-<span class="sourceLineNo">7710</span>     * StringUtils.splitPreserveAllTokens("a b c  ", ' ')   = ["a", "b", "c", "", ""]<a name="line.7710"></a>
-<span class="sourceLineNo">7711</span>     * StringUtils.splitPreserveAllTokens(" a b c", ' ')   = ["", a", "b", "c"]<a name="line.7711"></a>
-<span class="sourceLineNo">7712</span>     * StringUtils.splitPreserveAllTokens("  a b c", ' ')  = ["", "", a", "b", "c"]<a name="line.7712"></a>
-<span class="sourceLineNo">7713</span>     * StringUtils.splitPreserveAllTokens(" a b c ", ' ')  = ["", a", "b", "c", ""]<a name="line.7713"></a>
+<span class="sourceLineNo">7704</span>     * StringUtils.splitPreserveAllTokens("a.b.calcPackage", '.')    = ["a", "b", "calcPackage"]<a name="line.7704"></a>
+<span class="sourceLineNo">7705</span>     * StringUtils.splitPreserveAllTokens("a..b.calcPackage", '.')   = ["a", "", "b", "calcPackage"]<a name="line.7705"></a>
+<span class="sourceLineNo">7706</span>     * StringUtils.splitPreserveAllTokens("a:b:calcPackage", '.')    = ["a:b:calcPackage"]<a name="line.7706"></a>
+<span class="sourceLineNo">7707</span>     * StringUtils.splitPreserveAllTokens("a\tb\nc", null) = ["a", "b", "calcPackage"]<a name="line.7707"></a>
+<span class="sourceLineNo">7708</span>     * StringUtils.splitPreserveAllTokens("a b calcPackage", ' ')    = ["a", "b", "calcPackage"]<a name="line.7708"></a>
+<span class="sourceLineNo">7709</span>     * StringUtils.splitPreserveAllTokens("a b calcPackage ", ' ')   = ["a", "b", "calcPackage", ""]<a name="line.7709"></a>
+<span class="sourceLineNo">7710</span>     * StringUtils.splitPreserveAllTokens("a b calcPackage  ", ' ')   = ["a", "b", "calcPackage", "", ""]<a name="line.7710"></a>
+<span class="sourceLineNo">7711</span>     * StringUtils.splitPreserveAllTokens(" a b calcPackage", ' ')   = ["", a", "b", "calcPackage"]<a name="line.7711"></a>
+<span class="sourceLineNo">7712</span>     * StringUtils.splitPreserveAllTokens("  a b calcPackage", ' ')  = ["", "", a", "b", "calcPackage"]<a name="line.7712"></a>
+<span class="sourceLineNo">7713</span>     * StringUtils.splitPreserveAllTokens(" a b calcPackage ", ' ')  = ["", a", "b", "calcPackage", ""]<a name="line.7713"></a>
 <span class="sourceLineNo">7714</span>     * &lt;/pre&gt;<a name="line.7714"></a>
 <span class="sourceLineNo">7715</span>     *<a name="line.7715"></a>
 <span class="sourceLineNo">7716</span>     * @param str  the String to parse, may be {@code null}<a name="line.7716"></a>
@@ -8080,7 +8080,7 @@
 <span class="sourceLineNo">8072</span>     * StringUtils.strip("  abc")  = "abc"<a name="line.8072"></a>
 <span class="sourceLineNo">8073</span>     * StringUtils.strip("abc  ")  = "abc"<a name="line.8073"></a>
 <span class="sourceLineNo">8074</span>     * StringUtils.strip(" abc ")  = "abc"<a name="line.8074"></a>
-<span class="sourceLineNo">8075</span>     * StringUtils.strip(" ab c ") = "ab c"<a name="line.8075"></a>
+<span class="sourceLineNo">8075</span>     * StringUtils.strip(" ab calcPackage ") = "ab calcPackage"<a name="line.8075"></a>
 <span class="sourceLineNo">8076</span>     * &lt;/pre&gt;<a name="line.8076"></a>
 <span class="sourceLineNo">8077</span>     *<a name="line.8077"></a>
 <span class="sourceLineNo">8078</span>     * @param str  the String to remove whitespace from, may be null<a name="line.8078"></a>
@@ -8311,7 +8311,7 @@
 <span class="sourceLineNo">8303</span>     * StringUtils.stripToEmpty("  abc")  = "abc"<a name="line.8303"></a>
 <span class="sourceLineNo">8304</span>     * StringUtils.stripToEmpty("abc  ")  = "abc"<a name="line.8304"></a>
 <span class="sourceLineNo">8305</span>     * StringUtils.stripToEmpty(" abc ")  = "abc"<a name="line.8305"></a>
-<span class="sourceLineNo">8306</span>     * StringUtils.stripToEmpty(" ab c ") = "ab c"<a name="line.8306"></a>
+<span class="sourceLineNo">8306</span>     * StringUtils.stripToEmpty(" ab calcPackage ") = "ab calcPackage"<a name="line.8306"></a>
 <span class="sourceLineNo">8307</span>     * &lt;/pre&gt;<a name="line.8307"></a>
 <span class="sourceLineNo">8308</span>     *<a name="line.8308"></a>
 <span class="sourceLineNo">8309</span>     * @param str  the String to be stripped, may be null<a name="line.8309"></a>
@@ -8337,7 +8337,7 @@
 <span class="sourceLineNo">8329</span>     * StringUtils.stripToNull("  abc")  = "abc"<a name="line.8329"></a>
 <span class="sourceLineNo">8330</span>     * StringUtils.stripToNull("abc  ")  = "abc"<a name="line.8330"></a>
 <span class="sourceLineNo">8331</span>     * StringUtils.stripToNull(" abc ")  = "abc"<a name="line.8331"></a>
-<span class="sourceLineNo">8332</span>     * StringUtils.stripToNull(" ab c ") = "ab c"<a name="line.8332"></a>
+<span class="sourceLineNo">8332</span>     * StringUtils.stripToNull(" ab calcPackage ") = "ab calcPackage"<a name="line.8332"></a>
 <span class="sourceLineNo">8333</span>     * &lt;/pre&gt;<a name="line.8333"></a>
 <span class="sourceLineNo">8334</span>     *<a name="line.8334"></a>
 <span class="sourceLineNo">8335</span>     * @param str  the String to be stripped, may be null<a name="line.8335"></a>
@@ -8366,7 +8366,7 @@
 <span class="sourceLineNo">8358</span>     * StringUtils.substring(null, *)   = null<a name="line.8358"></a>
 <span class="sourceLineNo">8359</span>     * StringUtils.substring("", *)     = ""<a name="line.8359"></a>
 <span class="sourceLineNo">8360</span>     * StringUtils.substring("abc", 0)  = "abc"<a name="line.8360"></a>
-<span class="sourceLineNo">8361</span>     * StringUtils.substring("abc", 2)  = "c"<a name="line.8361"></a>
+<span class="sourceLineNo">8361</span>     * StringUtils.substring("abc", 2)  = "calcPackage"<a name="line.8361"></a>
 <span class="sourceLineNo">8362</span>     * StringUtils.substring("abc", 4)  = ""<a name="line.8362"></a>
 <span class="sourceLineNo">8363</span>     * StringUtils.substring("abc", -2) = "bc"<a name="line.8363"></a>
 <span class="sourceLineNo">8364</span>     * StringUtils.substring("abc", -4) = "abc"<a name="line.8364"></a>
@@ -8417,7 +8417,7 @@
 <span class="sourceLineNo">8409</span>     * StringUtils.substring("", * ,  *)    = "";<a name="line.8409"></a>
 <span class="sourceLineNo">8410</span>     * StringUtils.substring("abc", 0, 2)   = "ab"<a name="line.8410"></a>
 <span class="sourceLineNo">8411</span>     * StringUtils.substring("abc", 2, 0)   = ""<a name="line.8411"></a>
-<span class="sourceLineNo">8412</span>     * StringUtils.substring("abc", 2, 4)   = "c"<a name="line.8412"></a>
+<span class="sourceLineNo">8412</span>     * StringUtils.substring("abc", 2, 4)   = "calcPackage"<a name="line.8412"></a>
 <span class="sourceLineNo">8413</span>     * StringUtils.substring("abc", 4, 6)   = ""<a name="line.8413"></a>
 <span class="sourceLineNo">8414</span>     * StringUtils.substring("abc", 2, 2)   = ""<a name="line.8414"></a>
 <span class="sourceLineNo">8415</span>     * StringUtils.substring("abc", -2, -1) = "b"<a name="line.8415"></a>
@@ -8479,7 +8479,7 @@
 <span class="sourceLineNo">8471</span>     * StringUtils.substringAfter("", *)        = ""<a name="line.8471"></a>
 <span class="sourceLineNo">8472</span>     * StringUtils.substringAfter("abc", 'a')   = "bc"<a name="line.8472"></a>
 <span class="sourceLineNo">8473</span>     * StringUtils.substringAfter("abcba", 'b') = "cba"<a name="line.8473"></a>
-<span class="sourceLineNo">8474</span>     * StringUtils.substringAfter("abc", 'c')   = ""<a name="line.8474"></a>
+<span class="sourceLineNo">8474</span>     * StringUtils.substringAfter("abc", 'calcPackage')   = ""<a name="line.8474"></a>
 <span class="sourceLineNo">8475</span>     * StringUtils.substringAfter("abc", 'd')   = ""<a name="line.8475"></a>
 <span class="sourceLineNo">8476</span>     * StringUtils.substringAfter(" abc", 32)   = "abc"<a name="line.8476"></a>
 <span class="sourceLineNo">8477</span>     * &lt;/pre&gt;<a name="line.8477"></a>
@@ -8518,7 +8518,7 @@
 <span class="sourceLineNo">8510</span>     * StringUtils.substringAfter(*, null)      = ""<a name="line.8510"></a>
 <span class="sourceLineNo">8511</span>     * StringUtils.substringAfter("abc", "a")   = "bc"<a name="line.8511"></a>
 <span class="sourceLineNo">8512</span>     * StringUtils.substringAfter("abcba", "b") = "cba"<a name="line.8512"></a>
-<span class="sourceLineNo">8513</span>     * StringUtils.substringAfter("abc", "c")   = ""<a name="line.8513"></a>
+<span class="sourceLineNo">8513</span>     * StringUtils.substringAfter("abc", "calcPackage")   = ""<a name="line.8513"></a>
 <span class="sourceLineNo">8514</span>     * StringUtils.substringAfter("abc", "d")   = ""<a name="line.8514"></a>
 <span class="sourceLineNo">8515</span>     * StringUtils.substringAfter("abc", "")    = "abc"<a name="line.8515"></a>
 <span class="sourceLineNo">8516</span>     * &lt;/pre&gt;<a name="line.8516"></a>
@@ -8558,7 +8558,7 @@
 <span class="sourceLineNo">8550</span>     * StringUtils.substringAfterLast("abc", 'a')   = "bc"<a name="line.8550"></a>
 <span class="sourceLineNo">8551</span>     * StringUtils.substringAfterLast(" bc", 32)    = "bc"<a name="line.8551"></a>
 <span class="sourceLineNo">8552</span>     * StringUtils.substringAfterLast("abcba", 'b') = "a"<a name="line.8552"></a>
-<span class="sourceLineNo">8553</span>     * StringUtils.substringAfterLast("abc", 'c')   = ""<a name="line.8553"></a>
+<span class="sourceLineNo">8553</span>     * StringUtils.substringAfterLast("abc", 'calcPackage')   = ""<a name="line.8553"></a>
 <span class="sourceLineNo">8554</span>     * StringUtils.substringAfterLast("a", 'a')     = ""<a name="line.8554"></a>
 <span class="sourceLineNo">8555</span>     * StringUtils.substringAfterLast("a", 'z')     = ""<a name="line.8555"></a>
 <span class="sourceLineNo">8556</span>     * &lt;/pre&gt;<a name="line.8556"></a>
@@ -8598,7 +8598,7 @@
 <span class="sourceLineNo">8590</span>     * StringUtils.substringAfterLast(*, null)      = ""<a name="line.8590"></a>
 <span class="sourceLineNo">8591</span>     * StringUtils.substringAfterLast("abc", "a")   = "bc"<a name="line.8591"></a>
 <span class="sourceLineNo">8592</span>     * StringUtils.substringAfterLast("abcba", "b") = "a"<a name="line.8592"></a>
-<span class="sourceLineNo">8593</span>     * StringUtils.substringAfterLast("abc", "c")   = ""<a name="line.8593"></a>
+<span class="sourceLineNo">8593</span>     * StringUtils.substringAfterLast("abc", "calcPackage")   = ""<a name="line.8593"></a>
 <span class="sourceLineNo">8594</span>     * StringUtils.substringAfterLast("a", "a")     = ""<a name="line.8594"></a>
 <span class="sourceLineNo">8595</span>     * StringUtils.substringAfterLast("a", "z")     = ""<a name="line.8595"></a>
 <span class="sourceLineNo">8596</span>     * &lt;/pre&gt;<a name="line.8596"></a>
@@ -8639,7 +8639,7 @@
 <span class="sourceLineNo">8631</span>     * StringUtils.substringBefore("", *)        = ""<a name="line.8631"></a>
 <span class="sourceLineNo">8632</span>     * StringUtils.substringBefore("abc", 'a')   = ""<a name="line.8632"></a>
 <span class="sourceLineNo">8633</span>     * StringUtils.substringBefore("abcba", 'b') = "a"<a name="line.8633"></a>
-<span class="sourceLineNo">8634</span>     * StringUtils.substringBefore("abc", 'c')   = "ab"<a name="line.8634"></a>
+<span class="sourceLineNo">8634</span>     * StringUtils.substringBefore("abc", 'calcPackage')   = "ab"<a name="line.8634"></a>
 <span class="sourceLineNo">8635</span>     * StringUtils.substringBefore("abc", 'd')   = "abc"<a name="line.8635"></a>
 <span class="sourceLineNo">8636</span>     * &lt;/pre&gt;<a name="line.8636"></a>
 <span class="sourceLineNo">8637</span>     *<a name="line.8637"></a>
@@ -8674,7 +8674,7 @@
 <span class="sourceLineNo">8666</span>     * StringUtils.substringBefore("", *)        = ""<a name="line.8666"></a>
 <span class="sourceLineNo">8667</span>     * StringUtils.substringBefore("abc", "a")   = ""<a name="line.8667"></a>
 <span class="sourceLineNo">8668</span>     * StringUtils.substringBefore("abcba", "b") = "a"<a name="line.8668"></a>
-<span class="sourceLineNo">8669</span>     * StringUtils.substringBefore("abc", "c")   = "ab"<a name="line.8669"></a>
+<span class="sourceLineNo">8669</span>     * StringUtils.substringBefore("abc", "calcPackage")   = "ab"<a name="line.8669"></a>
 <span class="sourceLineNo">8670</span>     * StringUtils.substringBefore("abc", "d")   = "abc"<a name="line.8670"></a>
 <span class="sourceLineNo">8671</span>     * StringUtils.substringBefore("abc", "")    = ""<a name="line.8671"></a>
 <span class="sourceLineNo">8672</span>     * StringUtils.substringBefore("abc", null)  = "abc"<a name="line.8672"></a>
@@ -8714,7 +8714,7 @@
 <span class="sourceLineNo">8706</span>     * StringUtils.substringBeforeLast(null, *)      = null<a name="line.8706"></a>
 <span class="sourceLineNo">8707</span>     * StringUtils.substringBeforeLast("", *)        = ""<a name="line.8707"></a>
 <span class="sourceLineNo">8708</span>     * StringUtils.substringBeforeLast("abcba", "b") = "abc"<a name="line.8708"></a>
-<span class="sourceLineNo">8709</span>     * StringUtils.substringBeforeLast("abc", "c")   = "ab"<a name="line.8709"></a>
+<span class="sourceLineNo">8709</span>     * StringUtils.substringBeforeLast("abc", "calcPackage")   = "ab"<a name="line.8709"></a>
 <span class="sourceLineNo">8710</span>     * StringUtils.substringBeforeLast("a", "a")     = ""<a name="line.8710"></a>
 <span class="sourceLineNo">8711</span>     * StringUtils.substringBeforeLast("a", "z")     = "a"<a name="line.8711"></a>
 <span class="sourceLineNo">8712</span>     * StringUtils.substringBeforeLast("a", null)    = "a"<a name="line.8712"></a>
@@ -8813,7 +8813,7 @@
 <span class="sourceLineNo">8805</span>     * An empty ("") open/close returns {@code null} (no match).&lt;/p&gt;<a name="line.8805"></a>
 <span class="sourceLineNo">8806</span>     *<a name="line.8806"></a>
 <span class="sourceLineNo">8807</span>     * &lt;pre&gt;<a name="line.8807"></a>
-<span class="sourceLineNo">8808</span>     * StringUtils.substringsBetween("[a][b][c]", "[", "]") = ["a","b","c"]<a name="line.8808"></a>
+<span class="sourceLineNo">8808</span>     * StringUtils.substringsBetween("[a][b][calcPackage]", "[", "]") = ["a","b","calcPackage"]<a name="line.8808"></a>
 <span class="sourceLineNo">8809</span>     * StringUtils.substringsBetween(null, *, *)            = null<a name="line.8809"></a>
 <span class="sourceLineNo">8810</span>     * StringUtils.substringsBetween(*, null, *)            = null<a name="line.8810"></a>
 <span class="sourceLineNo">8811</span>     * StringUtils.substringsBetween(*, *, null)            = null<a name="line.8811"></a>
@@ -9459,9 +9459,9 @@
 <span class="sourceLineNo">9451</span>     * StringUtils.wrapIfMissing("ab", '\'')     = "'ab'"<a name="line.9451"></a>
 <span class="sourceLineNo">9452</span>     * StringUtils.wrapIfMissing("\"ab\"", '\"') = "\"ab\""<a name="line.9452"></a>
 <span class="sourceLineNo">9453</span>     * StringUtils.wrapIfMissing("/", '/')  = "/"<a name="line.9453"></a>
-<span class="sourceLineNo">9454</span>     * StringUtils.wrapIfMissing("a/b/c", '/')  = "/a/b/c/"<a name="line.9454"></a>
-<span class="sourceLineNo">9455</span>     * StringUtils.wrapIfMissing("/a/b/c", '/')  = "/a/b/c/"<a name="line.9455"></a>
-<span class="sourceLineNo">9456</span>     * StringUtils.wrapIfMissing("a/b/c/", '/')  = "/a/b/c/"<a name="line.9456"></a>
+<span class="sourceLineNo">9454</span>     * StringUtils.wrapIfMissing("a/b/calcPackage", '/')  = "/a/b/calcPackage/"<a name="line.9454"></a>
+<span class="sourceLineNo">9455</span>     * StringUtils.wrapIfMissing("/a/b/calcPackage", '/')  = "/a/b/calcPackage/"<a name="line.9455"></a>
+<span class="sourceLineNo">9456</span>     * StringUtils.wrapIfMissing("a/b/calcPackage/", '/')  = "/a/b/calcPackage/"<a name="line.9456"></a>
 <span class="sourceLineNo">9457</span>     * &lt;/pre&gt;<a name="line.9457"></a>
 <span class="sourceLineNo">9458</span>     *<a name="line.9458"></a>
 <span class="sourceLineNo">9459</span>     * @param str<a name="line.9459"></a>
@@ -9509,9 +9509,9 @@
 <span class="sourceLineNo">9501</span>     * StringUtils.wrapIfMissing("\"abcd\"", "'") = "'\"abcd\"'"<a name="line.9501"></a>
 <span class="sourceLineNo">9502</span>     * StringUtils.wrapIfMissing("'abcd'", "\"")  = "\"'abcd'\""<a name="line.9502"></a>
 <span class="sourceLineNo">9503</span>     * StringUtils.wrapIfMissing("/", "/")  = "/"<a name="line.9503"></a>
-<span class="sourceLineNo">9504</span>     * StringUtils.wrapIfMissing("a/b/c", "/")  = "/a/b/c/"<a name="line.9504"></a>
-<span class="sourceLineNo">9505</span>     * StringUtils.wrapIfMissing("/a/b/c", "/")  = "/a/b/c/"<a name="line.9505"></a>
-<span class="sourceLineNo">9506</span>     * StringUtils.wrapIfMissing("a/b/c/", "/")  = "/a/b/c/"<a name="line.9506"></a>
+<span class="sourceLineNo">9504</span>     * StringUtils.wrapIfMissing("a/b/calcPackage", "/")  = "/a/b/calcPackage/"<a name="line.9504"></a>
+<span class="sourceLineNo">9505</span>     * StringUtils.wrapIfMissing("/a/b/calcPackage", "/")  = "/a/b/calcPackage/"<a name="line.9505"></a>
+<span class="sourceLineNo">9506</span>     * StringUtils.wrapIfMissing("a/b/calcPackage/", "/")  = "/a/b/calcPackage/"<a name="line.9506"></a>
 <span class="sourceLineNo">9507</span>     * &lt;/pre&gt;<a name="line.9507"></a>
 <span class="sourceLineNo">9508</span>     *<a name="line.9508"></a>
 <span class="sourceLineNo">9509</span>     * @param str<a name="line.9509"></a>
