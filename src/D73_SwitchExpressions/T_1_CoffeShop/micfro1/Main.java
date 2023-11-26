@@ -7,7 +7,7 @@ public class Main {
     public static void order(String choiceCoffee, String choiceSize) {
 
         String coffeAndsize = choiceCoffee + choiceSize;
-        double s1 = 100.25;
+        double s1 = 200.25;
         double s2 = 1.50;
 
         double l1 = 2.25;
