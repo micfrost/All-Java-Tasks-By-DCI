@@ -1,4 +1,4 @@
-package D75_Singleton.Task_1_singleton_design_pattern;
+package D75_Singleton.Task_2_singleton_multithread;
 
 class ZooSingletonExample {
     // Step 1
