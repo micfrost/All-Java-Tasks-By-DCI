@@ -1,5 +1,6 @@
-/*
 package D66_SmartCity.SmartCitySimulation.src.main.java;
+
+
 
 //Simulates smart traffic management, including traffic lights, congestion detection, and rerouting of vehicles.
 // You can use a CSV file (traffic_data.csv) to represent traffic data.
@@ -103,4 +104,3 @@ public class TrafficManagement implements Runnable {
         }
     }
 }
-*/
