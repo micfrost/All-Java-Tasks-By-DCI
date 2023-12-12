@@ -38,31 +38,45 @@ public class Ghosts {
 
     public boolean moveGhosts(int pacManX, int pacManY) {
         for (int i = 0; i < numGhosts; i++) {
-            int direction = random.nextInt(4);
-            int newX = ghostX[i] + (direction == 0 ? -1 : (direction == 1 ? 1 : 0));
-            int newY = ghostY[i] + (direction == 2 ? -1 : (direction == 3 ? 1 : 0));
+            int ghostX = this.ghostX[i];
+            int ghostY = this.ghostY[i];
 
-            if (isValidMove(newX, newY)) {
-                if (newX == pacManX && newY == pacManY) {
-                    System.out.println("Ghost caught Pac-Man!");
-                    return true; 
-                } else {
-                    if (board[pacManX][pacManY] != 'G') {
-                        board[ghostX[i]][ghostY[i]] = Board.EMPTY_SPACE;
-                        board[newX][newY] = 'G';
-                        ghostX[i] = newX;
-                        ghostY[i] = newY;
-                    } else {
-                        System.out.println("Pac-Man ate a ghost!");
-                        board[ghostX[i]][ghostY[i]] = Board.EMPTY_SPACE;
-                        ghostX[i] = -1; // Set the ghost's position to an invalid state
-                        ghostY[i] = -1;
-                    }
+            int distX = pacManX - ghostX;
+            int distY = pacManY - ghostY;
+
+            if (Math.abs(distX) > Math.abs(distY)) {
+                // Move horizontally
+                int newX = ghostX + Integer.compare(distX, 0);
+                int newY = ghostY;
+                
+                if (isValidMove(newX, newY)) {
+                    moveGhost(i, newX, newY);
                 }
+            } else {
+                // Move vertically
+                int newX = ghostX;
+                int newY = ghostY + Integer.compare(distY, 0);
+                
+                if (isValidMove(newX, newY)) {
+                    moveGhost(i, newX, newY);
+                }
+            }
+
+            if (this.ghostX[i] == pacManX && this.ghostY[i] == pacManY) {
+                System.out.println("Ghost caught Pac-Man!");
+                return true; 
             }
         }
         return false;
     }
+
+    private void moveGhost(int index, int newX, int newY) {
+        board[ghostX[index]][ghostY[index]] = Board.EMPTY_SPACE;
+        board[newX][newY] = 'G';
+        ghostX[index] = newX;
+        ghostY[index] = newY;
+    }
+
 
     private boolean isValidMove(int x, int y) {
         return x >= 0 && x < boardSize && y >= 0 && y < boardSize && board[x][y] == ' ';

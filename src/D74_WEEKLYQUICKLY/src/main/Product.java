@@ -1,35 +1,31 @@
 package D74_WEEKLYQUICKLY.src.main;
 
 public class Product {
-    private String name;
-    private double price;
-    private int quantity;
+    int productID;
+    String productName;
+    int productQuantity;
 
-    public Product(String name, double price) {
-        this.name = name;
-        this.price = price;
+    public int getProductID() {
+        return productID;
     }
 
-    @Override
-    public String toString() {
-        return name +" \t"+ price + "€.";
+    public void setProductID(int productID) {
+        this.productID = productID;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public String getProductName() {
+        return productName;
     }
 
-    public String getName() {
-        return name;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
-    public double getPrice() {
-        return price;
+    public int getProductQuantity() {
+        return productQuantity;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setProductQuantity(int productQuantity) {
+        this.productQuantity = productQuantity;
     }
 }
-
-
