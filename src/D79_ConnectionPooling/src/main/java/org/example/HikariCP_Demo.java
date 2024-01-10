@@ -1,5 +1,5 @@
 package D79_ConnectionPooling.src.main.java.org.example;
-
+/*
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
@@ -15,7 +15,7 @@ public class HikariCP_Demo {
         HikariConfig config = new HikariConfig();
         config.setJdbcUrl("jdbc:mysql://localhost:3306/studentdb");
         config.setUsername("root");
-        config.setPassword("DCIlolopik2023!");
+        config.setPassword("password");
 
         config.addDataSourceProperty("minimumIdle", "5");
         config.addDataSourceProperty("maximumPoolSize", "25");
@@ -46,3 +46,4 @@ public class HikariCP_Demo {
         }
     }
 }
+*/

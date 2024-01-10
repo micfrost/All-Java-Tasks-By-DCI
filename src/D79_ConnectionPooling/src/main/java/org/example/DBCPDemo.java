@@ -1,5 +1,5 @@
 package D79_ConnectionPooling.src.main.java.org.example;
-
+/*
 import org.apache.commons.dbcp2.BasicDataSource;
 
 import java.sql.Connection;
@@ -15,7 +15,7 @@ public class DBCPDemo {
         dataSource = new BasicDataSource();
         dataSource.setUrl("jdbc:mysql://localhost:3306/studentdb?useSSL=false");
         dataSource.setUsername("root");
-        dataSource.setPassword("DCIlolopik2023!");
+        dataSource.setPassword("password");
 
 //    specify minimum number of idle connections
         // Set other properties for the connection pool
@@ -56,3 +56,4 @@ public class DBCPDemo {
         }
     }
 }
+*/

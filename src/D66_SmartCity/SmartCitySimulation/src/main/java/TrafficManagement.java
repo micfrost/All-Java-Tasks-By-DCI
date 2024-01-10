@@ -31,10 +31,10 @@ public class TrafficManagement implements Runnable {
         simulateTraffic();
     }
 
-    String csvFile = "src//D66_SmartCity//SmartCitySimulation//src//resources//traffic_data.csv";
+    String csvFile = "D78_JDBC/src//D66_SmartCity//SmartCitySimulation//src//resources//traffic_data.csv";
 
     private void readTrafficData() {
-        String csvFile = "src//D66_SmartCity//SmartCitySimulation//src//resources//traffic_data.csv";
+        String csvFile = "D78_JDBC/src//D66_SmartCity//SmartCitySimulation//src//resources//traffic_data.csv";
 
         try (CSVReader reader = new CSVReader(new FileReader(csvFile))) {
             String[] nextRecord;
@@ -87,7 +87,7 @@ public class TrafficManagement implements Runnable {
                 // Add more sample data as needed
         };
 
-        String csvFile = "src//D66_SmartCity//SmartCitySimulation//src//resources//traffic_data.csv";
+        String csvFile = "D78_JDBC/src//D66_SmartCity//SmartCitySimulation//src//resources//traffic_data.csv";
 
         try (FileWriter writer = new FileWriter(csvFile)) {
             // Write header

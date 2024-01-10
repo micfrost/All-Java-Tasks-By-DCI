@@ -1,5 +1,5 @@
 package D79_ConnectionPooling.src.main.java.org.example;
-
+/*
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 import java.sql.Connection;
@@ -16,7 +16,7 @@ public class c3p0_Demo {
 
         comboPooledDataSource.setJdbcUrl("jdbc:mysql://localhost:3306/studentdb");
         comboPooledDataSource.setUser("root");
-        comboPooledDataSource.setPassword("DCIlolopik2023!");
+        comboPooledDataSource.setPassword("password");
 
         comboPooledDataSource.setMinPoolSize(3);
         comboPooledDataSource.setMaxPoolSize(6);
@@ -49,3 +49,4 @@ public class c3p0_Demo {
         }
         }
     }
+*/

@@ -1,5 +1,5 @@
 package D79_ConnectionPooling.src.main.java.org.example;
-
+/*
 
 import org.apache.commons.dbcp2.*;
 import org.apache.commons.pool2.ObjectPool;
@@ -19,7 +19,7 @@ public class DBCPDemo2 {
     static {
         Properties properties = new Properties();
         properties.setProperty("user", "root");
-        properties.setProperty("password", "DCIlolopik2023!");
+        properties.setProperty("password", "password");
 
         ConnectionFactory connectionFactory =
                 new DriverManagerConnectionFactory("jdbc:mysql://localhost:3306/studentdb", properties);
@@ -73,4 +73,4 @@ public class DBCPDemo2 {
             }
         }
     }
-}
+}*/

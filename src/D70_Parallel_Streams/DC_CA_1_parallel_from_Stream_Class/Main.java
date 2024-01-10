@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 public class Main {
     public static void main(String[] args) throws IOException {
         // File path
-        String pathname = "src/D70_Parallel_Streams/names.txt";
+        String pathname = "D78_JDBC/src/D70_Parallel_Streams/names.txt";
 
         // Creating a File object with the file path
         File file1 = new File(pathname);

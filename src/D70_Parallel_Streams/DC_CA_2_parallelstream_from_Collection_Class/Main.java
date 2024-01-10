@@ -3,13 +3,12 @@ package D70_Parallel_Streams.DC_CA_2_parallelstream_from_Collection_Class;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.util.stream.Stream;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         // File path
-        String pathname = "src/D70_Parallel_Streams/names.txt";
+        String pathname = "D78_JDBC/src/D70_Parallel_Streams/names.txt";
 
         // Creating a File object with the file path
         File file2 = new File(pathname);

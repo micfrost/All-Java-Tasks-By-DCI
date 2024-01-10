@@ -1,7 +1,7 @@
 ### IntelliJ IDEA ###
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+!src/D78_JDBC/src/main/**/out/
+!src/D78_JDBC/src/test/**/out/
 
 ### Eclipse ###
 .apt_generated
@@ -12,8 +12,8 @@ out/
 .springBeans
 .sts4-cache
 bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+!src/D78_JDBC/src/main/**/bin/
+!src/D78_JDBC/src/test/**/bin/
 
 ### NetBeans ###
 /nbproject/private/
