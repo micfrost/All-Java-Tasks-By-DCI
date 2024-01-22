@@ -1,36 +1,38 @@
-package D78_JDBC.src.jdbc;
+package D78_JDBC.src.jdbc_postgresql;
 
 import java.sql.*;
-import java.util.Scanner;
 
-public class PreperedStatement {
-    private static final String jdbcUrl = "jdbc:mysql://localhost:3306/dciDB";
-    private static final String user = "root";
-    private static final String password = "password";
+public class Driver {
+    // JDBC URL, username, and password of PostgreSQL server
+    private static final String jdbcUrl = "jdbc:postgresql://localhost:5432/postgres";
+    private static final String user = "postgres";
+    private static final String password = "postgres";
 
+    // JDBC variables for opening, closing, and managing a connection
     public static void main(String[] args) throws SQLException {
         Connection myConnection = null;
-        PreparedStatement myStatement = null;
+        Statement myStatement = null;
         ResultSet myResultSet = null;
-        Scanner scanner = null;
 
         try {
 //            1. Get a connection to a database
+
             myConnection = DriverManager.getConnection(jdbcUrl, user, password);
             System.out.println("Database connection successful");
 
-            scanner = new Scanner(System.in);
-            System.out.println("What age do you want to search?");
-            int age = Integer.parseInt(scanner.nextLine());
+//         2. Create statement
+            myStatement = myConnection.createStatement();
 
-//         2. Prepare statement to parameter statement
-            myStatement = myConnection.prepareStatement("SELECT * FROM users where age = ?");
+//            3. Execute a sql query
+            String query1 = "SELECT datname FROM pg_database";
+            myResultSet = myStatement.executeQuery(query1);
 
-            myStatement.setInt(1, age);
-            myResultSet = myStatement.executeQuery();
-
+//            4. process the result set
+            System.out.println("List of Databases:");
             while (myResultSet.next()) {
-                System.out.println("age" + myResultSet.getInt("age"));
+                String dbName = myResultSet.getString("datname");
+                System.out.println(dbName);
+
             }
 
         } catch (Exception e) {
@@ -49,4 +51,3 @@ public class PreperedStatement {
         }
     }
 }
-

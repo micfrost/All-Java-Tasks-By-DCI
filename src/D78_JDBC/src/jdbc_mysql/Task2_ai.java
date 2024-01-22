@@ -1,4 +1,4 @@
-package D78_JDBC.src.jdbc;
+package D78_JDBC.src.jdbc_mysql;
 
 import java.sql.*;
 

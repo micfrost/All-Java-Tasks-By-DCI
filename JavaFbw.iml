@@ -19,5 +19,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="mysql-connector-j-8.2.0" level="project" />
+    <orderEntry type="library" name="postgresql-42.7.1" level="project" />
   </component>
 </module>
