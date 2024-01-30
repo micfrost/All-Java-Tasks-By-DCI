@@ -1,4 +1,4 @@
-package D78_JDBC.src.jdbc_postgresql;
+package D78_JDBC.src.jdbc_postgresql.micfro;
 
 import java.sql.*;
 
