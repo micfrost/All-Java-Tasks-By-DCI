@@ -53,12 +53,12 @@ public class Transaction {
             connection.setAutoCommit(false);
 
             DataManagement.insertDataIntoTable(stmt);
-            // Add more operations as needed
+
 
             // Count the number of rows after insert
             int countRecords = DataManagement.countRecords(stmt);
 
-            // Commit transaction if needed
+          // Commit transaction
             if (countRecords < 5) {
                 connection.rollback(); // Rollback the transaction if condition is not met
                 System.out.println("Rollback: Insert into registration_table failed - too few records");

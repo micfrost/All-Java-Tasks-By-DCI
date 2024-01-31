@@ -25,8 +25,8 @@ public class DataManagement {
             String sql = "INSERT INTO registration_table (id, name, lastName, age) VALUES "
                     + "(1, 'Johnski', 'Doe', 25), "
                     + "(2, 'Aliceski', 'Johnson', 30), "
-                    + "(5, 'Parski', 'Toksl', 00), "
-                    + "(6, 'Parski', 'Toksl', 00), "
+                    + "(5, 'Parski', 'Toksl', 100), "
+                    + "(6, 'Parski', 'Toksl', 100), "
                     + "(3, 'Bobski', 'Smith', 28), "
                     + "(4, 'Evaski', 'Green', 35)";
             statement.executeUpdate(sql);

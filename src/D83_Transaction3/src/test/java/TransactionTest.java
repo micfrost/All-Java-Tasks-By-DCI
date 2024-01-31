@@ -30,7 +30,7 @@ public class TransactionTest {
         int total = countRecords();
 
         // ASSERT THAT TOTAL RECORDS MATCH THE EXPECTED VALUE
-        assertEquals(4, total);
+        assertEquals(6, total);
 //        Assertions.assertEquals(1, total);
 
     }
