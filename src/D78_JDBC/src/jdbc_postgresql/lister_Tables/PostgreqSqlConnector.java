@@ -10,7 +10,7 @@ public class PostgreqSqlConnector {
     private static String _URL = "jdbc:postgresql://localhost:5432/";
     private static String _UID = "postgres";
     private static String _PWD = "postgres";
-    private static String _DBNAME = "dci";
+    private static String _DBNAME = "240130_dci_Task1";
     private static Connection myConnection = null;
 
 
