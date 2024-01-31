@@ -36,7 +36,6 @@ public class DataManagement {
     }
 
 
-
     // DROP TABLE SQL
     private static void dropTable(Statement statement) throws SQLException {
         String sql = "DROP TABLE IF EXISTS registration_table";
@@ -45,7 +44,9 @@ public class DataManagement {
 
     // GET DATA FROM TABLE
     public static ArrayList<Person> getDataFromTable(Statement statement) throws SQLException {
-        String sql = "select id, name, lastName, age from registration_table";
+        String sql = "select id, name, lastName, age " +
+                "from registration_table";
+
         ResultSet rs = statement.executeQuery(sql);
         ArrayList<Person> peopleList = new ArrayList<>();
         while (rs.next()) {
